@@ -78,7 +78,39 @@ export const curriculumAPI = {
     if (!topic) throw new Error(`Topic ${topicId} not found`);
     return { problems: topic.practice_problems || [] };
   },
-  generateTopic: async (topicId) => { },
+  generateTopic: async (topicId) => {
+    const curriculum = await loadStaticCurriculum();
+    const topic = curriculum.topics?.find(t => t.id === topicId);
+    if (!topic) throw new Error(`Topic ${topicId} not found`);
+    
+    // Simulate generation delay
+    await new Promise(resolve => setTimeout(resolve, 2000));
+    
+    return {
+      ...topic,
+      generated: true,
+      description: `This lesson on ${topic.title} was generated locally. Advanced generation is available in the full version.`,
+      concepts: [
+        {
+          title: `Introduction to ${topic.title}`,
+          explanation: `In this section, we explore the fundamentals of ${topic.title}. As this is running purely in your browser, this is a placeholder lesson structure.`,
+          formula: "f(x) = y",
+          example: `Consider how ${topic.title} applies in a standard context.`
+        }
+      ],
+      practice_problems: [
+        {
+          question: `What is the core idea behind ${topic.title}?`,
+          answer: "The fundamentals",
+          difficulty: "easy",
+          walkthrough: [
+            { title: "Review", content: "Review the main definition." },
+            { title: "Apply", content: "Apply it to the problem." }
+          ]
+        }
+      ]
+    };
+  },
   forceTopic: async (topicId) => { },
   triggerScrape: async () => { },
   getScrapeStatus: async () => { }
