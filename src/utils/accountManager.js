@@ -6,8 +6,8 @@ export function getAccount() {
   const data = localStorage.getItem(ACCOUNT_KEY);
   if (data) return JSON.parse(data);
   return {
-    isLoggedIn: false,
-    name: "Guest Student",
+    isLoggedIn: true,
+    name: "Local Student",
     level: 1, // Overall calculus level
     canvasTokenSaved: false,
     topics: {} // topicId -> { mastery: 0.0 to 1.0, attempts: 0, correct: 0 }

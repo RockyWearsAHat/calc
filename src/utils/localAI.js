@@ -191,3 +191,67 @@ export async function generateLessonLocally(topicTitle) {
 
   return reply.choices[0].message.content.trim();
 }
+
+export async function generateTopicLocally(topicBasics) {
+  const llm = await getAIEngine();
+  
+  const systemPrompt = `You are a brilliant calculus syllabus generator.
+  Generate curriculum data for this topic: ${topicBasics.id} - ${topicBasics.title || topicBasics.name}
+  
+  Output a JSON object perfectly matching this schema:
+  {
+    "id": "${topicBasics.id}",
+    "title": "${topicBasics.title || topicBasics.name}",
+    "calc_level": ${topicBasics.calc_level || 1},
+    "description": "A deep 3-4 sentence overview of the core principles.",
+    "key_formula": "The primary LaTeX formula representing this topic.",
+    "priority": "High",
+    "concepts": [
+      {
+        "title": "Concept 1 Name (e.g. Definition of Derivative)",
+        "explanation": "Markdown text explaining the concept simply.",
+        "example": "A worked out mathematical example in LaTeX."
+      },
+      {
+        "title": "Concept 2 Name (e.g. Applying the Power Rule)",
+        "explanation": "Further explanation...",
+        "example": "Another worked out example..."
+      }
+    ],
+    "practice_problems": [],
+    "generated": true
+  }
+  
+  Return ONLY the strict JSON object. DO NOT wrap it in markdown codeblocks (no \`\`\`json).`;
+
+  const reply = await llm.chat.completions.create({
+    messages: [
+      { role: "system", content: systemPrompt },
+      { role: "user", content: "Generate the JSON structure now." }
+    ],
+    temperature: 0.3,
+    max_tokens: 1500,
+  });
+
+  try {
+    let raw = reply.choices[0].message.content.trim();
+    if (raw.startsWith("```json")) raw = raw.replace(/```json/g, "").replace(/```/g, "").trim();
+    const data = JSON.parse(raw);
+    data.generated = true;
+    return data;
+  } catch(e) {
+    // Return a dummy fallback so it doesn't crash UI
+    return {
+      ...topicBasics,
+      generated: true,
+      description: "The Mecha-Copilot's WebGPU engine provided invalid JSON, but we recovered locally. Try refreshing the topic.",
+      key_formula: "\\int e^x dx",
+      concepts: [{
+        title: "Fallback Concept", 
+        explanation: "The LLM response could not be parsed: " + reply.choices[0].message.content,
+        example: "N/A"
+      }],
+      practice_problems: []
+    };
+  }
+}

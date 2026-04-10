@@ -3,7 +3,8 @@ import { BookOpen, ChevronDown, MessageCircle, X,
          Send, Loader2, CheckCircle, ArrowRight, ArrowLeft,
          Sparkles, GraduationCap, Calculator, AlertCircle, RefreshCw, Zap } from 'lucide-react';
 import { useParams } from 'react-router-dom';
-import { curriculumAPI, aiAPI } from '../utils/api';
+import { curriculumAPI } from '../utils/api';
+import { generateChatResponse, checkAnswerLocally } from '../utils/localAI';
 import { useLocalStorage } from '../hooks/useAPI';
 import MathMarkdown from '../components/MathMarkdown';
 import MathInput from '../components/MathInput';
@@ -204,11 +205,10 @@ function ChatPanel({ topicId, topicTitle, problem, stepIndex, currentConcept, cu
       const history = updatedMessages
         .filter((m, i) => i > 0)
         .map(m => ({ role: m.role, content: m.content }));
-      const resp = await aiAPI.chat(
-        `[Page Context: ${context}]\n\nStudent asks: ${userMsg}`,
-        topicId, 0.5, [], null, null, history
-      );
-      setMessages(prev => [...prev, { role: 'assistant', content: resp.response }]);
+      // Pass via Local WebLLM
+      const systemContext = "You are a helpful AI calculus tutor. The student is viewing the page context: " + context;
+      const respText = await generateChatResponse(userMsg, history, systemContext);
+      setMessages(prev => [...prev, { role: 'assistant', content: respText }]);
     } catch {
       setMessages(prev => [...prev, { role: 'assistant', content: 'Sorry, something went wrong. Try again.' }]);
     } finally {
@@ -316,7 +316,7 @@ function PracticeTab({ problems, topicId, topicTitle, onProblemChange, onStepCha
     if (!answer.trim()) return;
     setChecking(true);
     try {
-      const r = await aiAPI.checkAnswer(prob.question, prob.answer, answer);
+      const r = await checkAnswerLocally(prob.question, prob.answer, answer);
       setResult(r);
     } catch {
       setResult({ is_correct: false, feedback: 'Could not check answer. Try again.' });
