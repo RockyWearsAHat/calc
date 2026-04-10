@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { MessageCircle, X, Send, Loader2, Minimize2, GraduationCap } from 'lucide-react';
-import { aiAPI } from '../utils/api';
+import { generateChatResponse, setProgressCallback } from '../utils/localAI';
 import MathMarkdown from './MathMarkdown';
 import styles from './GlobalChat.module.css';
 
@@ -19,15 +19,24 @@ export default function GlobalChat({ topicId = null, topicTitle = null, problem 
   const [messages, setMessages] = useState([{ role: 'assistant', content: WELCOME }]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
+  const [engineStatus, setEngineStatus] = useState('Initializing 1-bit AI Core...');
+  const [isInitializing, setIsInitializing] = useState(false);
+
   const bottomRef = useRef(null);
   const inputRef = useRef(null);
+
+  useEffect(() => {
+    setProgressCallback((report) => {
+      setEngineStatus(report.text);
+    });
+  }, []);
 
   useEffect(() => {
     if (open && !minimized) {
       bottomRef.current?.scrollIntoView({ behavior: 'smooth' });
       setTimeout(() => inputRef.current?.focus(), 100);
     }
-  }, [messages, open, minimized]);
+  }, [messages, open, minimized, engineStatus, isInitializing]);
 
   async function send() {
     const text = input.trim();
@@ -36,17 +45,28 @@ export default function GlobalChat({ topicId = null, topicTitle = null, problem 
     const updatedMessages = [...messages, { role: 'user', content: text }];
     setMessages(updatedMessages);
     setLoading(true);
+    
+    // First message starts initialization if not done
+    setIsInitializing(true);
+
     try {
-      // Pass conversation history (exclude the system welcome message)
       const history = updatedMessages
-        .filter((m, i) => i > 0) // skip welcome message
+        .filter((m, i) => i > 0 && m.role !== 'system') 
         .map(m => ({ role: m.role, content: m.content }));
-      const resp = await aiAPI.chat(text, topicId, 0.5, [], problem?.question || '', stepIndex, history);
-      setMessages(prev => [...prev, { role: 'assistant', content: resp.response }]);
-    } catch {
-      setMessages(prev => [...prev, { role: 'assistant', content: 'Something went wrong — is the backend running? Try again.' }]);
+      
+      const systemPrompt = "You are a helpful and brilliant calculus AI tutor running directly in the browser using a lightweight WebGPU quantised engine. Keep answers brief, specific, and direct to the point. Focus strictly on their calculus questions. Use markdown math formatting when useful.";
+
+      // WebLLM chat generation
+      const resp = await generateChatResponse(text, history.slice(0, -1), systemPrompt);
+      
+      setIsInitializing(false);
+      setMessages(prev => [...prev, { role: 'assistant', content: resp }]);
+    } catch(err) {
+      setIsInitializing(false);
+      setMessages(prev => [...prev, { role: 'assistant', content: `SYSTEM ERROR: WebGPU/Model failure. Make sure you are using Chrome/Edge with WebGPU enabled. (${err.message})` }]);
     } finally {
       setLoading(false);
+      setEngineStatus('');
     }
   }
 
@@ -60,7 +80,7 @@ export default function GlobalChat({ topicId = null, topicTitle = null, problem 
       {!open && (
         <button className={styles.fab} aria-label="Open AI Tutor Chat" onClick={() => setOpen(true)} title="Ask your AI tutor">
           <MessageCircle size={22} />
-          <span className={styles.fabLabel}>Ask Tutor</span>
+          <span className={styles.fabLabel}>Mech Tutor</span>
         </button>
       )}
 
@@ -71,7 +91,7 @@ export default function GlobalChat({ topicId = null, topicTitle = null, problem 
             <div className={styles.headerLeft}>
               <GraduationCap size={16} className={styles.headerIcon} />
               <div>
-                <div className={styles.headerTitle}>AI Tutor</div>
+                <div className={styles.headerTitle}>WebGPU 1-bit Tutor</div>
                 {topicTitle && <div className={styles.headerSub}>{topicTitle}</div>}
               </div>
             </div>
@@ -97,8 +117,16 @@ export default function GlobalChat({ topicId = null, topicTitle = null, problem 
                     </div>
                   </div>
                 ))}
-                {loading && (
+                {loading && isInitializing && engineStatus && (
                   <div className={`${styles.msg} ${styles.msgBot}`}>
+                     <div className={styles.bubble} style={{ fontSize: '0.85em', color: '#888' }}>
+                       {engineStatus}... <br /> <br />
+                       [This model downloads once to your browser cache. Subsequent loads are instant. A ~600MB payload is deploying...]
+                     </div>
+                  </div>
+                )}
+                {loading && !isInitializing && (
+                   <div className={`${styles.msg} ${styles.msgBot}`}>
                     <div className={styles.bubble}>
                       <Loader2 size={15} className={styles.spin} />
                     </div>
@@ -108,7 +136,7 @@ export default function GlobalChat({ topicId = null, topicTitle = null, problem 
               </div>
 
               <div className={styles.suggestions}>
-                {['Explain this from scratch', 'Show me an example', "Why does this formula work?"].map(s => (
+                {['Explain limits like I am five', 'Help me find the derivative of sin(x)', "Why do we need calculus?"].map(s => (
                   <button key={s} className={styles.suggestion} onClick={() => { setInput(s); inputRef.current?.focus(); }}>
                     {s}
                   </button>
