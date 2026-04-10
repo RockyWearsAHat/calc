@@ -1,13 +1,22 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { BookOpen, Calculator, Settings, GraduationCap, Lightbulb, Sun, Moon, FolderOpen } from 'lucide-react';
+import { BookOpen, Calculator, Settings, GraduationCap, Lightbulb, Sun, Moon, FolderOpen, Award } from 'lucide-react';
 import styles from './Header.module.css';
 import { curriculumAPI } from '../utils/api';
 import { useTheme } from '../contexts/ThemeContext';
+import { getAccount, login as loginAccount } from '../utils/accountManager';
 
 export default function Header() {
   const [curriculumReady, setCurriculumReady] = useState(false);
+  const [account, setAccount] = useState(getAccount());
   const { theme, toggleTheme } = useTheme();
+
+  const handleLogin = () => {
+    const name = prompt("Enter Student Canvas ID or Name:"); 
+    if (name) {
+      setAccount(loginAccount(name, true));
+    }
+  };
 
   useEffect(() => {
     curriculumAPI.getTopics()
@@ -82,7 +91,7 @@ export default function Header() {
              </div>
           ) : (
             <button 
-              onClick={() => { const name = prompt("Enter Student Canvas ID or Name:"); if(name) login(name, true); }}
+              onClick={handleLogin}
               style={{ background: 'var(--brand-gradient)', color: 'white', border:'none', padding:'6px 12px', borderRadius:'14px', cursor:'pointer', fontWeight:'bold', marginRight:'10px' }}
             >
               Log In
