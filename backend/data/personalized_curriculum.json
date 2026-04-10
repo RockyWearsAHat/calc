@@ -3459,11 +3459,131 @@
       "order": 59,
       "priority": "CURRENT",
       "chapter_title": "Sequences and Series",
-      "description": "",
-      "key_formula": "",
-      "concepts": [],
-      "practice_problems": [],
-      "generated": false
+      "description": "Taylor series write a smooth function as an infinite polynomial using its derivatives at a point; Maclaurin series are the special case centered at $0$.",
+      "key_formula": "$$f(x)=\\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!}(x-a)^n$$",
+      "concepts": [
+        {
+          "title": "What is a Taylor series?",
+          "explanation": "A Taylor series represents a function $f(x)$ near a point $a$ as an infinite polynomial whose terms use derivatives of $f$ at $a$. Each term is of the form $\\frac{f^{(n)}(a)}{n!}(x-a)^n$, so adding more terms usually improves the approximation close to $a$.",
+          "formula": "$$f(x)=\\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!}(x-a)^n$$",
+          "example": "Example: for $f(x)=e^x$ every derivative is $e^x$, so at $a=0$ we have $f^{(n)}(0)=1$. Thus the Maclaurin series is $e^x=1+x+\\frac{x^2}{2!}+\\frac{x^3}{3!}+\\cdots$."
+        },
+        {
+          "title": "Maclaurin series (Taylor at $0$)",
+          "explanation": "A Maclaurin series is a Taylor series with $a=0$. It writes $f(x)$ as powers of $x$ with coefficients $f^{(n)}(0)/n!$, which is especially handy when the function's behavior at $0$ is simple.",
+          "formula": "$$f(x)=\\sum_{n=0}^{\\infty} \\frac{f^{(n)}(0)}{n!}x^n$$",
+          "example": "Example: $\\sin x$ has derivatives that cycle; evaluating at $0$ gives $\\sin(0)=0$, $\\sin'(0)=1$, $\\sin''(0)=0$, $\\sin^{(3)}(0)=-1$, so $\\sin x=x-\\frac{x^3}{3!}+\\frac{x^5}{5!}-\\cdots$."
+        },
+        {
+          "title": "How to compute the coefficients",
+          "explanation": "The coefficient of $(x-a)^n$ is $\\dfrac{f^{(n)}(a)}{n!}$, so compute the $n$-th derivative of $f$, evaluate it at $a$, then divide by $n!$. For polynomials the Taylor series stops at the polynomial's degree.",
+          "formula": "$$c_n=\\frac{f^{(n)}(a)}{n!}$$",
+          "example": "Example: $f(x)=x^3$ about $a=0$. Compute derivatives: $f'(x)=3x^2$, $f''(x)=6x$, $f^{(3)}(x)=6$. Evaluating at $0$ gives $f^{(3)}(0)=6$ and $6/3!=1$, so the series is just $x^3$ (all higher terms zero)."
+        },
+        {
+          "title": "Approximation and the remainder (error)",
+          "explanation": "Truncating the infinite series after $n$ terms gives a Taylor polynomial that approximates $f$; the remainder measures the error. The Lagrange form of the remainder says there is some $\\xi$ between $a$ and $x$ with $R_n(x)=\\dfrac{f^{(n+1)}(\\xi)}{(n+1)!}(x-a)^{n+1}$, which lets you bound the error.",
+          "formula": "$$R_n(x)=\\frac{f^{(n+1)}(\\xi)}{(n+1)!}(x-a)^{n+1}\\quad\\text{for some }\\xi\\text{ between }a\\text{ and }x.$$",
+          "example": "Example: to approximate $e^1$ by $1+x+\\frac{x^2}{2!}$ at $x=1$, note $f^{(3)}(t)=e^t\\le e$ on $[0,1]$, so $|R_2(1)|\\le \\dfrac{e}{3!}=\\dfrac{e}{6}\\approx0.453$. This bounds the error of that quadratic approximation."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Find the Maclaurin series for $e^x$ and write the first four nonzero terms.",
+          "answer": "$1 + x + \\dfrac{x^2}{2!} + \\dfrac{x^3}{3!} + \\cdots$",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Recognize the function",
+              "content": "Let $f(x)=e^x$. Note that every derivative is the same: $f^{(n)}(x)=e^x$ for all $n$.",
+              "formula": ""
+            },
+            {
+              "step": 2,
+              "title": "Evaluate derivatives at $0$",
+              "content": "Evaluate at $0$: $f^{(n)}(0)=e^0=1$ for every $n$, so each coefficient is $f^{(n)}(0)/n!=1/n!$.",
+              "formula": ""
+            },
+            {
+              "step": 3,
+              "title": "Write the series",
+              "content": "Plug coefficients into the Maclaurin form to get the infinite series.",
+              "formula": "$$e^x=\\sum_{n=0}^{\\infty}\\frac{x^n}{n!}$$"
+            },
+            {
+              "step": 4,
+              "title": "List the first four terms",
+              "content": "The first four nonzero terms are $1$, $x$, $\\dfrac{x^2}{2!}$ and $\\dfrac{x^3}{3!}$, so $e^x=1+x+\\dfrac{x^2}{2!}+\\dfrac{x^3}{3!}+\\cdots$.",
+              "formula": ""
+            }
+          ]
+        },
+        {
+          "question": "Find the Maclaurin series for $\\ln(1+x)$ valid for $|x|<1$ and give the first four terms.",
+          "answer": "$x-\\dfrac{x^2}{2}+\\dfrac{x^3}{3}-\\dfrac{x^4}{4}+\\cdots$",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Differentiate to a simpler function",
+              "content": "Let $f(x)=\\ln(1+x)$ so $f'(x)=\\dfrac{1}{1+x}$, which is a geometric-type function for $|x|<1$.",
+              "formula": ""
+            },
+            {
+              "step": 2,
+              "title": "Use the geometric series",
+              "content": "For $|x|<1$ we have $\\dfrac{1}{1+x}=\\sum_{n=0}^{\\infty}(-1)^n x^n$ (this is the geometric series with ratio $-x$).",
+              "formula": "$$\\frac{1}{1+x}=\\sum_{n=0}^{\\infty}(-1)^n x^n$$"
+            },
+            {
+              "step": 3,
+              "title": "Integrate term-by-term",
+              "content": "Integrate both sides from $0$ to $x$: $\\ln(1+x)=\\int_0^x \\dfrac{1}{1+t}\\,dt=\\sum_{n=0}^{\\infty}(-1)^n\\int_0^x t^n\\,dt=\\sum_{n=0}^{\\infty}(-1)^n\\dfrac{x^{n+1}}{n+1}$.",
+              "formula": "$$\\ln(1+x)=\\sum_{n=1}^{\\infty}(-1)^{n+1}\\frac{x^n}{n}$$"
+            },
+            {
+              "step": 4,
+              "title": "Write the first four terms",
+              "content": "List terms: $x-\\dfrac{x^2}{2}+\\dfrac{x^3}{3}-\\dfrac{x^4}{4}+\\cdots$, valid for $|x|<1$.",
+              "formula": ""
+            }
+          ]
+        },
+        {
+          "question": "Use the Taylor polynomial of degree 3 about $a=1$ to approximate $\\sqrt{1.2}$ and give a bound on the error using the Lagrange remainder.",
+          "answer": "Third-degree Taylor polynomial $T_3(1.2)=1.0955$ (approx). Remainder bound $|R_3|\\le 6.25\\times10^{-5}$, so the true value is within $\\pm6.25\\times10^{-5}$ of $1.0955$.",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Set up and compute derivatives",
+              "content": "Let $f(x)=\\sqrt{x}=x^{1/2}$. Compute derivatives up to order 4: $f'(x)=\\tfrac{1}{2}x^{-1/2}$, $f''(x)=-\\tfrac{1}{4}x^{-3/2}$, $f^{(3)}(x)=\\tfrac{3}{8}x^{-5/2}$, $f^{(4)}(x)=-\\tfrac{15}{16}x^{-7/2}$. Evaluate at $x=1$: $f(1)=1$, $f'(1)=\\tfrac12$, $f''(1)=-\\tfrac14$, $f^{(3)}(1)=\\tfrac{3}{8}$.",
+              "formula": ""
+            },
+            {
+              "step": 2,
+              "title": "Form the degree-3 Taylor polynomial about $a=1$",
+              "content": "Use $T_3(x)=\\sum_{k=0}^3\\dfrac{f^{(k)}(1)}{k!}(x-1)^k$ and plug values to get $T_3(x)=1+\\tfrac{1}{2}(x-1)-\\tfrac{1}{8}(x-1)^2+\\tfrac{1}{16}(x-1)^3$.",
+              "formula": "$$T_3(x)=1+\\frac{1}{2}(x-1)-\\frac{1}{8}(x-1)^2+\\frac{1}{16}(x-1)^3$$"
+            },
+            {
+              "step": 3,
+              "title": "Evaluate at $x=1.2$",
+              "content": "Let $h=0.2$. Compute terms: $1$, $\\tfrac{1}{2}h=0.1$, $-\\tfrac{1}{8}h^2=-0.005$, $\\tfrac{1}{16}h^3=0.0005$. Sum: $1+0.1-0.005+0.0005=1.0955$.",
+              "formula": ""
+            },
+            {
+              "step": 4,
+              "title": "Estimate the remainder (error) by Lagrange form",
+              "content": "Remainder is $R_3(1.2)=\\dfrac{f^{(4)}(\\xi)}{4!}(0.2)^4$ for some $\\xi\\in[1,1.2]$. Since $|f^{(4)}(t)|=\\dfrac{15}{16}t^{-7/2}\\le\\dfrac{15}{16}$ on $[1,1.2]$, we get $|R_3|\\le\\dfrac{15/16}{4!}(0.2)^4=6.25\\times10^{-5}$. The approximation $1.0955$ is therefore accurate within $\\pm6.25\\times10^{-5}$.",
+              "formula": "$$|R_3(1.2)|\\le\\frac{15/16}{4!}(0.2)^4=6.25\\times10^{-5}$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-10T15:42:34.112343"
     },
     {
       "id": "11.11",

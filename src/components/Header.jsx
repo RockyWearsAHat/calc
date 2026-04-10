@@ -72,10 +72,27 @@ export default function Header() {
         </nav>
 
         <div className={styles.headerMeta}>
+          {account.isLoggedIn ? (
+             <div style={{ display:'flex', alignItems:'center', gap:'12px', fontSize:'0.9rem', color:'var(--surface-color)', marginRight:'10px' }}>
+               <div style={{ display:'flex', alignItems:'center', gap:'4px', background:'var(--bg-elevated)', padding:'4px 8px', borderRadius:'12px' }}>
+                 <Award size={14} color="#6cb6ff"/>
+                 <span>Lvl {account.level}</span>
+               </div>
+               <span style={{ fontWeight:'500'}}>{account.name}</span>
+             </div>
+          ) : (
+            <button 
+              onClick={() => { const name = prompt("Enter Student Canvas ID or Name:"); if(name) login(name, true); }}
+              style={{ background: 'var(--brand-gradient)', color: 'white', border:'none', padding:'6px 12px', borderRadius:'14px', cursor:'pointer', fontWeight:'bold', marginRight:'10px' }}
+            >
+              Log In
+            </button>
+          )}
+
           <div className={styles.syncStatus} data-live={curriculumReady ? 'true' : 'false'} aria-live="polite">
             <span className={curriculumReady ? styles.syncDotConnected : styles.syncDot} />
             <span className={styles.syncLabel}>
-              {curriculumReady ? 'AI Path Online' : 'Curriculum Pending'}
+              {account.canvasTokenSaved ? 'Canvas Linked' : (curriculumReady ? 'AI Path Online' : 'Curriculum Pending')}
             </span>
           </div>
           <button

@@ -6,7 +6,9 @@ import {
   Send, Sparkles, GraduationCap, Eye,
   BookOpen, FileQuestion, Award, Clock
 } from 'lucide-react';
-import { aiAPI, tutorAPI } from '../utils/api';
+import { curriculumAPI } from '../utils/api';
+import { generatePracticeProblem, generateChatResponse, checkAnswerLocally, generateHintLocally, generateLessonLocally } from '../utils/localAI';
+import { getAccount, updateMastery, getDiagnosticProgress } from '../utils/accountManager';
 import MathMarkdown from '../components/MathMarkdown';
 import MathInput from '../components/MathInput';
 import styles from './PracticeV2.module.css';
@@ -142,10 +144,12 @@ function LearnMode({ topic, topicId, onBack, onPractice }) {
   const loadLesson = async () => {
     setLoading(true);
     try {
-      const data = await aiAPI.getLesson(topicId);
-      setLesson(data.lesson);
+      const topicTitle = topic ? (topic.title || topic.name) : "Calculus";
+      const lessonText = await generateLessonLocally(topicTitle);
+      setLesson(lessonText);
     } catch (err) {
-      console.error('Failed to load lesson:', err);
+      console.error('Failed to load local lesson:', err);
+      setLesson("Failed to generate dynamic lesson. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -227,28 +231,12 @@ function PracticeMode({ topic, topicId, onBack, diagnostic }) {
     setShowExplanation(false);
     
     try {
-      // Try AI-generated problem first
-      const data = await aiAPI.generateProblem(topicId, difficulty);
-      if (data.problem) {
-        setProblem(data.problem);
-      }
+      const account = getAccount();
+      // Try AI-generated problem locally using the WebGPU LLC engine
+      const generated = await generatePracticeProblem(topic, Math.max(1, account.level + difficulty - 1), []);
+      setProblem(generated);
     } catch (err) {
       console.error('Failed to generate problem:', err);
-      // Fall back to tutor problem bank
-      try {
-        const tutorProblem = await tutorAPI.getNextProblem(topicId);
-        if (tutorProblem.problem) {
-          setProblem({
-            question: tutorProblem.problem.question,
-            answer: tutorProblem.problem.answer,
-            topic: topicId,
-            difficulty: tutorProblem.current_level,
-            id: tutorProblem.problem.id
-          });
-        }
-      } catch (e) {
-        console.error('Fallback also failed:', e);
-      }
     } finally {
       setLoading(false);
     }
@@ -259,7 +247,7 @@ function PracticeMode({ topic, topicId, onBack, diagnostic }) {
     setHintLoading(true);
     
     try {
-      const data = await aiAPI.hint(problem.question, hints.length + 1, answer);
+      const data = await generateHintLocally(problem.question, hints.length + 1, answer);
       if (data.hint) {
         setHints(prev => [...prev, data.hint]);
       }
@@ -274,7 +262,7 @@ function PracticeMode({ topic, topicId, onBack, diagnostic }) {
     if (!problem || !answer.trim()) return;
     
     try {
-      const data = await aiAPI.checkAnswer(problem.question, problem.answer, answer);
+      const data = await checkAnswerLocally(problem.question, problem.answer, answer);
       setResult(data);
       setProblemsAttempted(prev => prev + 1);
       
@@ -287,6 +275,7 @@ function PracticeMode({ topic, topicId, onBack, diagnostic }) {
           return newStreak;
         });
         setProblemsCorrect(prev => prev + 1);
+        updateMastery(topicId, true);
       } else {
         setStreak(0);
         setWrongAnswers(prev => {
@@ -296,6 +285,7 @@ function PracticeMode({ topic, topicId, onBack, diagnostic }) {
           }
           return updated;
         });
+        updateMastery(topicId, false);
       }
     } catch (err) {
       console.error('Failed to check answer:', err);
@@ -307,8 +297,11 @@ function PracticeMode({ topic, topicId, onBack, diagnostic }) {
     setShowExplanation(true);
     
     try {
-      const data = await aiAPI.explainSolution(problem.question, problem.answer);
-      setExplanation(data.explanation);
+      if (problem.explanation) {
+        setExplanation(problem.explanation);
+      } else {
+        setExplanation("The mecha-copilot LLM did not provide an explanation.");
+      }
     } catch (err) {
       console.error('Failed to get solution:', err);
     }
@@ -509,13 +502,15 @@ function TutorMode({ topics, onBack }) {
     setLoading(true);
     
     try {
-      const data = await aiAPI.chat(userMessage, currentTopic);
-      setMessages(prev => [...prev, { role: 'assistant', content: data.response }]);
+      const account = getAccount();
+      const promptContext = "We are tutoring the student on " + (currentTopic ? (currentTopic.title || currentTopic.name) : "Calculus") + ". Ask guided questions, do not give out the answer. Their level is " + account.level + ".";
+      const response = await generateChatResponse(userMessage, messages, promptContext);
+      setMessages(prev => [...prev, { role: 'assistant', content: response }]);
     } catch (err) {
       console.error('Chat error:', err);
       setMessages(prev => [...prev, { 
         role: 'assistant', 
-        content: "Sorry, I had trouble processing that. Please try again." 
+        content: "Sorry, my WebGPU processor is overloaded. Reconnecting..." 
       }]);
     } finally {
       setLoading(false);
@@ -540,7 +535,7 @@ function TutorMode({ topics, onBack }) {
         <button 
           className={styles.clearBtn}
           onClick={() => {
-            aiAPI.clearHistory();
+
             setMessages([{ role: 'assistant', content: "Chat cleared! What would you like to learn about?" }]);
           }}
         >
@@ -635,12 +630,26 @@ function QuizMode({ topics, onBack }) {
     setLoading(true);
     
     try {
-      const data = await aiAPI.generateQuiz(selectedTopics, 5);
-      setQuiz(data.problems);
+      const account = getAccount();
+      // Generate 5 questions by looping the local model.
+      const quizProblems = [];
+      const numQuestions = 5;
+      
+      // We pick random topics from the selected list
+      for (let i = 0; i < numQuestions; i++) {
+        const randomTopicId = selectedTopics[Math.floor(Math.random() * selectedTopics.length)];
+        const topic = topics[randomTopicId] || { name: randomTopicId };
+        const generated = await generatePracticeProblem(topic, account.level, []);
+        // Save the topic on it so we know context
+        generated.topic = randomTopicId;
+        quizProblems.push(generated);
+      }
+      
+      setQuiz(quizProblems);
       setAnswers([]);
       setCurrentIndex(0);
     } catch (err) {
-      console.error('Failed to generate quiz:', err);
+      console.error('Failed to generate quiz locally:', err);
     } finally {
       setLoading(false);
     }
@@ -650,7 +659,7 @@ function QuizMode({ topics, onBack }) {
     if (!currentAnswer.trim()) return;
     
     const problem = quiz[currentIndex];
-    const result = await aiAPI.checkAnswer(problem.question, problem.answer, currentAnswer);
+    const result = await checkAnswerLocally(problem.question, problem.answer, currentAnswer);
     
     setAnswers(prev => [...prev, {
       problem,
@@ -658,6 +667,11 @@ function QuizMode({ topics, onBack }) {
       correct: result.is_correct,
       feedback: result.feedback
     }]);
+    
+    // Update mastery immediately
+    if (problem.topic) {
+      updateMastery(problem.topic, result.is_correct);
+    }
     
     setCurrentAnswer('');
     
@@ -792,14 +806,12 @@ export default function PracticeV2() {
 
   const loadInitialData = async () => {
     try {
-      const [aiTopics, diag] = await Promise.all([
-        aiAPI.getTopics(),
-        tutorAPI.getDiagnostic().catch(() => null)
-      ]);
+      const aiTopics = await curriculumAPI.getTopics();
+      const diag = getDiagnosticProgress();
       setTopics(aiTopics.topics || {});
       setDiagnostic(diag);
     } catch (err) {
-      console.error('Failed to load data:', err);
+      console.error('Failed to load local data:', err);
     } finally {
       setLoading(false);
     }

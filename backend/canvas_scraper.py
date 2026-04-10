@@ -116,7 +116,25 @@ def scrape_canvas() -> dict:
                     "url": _full_url(a_el.get_attribute("href", "")) if a_el else "",
                 })
 
-        print(f"    Found {len(raw['assignments'])} assignments")
+        print(f"    Found {len(raw['assignments'])} assignments. Deep scraping their contents + videos...")
+        for i, assign in enumerate(raw["assignments"]):
+            if assign["url"]:
+                print(f"      -> Extracting: {assign['title']}")
+                page.goto(assign["url"], wait_until="networkidle")
+                
+                # Try to get the assignment description, iframe videos, or actual questions
+                desc_el = page.query_selector(".description")
+                content_html = desc_el.inner_text().strip() if desc_el else "No text description."
+                
+                # Check for video links
+                video_els = page.query_selector_all("iframe, video, source")
+                videos = [v.get_attribute("src") for v in video_els if v.get_attribute("src")]
+
+                assign["content"] = content_html
+                assign["videos"] = videos
+                
+                # To prevent being blocked, wait a tick
+                page.wait_for_timeout(500)
 
         print("  Scraping quizzes...")
         page.goto(f"{CANVAS_BASE}/courses/{COURSE_ID}/quizzes", wait_until="networkidle")
