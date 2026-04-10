@@ -38,7 +38,7 @@ function AppRoutes() {
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <BrowserRouter basename="/calc/">
         <AppRoutes />
       </BrowserRouter>
     </ThemeProvider>
