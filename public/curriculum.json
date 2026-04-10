@@ -1,0 +1,3482 @@
+{
+  "course": "MATH 1220 - Calculus II (University of Utah)",
+  "generated_at": "2026-04-08T16:34:48.023659",
+  "total_topics": 60,
+  "source": "canvas_scrape + calc1_standard",
+  "topics": [
+    {
+      "id": "1.5",
+      "title": "Exponential Functions",
+      "calc_level": 1,
+      "order": 1,
+      "priority": "REVIEW",
+      "description": "Exponential functions place the variable in the exponent and model repeated multiplication, used for rapid growth or decay.",
+      "key_formula": "y = a b^{x}",
+      "concepts": [
+        {
+          "title": "Definition of an exponential function",
+          "explanation": "An exponential function has the variable in the exponent, so outputs change by repeated multiplication instead of addition. The standard form is y = a b^{x}, where a sets the starting value and b is the base that is multiplied as x increases.",
+          "formula": "y = a b^{x}",
+          "example": "Example: y = 2 * 3^{2}. Compute 3^{2} = 9, then y = 2 * 9 = 18, so the value at x = 2 is 18."
+        },
+        {
+          "title": "Base, growth and decay",
+          "explanation": "The base b decides growth or decay: if b > 1 the function grows as x increases; if 0 < b < 1 it decays. The coefficient a is the value when x = 0 (the y-intercept) and scales the whole curve.",
+          "formula": "b > 1 => growth, 0 < b < 1 => decay",
+          "example": "Example: y = 5 * 1.2^{x}. Then y(0) = 5, y(1) = 5 * 1.2 = 6, y(2) = 6 * 1.2 = 7.2, showing steady growth."
+        },
+        {
+          "title": "Domain, range, intercepts and asymptote",
+          "explanation": "Exponential functions have domain all real numbers because any real x can be used as an exponent. If a > 0 the range is (0, infinity), the y-intercept is y(0) = a, and there is a horizontal asymptote y = 0 for positive a.",
+          "formula": "Domain = (-infinity, infinity), Range = (0, infinity) if a > 0",
+          "example": "Example: y = 5 * (1/2)^{x}. Domain all reals, y(0) = 5, and as x -> infinity the values approach 0, so the asymptote is y = 0."
+        },
+        {
+          "title": "Solving exponential equations (use of logarithms)",
+          "explanation": "Sometimes you know the answer but not the exponent. For example: a population of 4 is growing by 20% each year \u2014 when does it reach 10? You are looking for the unknown power. Logarithms are the tool for this: a logarithm answers the question \"how many times do I need to multiply by this base to reach that number?\" Think of it like an undo button for exponents. The key idea is: take the natural log (ln) of both sides, which lets you pull down the exponent and turn it into regular multiplication. Then it is just algebra \u2014 divide and solve. This works because of the power rule for logarithms: $\\ln(b^x) = x \\cdot \\ln(b)$.",
+          "formula": "x = \\frac{\\ln(c/a)}{\\ln(b)}",
+          "example": "**Solve** $4 \\cdot (1.2)^x = 10$.\n\n**Step 1 \u2014 Isolate the exponential:** Divide both sides by 4:\n$$(1.2)^x = \\frac{10}{4} = 2.5$$\n\n**Step 2 \u2014 Take ln of both sides:**\n$$\\ln\\bigl((1.2)^x\\bigr) = \\ln(2.5)$$\n\n**Step 3 \u2014 Pull down the exponent** (power rule: $\\ln(b^x) = x \\ln b$):\n$$x \\cdot \\ln(1.2) = \\ln(2.5)$$\n\n**Step 4 \u2014 Solve for x** (divide both sides by $\\ln(1.2)$):\n$$x = \\frac{\\ln(2.5)}{\\ln(1.2)}$$\n\n**Step 5 \u2014 Calculator:** Type ln(2.5) = 0.9163, then ln(1.2) = 0.1823. Divide: $x \\approx \\frac{0.9163}{0.1823} \\approx 5.03$.\n\n**Quick check:** $4 \\times 1.2^5 = 4 \\times 2.488 \\approx 9.95$ (close to 10, so 5.03 makes sense)."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "If y = 4 * 2^{x}, find y when x = 3.",
+          "answer": "32",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Substitute x",
+              "content": "Replace x with 3 in the formula to get y = 4 * 2^{3}.",
+              "formula": "y = 4 * 2^{3}"
+            },
+            {
+              "step": 2,
+              "title": "Compute the power",
+              "content": "Calculate 2^{3} = 8.",
+              "formula": "2^{3} = 8"
+            },
+            {
+              "step": 3,
+              "title": "Multiply by the coefficient",
+              "content": "Multiply 4 * 8 = 32.",
+              "formula": "4 * 8 = 32"
+            },
+            {
+              "step": 4,
+              "title": "State the result",
+              "content": "Therefore the function value is y = 32.",
+              "formula": "y = 32"
+            }
+          ]
+        },
+        {
+          "question": "Solve for x: 4(1.2)^{x} = 10.",
+          "answer": "x = ln(2.5)/ln(1.2) \u2248 5.025",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Isolate the exponential",
+              "content": "Divide both sides by 4: (1.2)^{x} = 10/4 = 2.5.",
+              "formula": "(1.2)^{x} = 2.5"
+            },
+            {
+              "step": 2,
+              "title": "Take logs",
+              "content": "Take natural log of both sides: ln((1.2)^{x}) = ln(2.5).",
+              "formula": "ln((1.2)^{x}) = ln(2.5)"
+            },
+            {
+              "step": 3,
+              "title": "Use power rule",
+              "content": "Use the rule ln(a^{x}) = x ln(a) to get x * ln(1.2) = ln(2.5).",
+              "formula": "x * ln(1.2) = ln(2.5)"
+            },
+            {
+              "step": 4,
+              "title": "Solve for x",
+              "content": "Divide both sides by ln(1.2): x = ln(2.5)/ln(1.2).",
+              "formula": "x = ln(2.5)/ln(1.2)"
+            },
+            {
+              "step": 5,
+              "title": "Calculator estimate",
+              "content": "Compute ln(2.5) \u2248 0.91629 and ln(1.2) \u2248 0.18232, so x \u2248 0.91629/0.18232 \u2248 5.025.",
+              "formula": ""
+            }
+          ]
+        },
+        {
+          "question": "A bacterial culture doubles every 3 hours. Starting with 200 bacteria, how many hours until the culture reaches 5000 bacteria?",
+          "answer": "t = 3 * ln(25)/ln(2) \u2248 13.93 hours",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Write the model",
+              "content": "If t is hours, doubling every 3 hours gives N(t) = 200 * 2^{t/3}.",
+              "formula": "N(t) = 200 * 2^{t/3}"
+            },
+            {
+              "step": 2,
+              "title": "Set equal to target",
+              "content": "Set N(t) = 5000 and divide by 200: 2^{t/3} = 5000/200 = 25.",
+              "formula": "2^{t/3} = 25"
+            },
+            {
+              "step": 3,
+              "title": "Take logs",
+              "content": "Take natural logs: (t/3) * ln(2) = ln(25).",
+              "formula": "(t/3) * ln(2) = ln(25)"
+            },
+            {
+              "step": 4,
+              "title": "Solve for t",
+              "content": "Rearrange to t = 3 * ln(25)/ln(2).",
+              "formula": "t = 3 * ln(25)/ln(2)"
+            },
+            {
+              "step": 5,
+              "title": "Compute numeric value",
+              "content": "Compute ln(25) \u2248 3.218876 and ln(2) \u2248 0.693147, so t \u2248 3 * (3.218876/0.693147) \u2248 13.93 hours.",
+              "formula": ""
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-08T17:22:49.514018"
+    },
+    {
+      "id": "1.6",
+      "title": "Inverse Functions and Logarithms",
+      "calc_level": 1,
+      "order": 2,
+      "priority": "REVIEW",
+      "description": "Inverse functions undo each other ($f(f^{-1}(x))=x$); logarithms are the inverses of exponentials ($\\log_b(b^x)=x$).",
+      "key_formula": "$$f(f^{-1}(x))=x,\\quad f^{-1}(f(x))=x,\\quad \\log_b(b^x)=x,\\quad b^{\\log_b x}=x$$",
+      "concepts": [
+        {
+          "title": "Inverse function definition",
+          "explanation": "An inverse function $f^{-1}$ reverses the action of $f$: applying $f$ and then $f^{-1}$ returns the original input. If $f(a)=b$ then $f^{-1}(b)=a$, so the domain and range swap and $f(f^{-1}(x))=x$.",
+          "formula": "$$f(f^{-1}(x))=x$$",
+          "example": "Find the inverse of $f(x)=2x+3$. Set $y=2x+3$ and solve for $x$: $x=(y-3)/2$. Swap $x$ and $y$ to get $f^{-1}(x)=(x-3)/2$. Check: $f(f^{-1}(x))=2((x-3)/2)+3=x$."
+        },
+        {
+          "title": "Horizontal line test and reflection",
+          "explanation": "A function is invertible only if it is one-to-one: each output comes from exactly one input. Graphically this means any horizontal line meets the curve at most once (the horizontal line test), and the inverse graph is the reflection across the line $y=x$.",
+          "formula": "$$(x,y)\\mapsto(y,x)$$",
+          "example": "The function $f(x)=x^2$ is not one-to-one on all real numbers because horizontal lines $y=c$ for $c>0$ meet it twice; restricting to $x\\ge0$ makes it one-to-one with inverse $f^{-1}(x)=\\sqrt{x}$. The function $f(x)=x^3$ is one-to-one and $f^{-1}(x)=\\sqrt[3]{x}$."
+        },
+        {
+          "title": "Exponential functions and logarithms",
+          "explanation": "An exponential function has the form $b^x$ with base $b>0$, $b\\ne1$. Its inverse is the logarithm $\\log_b x$, so $\\log_b(b^x)=x$ and $b^{\\log_b x}=x$.",
+          "formula": "$$\\log_b(b^x)=x,\\quad b^{\\log_b x}=x$$",
+          "example": "Solve $3^x=81$. Take logarithm base 3: $x=\\log_3 81=4$ because $3^4=81$. Also $\\log_2 8=3$ since $2^3=8$."
+        },
+        {
+          "title": "Logarithm rules and change of base",
+          "explanation": "Logarithms convert multiplication to addition, division to subtraction, and powers to multipliers: $\\log_b(xy)=\\log_b x+\\log_b y$, $\\log_b\\left(\\frac{x}{y}\\right)=\\log_b x-\\log_b y$, $\\log_b(x^k)=k\\log_b x$. For computation use the change of base formula $\\log_b x=\\frac{\\ln x}{\\ln b}$ (often using $\\ln$ or $\\log_{10}$).",
+          "formula": "$$\\log_b x=\\frac{\\ln x}{\\ln b}$$",
+          "example": "Compute $\\log_2 50$ using natural logs: $\\log_2 50=\\frac{\\ln 50}{\\ln 2}\\approx\\frac{3.912}{0.693}\\approx5.643$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Find the inverse of $f(x)=2x+3$.",
+          "answer": "$f^{-1}(x)=(x-3)/2$",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Write the equation",
+              "content": "Set $y=2x+3$ to express the function as an equation relating $x$ and $y$.",
+              "formula": "$$y=2x+3$$"
+            },
+            {
+              "step": 2,
+              "title": "Solve for $x$",
+              "content": "Solve the equation for $x$: subtract 3 then divide by 2 to get $x=(y-3)/2$.",
+              "formula": "$$x=(y-3)/2$$"
+            },
+            {
+              "step": 3,
+              "title": "Swap variables",
+              "content": "Exchange $x$ and $y$ to write the inverse function: $y=(x-3)/2$, so $f^{-1}(x)=(x-3)/2$.",
+              "formula": "$$f^{-1}(x)=(x-3)/2$$"
+            },
+            {
+              "step": 4,
+              "title": "Check",
+              "content": "Verify by composition: $f(f^{-1}(x))=2((x-3)/2)+3=x$, so the inverse is correct.",
+              "formula": "$$f(f^{-1}(x))=x$$"
+            }
+          ]
+        },
+        {
+          "question": "Is $f(x)=x^2$ invertible on all real numbers? If not, restrict the domain so it is invertible and give $f^{-1}(x)$.",
+          "answer": "Not on all reals; restrict to $x\\ge0$ and then $f^{-1}(x)=\\sqrt{x}$.",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Apply horizontal line test",
+              "content": "A horizontal line $y=c$ with $c>0$ meets $y=x^2$ twice, so the function is not one-to-one on all real numbers.",
+              "formula": "$$y=x^2$$"
+            },
+            {
+              "step": 2,
+              "title": "Conclude and restrict",
+              "content": "Because it's not one-to-one on $\\mathbb{R}$, restrict the domain to make it one-to-one; choose $x\\ge0$.",
+              "formula": ""
+            },
+            {
+              "step": 3,
+              "title": "Solve for inverse",
+              "content": "Set $y=x^2$ and solve: $x=\\pm\\sqrt{y}$. With the restriction $x\\ge0$ take $x=\\sqrt{y}$, then swap to get $f^{-1}(x)=\\sqrt{x}$.",
+              "formula": "$$f^{-1}(x)=\\sqrt{x}$$"
+            },
+            {
+              "step": 4,
+              "title": "State domain and range",
+              "content": "For the restricted function $f:[0,\\infty)\\to[0,\\infty)$, the inverse is $f^{-1}:[0,\\infty)\\to[0,\\infty)$ given by $\\sqrt{x}$.",
+              "formula": "$$f^{-1}(x)=\\sqrt{x}\\quad(x\\ge0)$$"
+            }
+          ]
+        },
+        {
+          "question": "Solve for $x$: $\\log_3(x)+\\log_3(x-2)=2$.",
+          "answer": "$x=1+\\sqrt{10}$ (only valid solution since $x>2$).",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Domain restriction",
+              "content": "Both logarithms require positive arguments, so require $x>0$ and $x-2>0$, hence $x>2$.",
+              "formula": "$$x>2$$"
+            },
+            {
+              "step": 2,
+              "title": "Combine logs",
+              "content": "Use the product rule: $\\log_3(x)+\\log_3(x-2)=\\log_3(x(x-2))$, so $\\log_3(x(x-2))=2$.",
+              "formula": "$$\\log_3(x(x-2))=2$$"
+            },
+            {
+              "step": 3,
+              "title": "Exponentiate",
+              "content": "Convert from log form: $x(x-2)=3^2=9$, which gives the quadratic $x^2-2x-9=0$.",
+              "formula": "$$x^2-2x-9=0$$"
+            },
+            {
+              "step": 4,
+              "title": "Solve the quadratic",
+              "content": "Use the quadratic formula: $x=\\frac{2\\pm\\sqrt{4+36}}{2}=1\\pm\\sqrt{10}$.",
+              "formula": "$$x=1\\pm\\sqrt{10}$$"
+            },
+            {
+              "step": 5,
+              "title": "Choose the valid root",
+              "content": "Only $x=1+\\sqrt{10}\\approx4.162>2$ satisfies the domain; $1-\\sqrt{10}$ is negative and rejected, so $x=1+\\sqrt{10}$.",
+              "formula": "$$x=1+\\sqrt{10}$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T14:00:44.239521"
+    },
+    {
+      "id": "2.1",
+      "title": "The Tangent and Velocity Problems",
+      "calc_level": 1,
+      "order": 3,
+      "priority": "REVIEW",
+      "description": "Introduce derivatives as the slope of the tangent line and instantaneous velocity, using limits of secant slopes.",
+      "key_formula": "f'(a)=\\lim_{h\\to 0}\\frac{f(a+h)-f(a)}{h}",
+      "concepts": [
+        {
+          "title": "Secant lines and average rate of change",
+          "explanation": "A secant line connects two points on a curve; its slope is the average rate of change over an interval. The difference quotient (f(a+h)-f(a))/h computes this slope and prepares us to take a limit for the instantaneous rate.",
+          "formula": "\\frac{f(a+h)-f(a)}{h}",
+          "example": "Example: f(x)=x^2 from x=1 to x=3. Compute slope = (f(3)-f(1))/(3-1) = (9-1)/2 = 8/2 = 4. So the average rate of change (secant slope) is 4."
+        },
+        {
+          "title": "Tangent line and instantaneous rate (the derivative)",
+          "explanation": "A tangent line touches the curve at a single point and its slope is the instantaneous rate of change there. The derivative f'(a) is the limit of secant slopes as the second point approaches the first.",
+          "formula": "f'(a)=\\lim_{h\\to 0}\\frac{f(a+h)-f(a)}{h}",
+          "example": "Find f'(1) for f(x)=x^2 by limit: f'(1)=lim_{h\\to0}((1+h)^2-1)/h = lim_{h\\to0}(2h+h^2)/h = lim_{h\\to0}(2+h)=2. So tangent slope at x=1 is 2."
+        },
+        {
+          "title": "Velocity as the derivative of position",
+          "explanation": "If s(t) is position at time t, the average velocity over [t,t+h] is (s(t+h)-s(t))/h. Instantaneous velocity v(t) is the derivative v(t)=s'(t)=lim_{h\\to0}(s(t+h)-s(t))/h.",
+          "formula": "v(t)=s'(t)=\\lim_{h\\to 0}\\frac{s(t+h)-s(t)}{h}",
+          "example": "Let s(t)=3t^2. Then v(t)=lim_{h\\to0}(3( t+h)^2-3t^2)/h = lim_{h\\to0}(6th+3h^2)/h = lim_{h\\to0}(6t+3h)=6t. At t=2, v(2)=12 m/s."
+        },
+        {
+          "title": "Equation of the tangent line and linear approximation",
+          "explanation": "The tangent line at x=a uses point-slope with slope f'(a): it approximates the curve near a. The tangent equation is y = f(a)+f'(a)(x-a) and gives quick local estimates.",
+          "formula": "y = f(a)+f'(a)(x-a)",
+          "example": "For f(x)=x^2 at a=1: f(1)=1 and f'(1)=2, so tangent line is y=1+2(x-1)=2x-1. Use it to approximate f(1.1) \u2248 2(1.1)-1 = 1.2."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Use the limit definition to find f'(3) for f(x)=x^2.",
+          "answer": "6",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Write the difference quotient",
+              "content": "Set up f'(3)=lim_{h->0}[(3+h)^2-3^2]/h to get the slope at x=3.",
+              "formula": "f'(3)=\\lim_{h\\to0}\\frac{(3+h)^2-3^2}{h}"
+            },
+            {
+              "step": 2,
+              "title": "Expand the numerator",
+              "content": "Compute (3+h)^2 = 9+6h+h^2, so numerator = 9+6h+h^2-9 = 6h+h^2.",
+              "formula": "(3+h)^2=9+6h+h^2"
+            },
+            {
+              "step": 3,
+              "title": "Simplify by canceling h",
+              "content": "Divide by h: (6h+h^2)/h = 6+h.",
+              "formula": "\\frac{6h+h^2}{h}=6+h"
+            },
+            {
+              "step": 4,
+              "title": "Take the limit",
+              "content": "Let h\u21920: 6+h \u2192 6, so f'(3)=6.",
+              "formula": "\\lim_{h\\to0}(6+h)=6"
+            },
+            {
+              "step": 5,
+              "title": "State the result",
+              "content": "The derivative (slope of the tangent) at x=3 is 6.",
+              "formula": "f'(3)=6"
+            }
+          ]
+        },
+        {
+          "question": "Find the equation of the tangent line to f(x)=x^3 at x=1.",
+          "answer": "y=3x-2",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Set up the derivative at x=1",
+              "content": "Use f'(1)=lim_{h->0}[(1+h)^3-1]/h to find the slope of the tangent at x=1.",
+              "formula": "f'(1)=\\lim_{h\\to0}\\frac{(1+h)^3-1}{h}"
+            },
+            {
+              "step": 2,
+              "title": "Expand the cube",
+              "content": "Compute (1+h)^3 = 1+3h+3h^2+h^3, so numerator becomes 3h+3h^2+h^3.",
+              "formula": "(1+h)^3=1+3h+3h^2+h^3"
+            },
+            {
+              "step": 3,
+              "title": "Divide by h",
+              "content": "Divide numerator by h to get 3+3h+h^2, which simplifies the quotient.",
+              "formula": "\\frac{3h+3h^2+h^3}{h}=3+3h+h^2"
+            },
+            {
+              "step": 4,
+              "title": "Take the limit",
+              "content": "Let h\u21920: 3+3h+h^2 \u2192 3, so the tangent slope at x=1 is 3.",
+              "formula": "\\lim_{h\\to0}(3+3h+h^2)=3"
+            },
+            {
+              "step": 5,
+              "title": "Write the tangent line",
+              "content": "Point is (1,f(1))=(1,1). Use y-1=3(x-1) \u2192 y=3x-2, the equation of the tangent.",
+              "formula": "y-1=3(x-1)\\Rightarrow y=3x-2"
+            }
+          ]
+        },
+        {
+          "question": "A car's position is s(t)=t^3-6t^2+9t (meters). Find the instantaneous velocity at t=2 and use the tangent line to approximate s(2.1).",
+          "answer": "Instantaneous velocity v(2) = -3 m/s; approximate s(2.1) \u2248 1.7 m",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Compute s(2)",
+              "content": "Evaluate position at t=2: s(2)=2^3-6\u00b72^2+9\u00b72=8-24+18=2 meters.",
+              "formula": "s(2)=8-24+18=2"
+            },
+            {
+              "step": 2,
+              "title": "Set up the difference quotient for velocity",
+              "content": "v(2)=s'(2)=lim_{h->0}[s(2+h)-s(2)]/h; expand s(2+h) algebraically before simplifying.",
+              "formula": "s'(2)=\\lim_{h\\to0}\\frac{s(2+h)-s(2)}{h}"
+            },
+            {
+              "step": 3,
+              "title": "Expand and simplify",
+              "content": "Compute s(2+h) = (2+h)^3-6(2+h)^2+9(2+h) = 2 -3h + h^3, so s(2+h)-s(2) = -3h + h^3 and dividing by h gives -3 + h^2.",
+              "formula": "s(2+h)-s(2)=-3h+h^3\\Rightarrow\\frac{-3h+h^3}{h}=-3+h^2"
+            },
+            {
+              "step": 4,
+              "title": "Take the limit to get velocity",
+              "content": "Let h\u21920: -3 + h^2 \u2192 -3, so instantaneous velocity v(2) = -3 m/s (the car is moving backward or slowing in the chosen direction).",
+              "formula": "\\lim_{h\\to0}(-3+h^2)=-3"
+            },
+            {
+              "step": 5,
+              "title": "Form the tangent line (linear approximation)",
+              "content": "Tangent line at t=2: L(t)=s(2)+s'(2)(t-2)=2+(-3)(t-2). Use it to estimate s(2.1).",
+              "formula": "L(t)=2-3(t-2)"
+            },
+            {
+              "step": 6,
+              "title": "Approximate s(2.1)",
+              "content": "Compute L(2.1)=2-3(0.1)=2-0.3=1.7 meters, so s(2.1) \u2248 1.7 m by tangent-line approximation.",
+              "formula": "L(2.1)=2-3(0.1)=1.7"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-08T17:03:22.832601"
+    },
+    {
+      "id": "2.2",
+      "title": "The Limit of a Function",
+      "calc_level": 1,
+      "order": 4,
+      "priority": "HIGH",
+      "description": "Introduce the idea that a limit describes the value a function approaches as the input approaches a point.",
+      "key_formula": "\\lim_{x \\to a} f(x) = L",
+      "concepts": [
+        {
+          "title": "What a limit means (intuitive)",
+          "explanation": "A limit describes the value f(x) gets closer to as x gets closer to a, even if f(a) is undefined. It captures the behavior near a point rather than the value exactly at the point.",
+          "formula": "\\lim_{x \\to a} f(x) = L",
+          "example": "Example: f(x)=\\frac{x^2-1}{x-1}. For x\\neq1 factor numerator: x^2-1=(x-1)(x+1) so f(x)=x+1. For x near 1, f(x)\\approx x+1, so as x\\to1 f(x)\\to2. Therefore \\lim_{x\\to1} \\frac{x^2-1}{x-1}=2. Numeric check: f(0.9)=1.9, f(0.99)=1.99, f(1.1)=2.1."
+        },
+        {
+          "title": "Left-hand and right-hand limits",
+          "explanation": "A left-hand limit looks at x approaching a from values less than a, written a^-; a right-hand limit comes from values greater than a, written a^+. The overall limit exists only if both one-sided limits are equal.",
+          "formula": "\\lim_{x\\to a^-} f(x) ,\\ \\lim_{x\\to a^+} f(x)",
+          "example": "Example: define f(x)= -1 for x<0 and f(x)= 1 for x>0. Then \\lim_{x\\to0^-} f(x)=-1 and \\lim_{x\\to0^+} f(x)=1. Because the one-sided limits differ, \\lim_{x\\to0} f(x) does not exist."
+        },
+        {
+          "title": "Limits at infinity and infinite limits",
+          "explanation": "Limits can describe behavior as x grows without bound (x\\to\\infty) or when f(x) grows without bound (limit is \\infty). These capture end behavior and vertical asymptotes.",
+          "formula": "\\lim_{x\\to\\infty} f(x)=L\\quad\\text{or}\\quad\\lim_{x\\to a} f(x)=\\pm\\infty",
+          "example": "Example 1 (limit at infinity): f(x)=1/x gives \\lim_{x\\to\\infty} 1/x=0 because values get smaller as x grows. Example 2 (infinite limit): g(x)=1/(x-1) has \\lim_{x\\to1^+} g(x)=+\\infty and \\lim_{x\\to1^-} g(x)=-\\infty, so no finite limit at x=1."
+        },
+        {
+          "title": "Algebraic techniques to compute limits",
+          "explanation": "Many limits are computed by algebra: direct substitution when possible, factoring and canceling to remove 0/0 indeterminate forms, or rationalizing when roots are involved. These manipulate the expression to a form where substitution works.",
+          "formula": "",
+          "example": "Example: \\lim_{x\\to0} \\frac{\\sqrt{1+x}-1}{x}. Direct substitution gives 0/0, so rationalize: multiply top and bottom by \\sqrt{1+x}+1 to get \\frac{(1+x)-1}{x(\\sqrt{1+x}+1)}=\\frac{x}{x(\\sqrt{1+x}+1)}=\\frac{1}{\\sqrt{1+x}+1}. Now substitute x=0 to get 1/2, so the limit is 1/2."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Evaluate \\lim_{x\\to3} (2x+5).",
+          "answer": "11",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Recognize the function type",
+              "content": "2x+5 is a linear polynomial, which is continuous everywhere. For continuous functions the limit as x approaches a point equals the function value at that point.",
+              "formula": "f(x)=2x+5"
+            },
+            {
+              "step": 2,
+              "title": "Substitute the point",
+              "content": "Because the function is continuous, substitute x=3 directly: 2(3)+5.",
+              "formula": "2(3)+5"
+            },
+            {
+              "step": 3,
+              "title": "Compute",
+              "content": "Calculate 2\\times3=6, then 6+5=11.",
+              "formula": "11"
+            },
+            {
+              "step": 4,
+              "title": "Conclude",
+              "content": "Therefore \\lim_{x\\to3} (2x+5)=11; left and right approaches match because polynomials are continuous.",
+              "formula": "\\lim_{x\\to3} (2x+5)=11"
+            }
+          ]
+        },
+        {
+          "question": "Find \\lim_{x\\to2} \\frac{x^2-4}{x-2}.",
+          "answer": "4",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Try substitution",
+              "content": "Substitute x=2: numerator 2^2-4=0 and denominator 2-2=0, giving 0/0 which is indeterminate. So algebraic simplification is needed.",
+              "formula": "0/0 (indeterminate)"
+            },
+            {
+              "step": 2,
+              "title": "Factor the numerator",
+              "content": "Factor x^2-4 as a difference of squares: (x-2)(x+2).",
+              "formula": "x^2-4=(x-2)(x+2)"
+            },
+            {
+              "step": 3,
+              "title": "Cancel common factor",
+              "content": "For x\\neq2 cancel (x-2) in numerator and denominator, leaving x+2 as an equivalent expression near x=2.",
+              "formula": "\\frac{(x-2)(x+2)}{x-2}=x+2"
+            },
+            {
+              "step": 4,
+              "title": "Substitute into simplified form",
+              "content": "Now substitute x=2 into x+2 to get 4.",
+              "formula": "2+2=4"
+            },
+            {
+              "step": 5,
+              "title": "State the limit",
+              "content": "Because the simplified expression approaches 4 from both sides, \\lim_{x\\to2} \\frac{x^2-4}{x-2}=4.",
+              "formula": "\\lim_{x\\to2} \\frac{x^2-4}{x-2}=4"
+            }
+          ]
+        },
+        {
+          "question": "Compute \\lim_{x\\to0} \\frac{\\sqrt{1+x}-1}{x}.",
+          "answer": "1/2",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Attempt substitution",
+              "content": "Substituting x=0 gives numerator \\sqrt{1}-1=0 and denominator 0, so 0/0 indeterminate; algebraic manipulation needed.",
+              "formula": "0/0"
+            },
+            {
+              "step": 2,
+              "title": "Multiply by conjugate",
+              "content": "Multiply numerator and denominator by the conjugate \\sqrt{1+x}+1 to remove the root in the numerator.",
+              "formula": "\\frac{\\sqrt{1+x}-1}{x}\\cdot\\frac{\\sqrt{1+x}+1}{\\sqrt{1+x}+1}"
+            },
+            {
+              "step": 3,
+              "title": "Simplify",
+              "content": "The numerator becomes (1+x)-1 = x, so expression simplifies to \\frac{x}{x(\\sqrt{1+x}+1)} = \\frac{1}{\\sqrt{1+x}+1} for x\\neq0.",
+              "formula": "\\frac{1}{\\sqrt{1+x}+1}"
+            },
+            {
+              "step": 4,
+              "title": "Substitute the limit point",
+              "content": "Now substitute x=0 into the simplified expression: 1/(\\sqrt{1+0}+1)=1/(1+1)=1/2.",
+              "formula": "\\frac{1}{1+1}=\\tfrac{1}{2}"
+            },
+            {
+              "step": 5,
+              "title": "Explain validity",
+              "content": "The algebraic steps are valid for x near 0 (x\\neq0) so the limit equals the substituted value 1/2; both one-sided approaches match.",
+              "formula": "\\lim_{x\\to0} \\frac{\\sqrt{1+x}-1}{x}=\\tfrac{1}{2}"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-08T16:52:10.764856"
+    },
+    {
+      "id": "2.3",
+      "title": "Calculating Limits Using the Limit Laws",
+      "calc_level": 1,
+      "order": 5,
+      "priority": "HIGH",
+      "description": "Use limit laws (sum, constant multiple, product, quotient, power) and algebraic simplification to compute limits by reducing to simpler limits or direct substitution.",
+      "key_formula": "\\displaystyle \\lim_{x\\to a}(f(x)+g(x))=\\lim_{x\\to a}f(x)+\\lim_{x\\to a}g(x),\\quad \\lim_{x\\to a}(c\\,f(x))=c\\,\\lim_{x\\to a}f(x),\\quad \\lim_{x\\to a}(f(x)g(x))=\\lim_{x\\to a}f(x)\\cdot\\lim_{x\\to a}g(x),\\quad \\lim_{x\\to a}\\frac{f(x)}{g(x)}=\\frac{\\lim_{x\\to a}f(x)}{\\lim_{x\\to a}g(x)}\\;\\text{if }\\lim_{x\\to a}g(x)\\neq 0",
+      "concepts": [
+        {
+          "title": "What a limit means",
+          "explanation": "A limit describes the value f(x) approaches as x gets arbitrarily close to a number a; the function does not have to be defined at a. The notation \\lim_{x\\to a}f(x)=L means values of f(x) get as close to L as you like when x is close to a.",
+          "formula": "\\lim_{x\\to a} f(x)=L",
+          "example": "Compute \\lim_{x\\to 3}(2x+1). Step 1: Recognize 2x+1 is a polynomial (continuous). Step 2: Use direct substitution: 2(3)+1=7. Conclusion: \\lim_{x\\to 3}(2x+1)=7."
+        },
+        {
+          "title": "Direct substitution for polynomials and continuous expressions",
+          "explanation": "Polynomials, sums, products, and many algebraic expressions are continuous at every number, so their limit at a point equals the value you get by plugging in the point. Only when substitution gives an indeterminate form like 0/0 must you simplify first.",
+          "formula": "\\text{If }f\\text{ is continuous at }a,\\;\\lim_{x\\to a}f(x)=f(a)",
+          "example": "Compute \\lim_{x\\to -1}(x^2-2x+3). Step 1: Recognize continuity. Step 2: Substitute x=-1: (-1)^2-2(-1)+3=1+2+3=6. So the limit is 6."
+        },
+        {
+          "title": "Limit laws: sum, difference, constant multiple",
+          "explanation": "Limit laws let you split complicated expressions into simpler pieces: the limit of a sum is the sum of the limits, and constants pull out of limits. Use these to evaluate each piece separately and then combine the results.",
+          "formula": "\\lim_{x\\to a}(f+g)=\\lim_{x\\to a}f+\\lim_{x\\to a}g,\\quad \\lim_{x\\to a}(c\\,f)=c\\,\\lim_{x\\to a}f",
+          "example": "Compute \\lim_{x\\to 3}(2x^2+5x). Step 1: Split using laws: 2\\lim_{x\\to3}x^2+5\\lim_{x\\to3}x. Step 2: Evaluate: 2(3^2)+5(3)=2(9)+15=18+15=33. So the limit is 33."
+        },
+        {
+          "title": "Product, quotient, power laws and removing 0/0 by algebra",
+          "explanation": "Product, quotient, and power laws let you combine limits when the separate limits exist (quotient requires nonzero denominator limit). If substitution gives 0/0, factor or rationalize to remove the common factor, then substitute.",
+          "formula": "\\lim_{x\\to a}(f g)=\\lim_{x\\to a}f\\cdot\\lim_{x\\to a}g,\\quad \\lim_{x\\to a}\\frac{f}{g}=\\frac{\\lim f}{\\lim g}\\ (\\text{if }\\lim g\\neq0)",
+          "example": "Compute \\lim_{x\\to 2}\\frac{x^2-4}{x-2}. Step 1: Substitution gives 0/0, so factor numerator: x^2-4=(x-2)(x+2). Step 2: Cancel (x-2) (for x\\neq2) to get x+2. Step 3: Substitute x=2 to get 4. So the limit is 4."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Evaluate \\lim_{x\\to 5}(4x-3).",
+          "answer": "17",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Recognize the type",
+              "content": "4x-3 is a linear polynomial, which is continuous everywhere, so its limit at 5 equals its value at 5.",
+              "formula": ""
+            },
+            {
+              "step": 2,
+              "title": "Apply direct substitution",
+              "content": "Plug x=5 into the expression.",
+              "formula": "\\;4(5)-3"
+            },
+            {
+              "step": 3,
+              "title": "Compute arithmetic",
+              "content": "Multiply and subtract to find the value: 20-3.",
+              "formula": "=17"
+            },
+            {
+              "step": 4,
+              "title": "State the limit",
+              "content": "Thus \\lim_{x\\to 5}(4x-3)=17.",
+              "formula": "\\lim_{x\\to 5}(4x-3)=17"
+            }
+          ]
+        },
+        {
+          "question": "Evaluate \\lim_{x\\to 2}\\frac{x^2-4}{x-2}.",
+          "answer": "4",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Check direct substitution",
+              "content": "Substitute x=2: numerator 2^2-4=0 and denominator 2-2=0, so you get 0/0, an indeterminate form that requires algebraic simplification.",
+              "formula": "\\frac{0}{0}\\ \\text{(indeterminate)}"
+            },
+            {
+              "step": 2,
+              "title": "Factor the numerator",
+              "content": "Write x^2-4 as a difference of squares: (x-2)(x+2).",
+              "formula": "x^2-4=(x-2)(x+2)"
+            },
+            {
+              "step": 3,
+              "title": "Cancel common factor",
+              "content": "For x\\neq2 the factor (x-2) cancels from numerator and denominator, leaving x+2.",
+              "formula": "\\frac{(x-2)(x+2)}{x-2}=x+2\\ (x\\neq2)"
+            },
+            {
+              "step": 4,
+              "title": "Substitute and conclude",
+              "content": "Now substitute x=2 into x+2 to get 4, so the limit is 4.",
+              "formula": "\\lim_{x\\to2}\\frac{x^2-4}{x-2}=\\lim_{x\\to2}(x+2)=4"
+            },
+            {
+              "step": 5,
+              "title": "Note about domain",
+              "content": "The simplified expression equals the original for x near 2 but not equal to 2, which is sufficient for the limit.",
+              "formula": ""
+            }
+          ]
+        },
+        {
+          "question": "Evaluate \\lim_{x\\to 1}\\frac{\\sqrt{x+3}-2}{x-1}.",
+          "answer": "\\tfrac{1}{4}",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Attempt direct substitution",
+              "content": "Plug x=1: numerator \\sqrt{4}-2=2-2=0 and denominator 0, so we have 0/0; need algebraic manipulation (rationalize).",
+              "formula": "\\frac{0}{0}\\ \\text{(indeterminate)}"
+            },
+            {
+              "step": 2,
+              "title": "Multiply by the conjugate",
+              "content": "Multiply numerator and denominator by the conjugate \\sqrt{x+3}+2 to remove the square root in the numerator.",
+              "formula": "\\frac{\\sqrt{x+3}-2}{x-1}\\cdot\\frac{\\sqrt{x+3}+2}{\\sqrt{x+3}+2}"
+            },
+            {
+              "step": 3,
+              "title": "Simplify using difference of squares",
+              "content": "The numerator becomes (x+3)-4 = x-1, so the fraction simplifies to \\dfrac{x-1}{(x-1)(\\sqrt{x+3}+2)}.",
+              "formula": "\\frac{(x+3)-4}{(x-1)(\\sqrt{x+3}+2)}=\\frac{x-1}{(x-1)(\\sqrt{x+3}+2)}"
+            },
+            {
+              "step": 4,
+              "title": "Cancel the (x-1) factor",
+              "content": "Cancel x-1 (for x\\neq1) to get 1/(\\sqrt{x+3}+2).",
+              "formula": "\\frac{1}{\\sqrt{x+3}+2}"
+            },
+            {
+              "step": 5,
+              "title": "Substitute and finish",
+              "content": "Now substitute x=1: 1/(\\sqrt{4}+2)=1/(2+2)=1/4, so the limit equals 1/4.",
+              "formula": "\\lim_{x\\to1}\\frac{\\sqrt{x+3}-2}{x-1}=\\frac{1}{4}"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-08T16:54:51.707823"
+    },
+    {
+      "id": "2.4",
+      "title": "The Precise Definition of a Limit",
+      "calc_level": 1,
+      "order": 6,
+      "priority": "MEDIUM",
+      "description": "Formalizes the idea that $f(x)$ can be made arbitrarily close to $L$ as $x$ approaches $a$: for every $\\epsilon>0$ there exists a $\\delta>0$ so that $0<|x-a|<\\delta$ implies $|f(x)-L|<\\epsilon$.",
+      "key_formula": "$$\\lim_{x\\to a} f(x) = L \\iff (\\forall \\epsilon>0)(\\exists \\delta>0)\\ \\text{such that } 0<|x-a|<\\delta \\Rightarrow |f(x)-L|<\\epsilon.$$",
+      "concepts": [
+        {
+          "title": "Intuitive idea",
+          "explanation": "A limit means $f(x)$ gets as close to $L$ as desired when $x$ is near $a$ (we may exclude $x=a$). Pick a tolerance $\\epsilon$ for the $y$-distance; the definition guarantees an $x$-distance $\\delta$ that keeps $f(x)$ within that tolerance.",
+          "formula": "",
+          "example": "If $f(x)=2x$ and $|x-3|<0.1$ then $|f(x)-6|=2|x-3|<0.2$, so $f(x)$ is within $0.2$ of $6$."
+        },
+        {
+          "title": "Formal epsilon-delta definition",
+          "explanation": "Formally, $\\lim_{x\\to a} f(x)=L$ means: for every $\\epsilon>0$ there exists $\\delta>0$ such that whenever $0<|x-a|<\\delta$ we have $|f(x)-L|<\\epsilon$. The quantifier order ($\\forall\\epsilon\\;\\exists\\delta$) is crucial: $\\delta$ may depend on $\\epsilon$.",
+          "formula": "$$\\forall\\,\\epsilon>0\\;\\exists\\,\\delta>0:\\;0<|x-a|<\\delta\\Rightarrow |f(x)-L|<\\epsilon.$$",
+          "example": "For the constant function $f(x)=5$, $|f(x)-5|=0<\\epsilon$ for every $\\epsilon>0$, so any $\\delta>0$ works and $\\lim_{x\\to a}5=5$."
+        },
+        {
+          "title": "Proving limits (constructing $\\delta$ from $\\epsilon$)",
+          "explanation": "To prove a limit start from $|f(x)-L|<\\epsilon$ and algebraically rewrite until you get a condition of the form $|x-a|<g(\\epsilon)$. Then choose $\\delta=g(\\epsilon)$ or a convenient smaller value; sometimes impose an extra bound like $\\delta\\le1$ to control other factors.",
+          "formula": "$$|2x-6|<\\epsilon\\;\\Longrightarrow\\;|x-3|<\\frac{\\epsilon}{2}.$$",
+          "example": "Prove $\\lim_{x\\to3}2x=6$. Start with $|2x-6|=2|x-3|$. To make $2|x-3|<\\epsilon$ it suffices to have $|x-3|<\\epsilon/2$, so pick $\\delta=\\epsilon/2$."
+        },
+        {
+          "title": "Common strategies and tricks",
+          "explanation": "Typical moves: factor polynomials, bound troublesome factors by restricting $\\delta$ (e.g. $\\delta\\le1$), rationalize expressions with roots, and simplify algebraically. Often pick $\\delta=\\min(1,\\text{expression in }\\epsilon)$ to control both proximity and auxiliary bounds.",
+          "formula": "$$\\frac{x^2-1}{x-1}=x+1\\quad(x\\neq1)$$",
+          "example": "For $\\frac{x^2-1}{x-1}$ as $x\\to1$, simplify to $x+1$ so the limit is $2$. In epsilon-delta form, $\\left|\\frac{x^2-1}{x-1}-2\\right|=|x-1|$, so choosing $\\delta=\\epsilon$ works."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Prove $\\lim_{x\\to2}(5x-3)=7$.",
+          "answer": "The limit is $7$. For any $\\epsilon>0$ choose $\\delta=\\epsilon/5$, then $0<|x-2|<\\delta$ implies $|5x-3-7|<\\epsilon$.",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "State the goal",
+              "content": "Show: for every $\\epsilon>0$ there exists $\\delta>0$ such that $0<|x-2|<\\delta$ implies $|5x-3-7|<\\epsilon$.",
+              "formula": "$$|5x-3-7|<\\epsilon$$"
+            },
+            {
+              "step": 2,
+              "title": "Simplify the difference",
+              "content": "Compute $|5x-3-7|=|5x-10|=5|x-2|$, so the inequality becomes $5|x-2|<\\epsilon$.",
+              "formula": "$$5|x-2|<\\epsilon$$"
+            },
+            {
+              "step": 3,
+              "title": "Solve for $|x-2|$",
+              "content": "Divide by $5$: $|x-2|<\\epsilon/5$. Thus pick $\\delta=\\epsilon/5$.",
+              "formula": "$$\\delta=\\frac{\\epsilon}{5}$$"
+            },
+            {
+              "step": 4,
+              "title": "Conclude",
+              "content": "Hence whenever $0<|x-2|<\\delta$ we have $|5x-3-7|<\\epsilon$, proving the limit.",
+              "formula": ""
+            }
+          ]
+        },
+        {
+          "question": "Prove $\\lim_{x\\to3} x^2 = 9$.",
+          "answer": "The limit is $9$. Given $\\epsilon>0$ take $\\delta=\\min\\{1,\\epsilon/7\\}$; then $0<|x-3|<\\delta$ implies $|x^2-9|<\\epsilon$.",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "State the target",
+              "content": "Need: for every $\\epsilon>0$ find $\\delta>0$ so $0<|x-3|<\\delta$ gives $|x^2-9|<\\epsilon$.",
+              "formula": "$$|x^2-9|<\\epsilon$$"
+            },
+            {
+              "step": 2,
+              "title": "Factor the difference",
+              "content": "Rewrite $|x^2-9|=|x-3||x+3|$ to separate $|x-3|$ from other factors.",
+              "formula": "$$|x^2-9|=|x-3||x+3|$$"
+            },
+            {
+              "step": 3,
+              "title": "Bound the extra factor",
+              "content": "Restrict $\\delta\\le1$. If $|x-3|<1$ then $2<x<4$, so $|x+3|<7$. Thus $|x^2-9|<7|x-3|$.",
+              "formula": "$$|x+3|<7\\Rightarrow |x^2-9|<7|x-3|$$"
+            },
+            {
+              "step": 4,
+              "title": "Choose $\\delta$ using $\\epsilon$",
+              "content": "To make $7|x-3|<\\epsilon$ it suffices that $|x-3|<\\epsilon/7$. So set $\\delta=\\min\\{1,\\epsilon/7\\}$.",
+              "formula": "$$\\delta=\\min\\{1,\\frac{\\epsilon}{7}\\}$$"
+            },
+            {
+              "step": 5,
+              "title": "Conclude",
+              "content": "With this $\\delta$, $0<|x-3|<\\delta$ implies $|x^2-9|<\\epsilon$, proving the limit.",
+              "formula": ""
+            }
+          ]
+        },
+        {
+          "question": "Prove $\\lim_{x\\to2} \\dfrac{1}{x} = \\dfrac{1}{2}$.",
+          "answer": "The limit is $\\tfrac{1}{2}$. Given $\\epsilon>0$ choose $\\delta=\\min\\{1,2\\epsilon\\}$; then $0<|x-2|<\\delta$ implies $\\left|\\frac{1}{x}-\\frac{1}{2}\\right|<\\epsilon$.",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "State the target",
+              "content": "For every $\\epsilon>0$ find $\\delta>0$ so that $0<|x-2|<\\delta$ implies $\\left|\\frac{1}{x}-\\frac{1}{2}\\right|<\\epsilon$.",
+              "formula": "$$\\left|\\frac{1}{x}-\\frac{1}{2}\\right|<\\epsilon$$"
+            },
+            {
+              "step": 2,
+              "title": "Algebraic manipulation",
+              "content": "Compute the difference: $\\left|\\frac{1}{x}-\\frac{1}{2}\\right|=\\left|\\frac{2-x}{2x}\\right|=\\frac{|x-2|}{2|x|}$.",
+              "formula": "$$\\left|\\frac{1}{x}-\\frac{1}{2}\\right|=\\frac{|x-2|}{2|x|}$$"
+            },
+            {
+              "step": 3,
+              "title": "Control the denominator",
+              "content": "Restrict $\\delta\\le1$. If $|x-2|<1$ then $1<x<3$, so $|x|>1$ and $\\frac{1}{2|x|}\\le\\frac{1}{2}$. Hence $\\left|\\frac{1}{x}-\\frac{1}{2}\\right|\\le\\frac{|x-2|}{2}$.",
+              "formula": "$$\\left|\\frac{1}{x}-\\frac{1}{2}\\right|\\le\\frac{|x-2|}{2}$$"
+            },
+            {
+              "step": 4,
+              "title": "Choose $\\delta$ from $\\epsilon$",
+              "content": "Make $\\frac{|x-2|}{2}<\\epsilon$ by ensuring $|x-2|<2\\epsilon$. So set $\\delta=\\min\\{1,2\\epsilon\\}$.",
+              "formula": "$$\\delta=\\min\\{1,2\\epsilon\\}$$"
+            },
+            {
+              "step": 5,
+              "title": "Conclude",
+              "content": "Therefore for this $\\delta$, $0<|x-2|<\\delta$ implies $\\left|\\frac{1}{x}-\\frac{1}{2}\\right|<\\epsilon$, which proves the limit.",
+              "formula": ""
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T14:36:30.590737"
+    },
+    {
+      "id": "2.5",
+      "title": "Continuity",
+      "calc_level": 1,
+      "order": 7,
+      "priority": "HIGH",
+      "description": "Introduces continuity: intuitive idea, formal limit definition, common discontinuities, and algebraic tests for a student with only high-school algebra.",
+      "key_formula": "$$\\lim_{x\\to a} f(x) = f(a)$$",
+      "concepts": [
+        {
+          "title": "Intuitive meaning of continuity",
+          "explanation": "A function is continuous at a point $a$ when there is no break, hole, or sudden jump there: as $x$ gets close to $a$, $f(x)$ gets close to $f(a)$. Informally, you can draw the graph near $a$ without lifting your pencil.",
+          "formula": "$$\\lim_{x\\to a} f(x)=f(a)$$",
+          "example": "For $f(x)=x^2$, as $x$ approaches $2$ we have $f(x)$ close to $4$, and $f(2)=4$, so $f$ is continuous at $2$."
+        },
+        {
+          "title": "Formal three-part definition",
+          "explanation": "A function $f$ is continuous at $a$ exactly when three conditions hold: (1) $f(a)$ is defined, (2) the limit $\\lim_{x\\to a} f(x)$ exists, and (3) the limit equals the value, $\\lim_{x\\to a} f(x)=f(a)$. These three checks make the intuitive idea precise.",
+          "formula": "$$\\text{(1) } f(a)\\text{ exists},\\ \\text{(2) } \\lim_{x\\to a} f(x)\\text{ exists},\\ \\text{(3) } \\lim_{x\\to a} f(x)=f(a)$$",
+          "example": "Consider $g(x)=\\frac{x^2-9}{x-3}$ for $x\\neq 3$ and $g(3)=9$. Simplify $\\frac{x^2-9}{x-3}=x+3$ for $x\\neq3$, so the limit as $x$ approaches $3$ is $6$ but $g(3)=9$, so $g$ is not continuous at $3$."
+        },
+        {
+          "title": "Types of discontinuities",
+          "explanation": "Common types are removable (a hole that algebra can fix), jump (left and right limits differ), and infinite (vertical asymptote where values blow up). Identify them by checking left and right limits and whether the function value matches.",
+          "formula": "$$\\text{removable if }\\lim_{x\\to a} f(x)\\text{ exists but }f(a)\\text{ is different or undefined;}\\\\ \\text{jump if }\\lim_{x\\to a^-} f(x)\\neq\\lim_{x\\to a^+} f(x);\\\\ \\text{infinite if limits blow up (}\\pm\\infty\\text{).}$$",
+          "example": "Removable: $h(x)=\\frac{x^2-1}{x-1}$ has a hole at $x=1$. Jump: $j(x)=1$ for $x<0$ and $j(x)=2$ for $x\\ge 0$ (left and right values differ). Infinite: $k(x)=1/x$ blows up at $x=0$."
+        },
+        {
+          "title": "Continuity of common functions and algebraic tests",
+          "explanation": "Polynomials are continuous everywhere; rational functions are continuous where the denominator is nonzero. Use algebra (factor and simplify) or direct substitution to compute limits and compare with function values.",
+          "formula": "$$\\text{Polynomials: continuous }\\forall x;\\qquad\\text{Rational }\\frac{p(x)}{q(x)}\\text{ continuous where }q(x)\\neq0.$$",
+          "example": "Take $f(x)=\\frac{x^2+3x+2}{x+1}$. At $x=1$ the denominator is nonzero, so $\\lim_{x\\to1} f(x)=f(1)=3$, and $f$ is continuous at $1$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Is $f(x)=x^2$ continuous at $x=1$?",
+          "answer": "Yes. Continuous at $x=1$ because $\\lim_{x\\to1} x^2 = 1 = f(1)$.",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Evaluate the function at the point",
+              "content": "Compute the function value: $f(1)=1^2=1$.",
+              "formula": "$$f(1)=1$$"
+            },
+            {
+              "step": 2,
+              "title": "Compute the limit by substitution",
+              "content": "Compute $\\lim_{x\\to1} x^2$ by direct substitution: replace $x$ with $1$ to get $1$.",
+              "formula": "$$\\lim_{x\\to1} x^2 = 1$$"
+            },
+            {
+              "step": 3,
+              "title": "Compare limit and value",
+              "content": "Compare the two results: the limit is $1$ and $f(1)=1$, so they match.",
+              "formula": "$$\\lim_{x\\to1} x^2 = f(1)$$"
+            },
+            {
+              "step": 4,
+              "title": "Conclude continuity",
+              "content": "Since the limit equals the function value, $f$ is continuous at $x=1$ by the definition of continuity.",
+              "formula": "$$\\lim_{x\\to1} f(x) = f(1)$$"
+            }
+          ]
+        },
+        {
+          "question": "Is $f(x)=\\frac{x^2-1}{x-1}$ continuous at $x=1$? Classify the discontinuity and explain how (if possible) to fix it.",
+          "answer": "Not continuous at $x=1$. There is a removable discontinuity (a hole). The limit is $2$, but $f(1)$ is undefined; defining $f(1)=2$ would make it continuous.",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Check the function value at 1",
+              "content": "Direct substitution gives denominator zero: $f(1)$ is undefined because $1-1=0$.",
+              "formula": "$$f(1)\\text{ is undefined}$$"
+            },
+            {
+              "step": 2,
+              "title": "Algebraic simplification",
+              "content": "Factor the numerator: $x^2-1=(x-1)(x+1)$, so for $x\\neq1$ the expression simplifies to $x+1$.",
+              "formula": "$$\\frac{x^2-1}{x-1}=x+1\\quad (x\\neq1)$$"
+            },
+            {
+              "step": 3,
+              "title": "Compute the limit",
+              "content": "Take the limit using the simplified form: $\\lim_{x\\to1} (x+1)=2$.",
+              "formula": "$$\\lim_{x\\to1} f(x)=2$$"
+            },
+            {
+              "step": 4,
+              "title": "Compare limit and function value",
+              "content": "The limit exists and equals $2$, but $f(1)$ is undefined, so the function is not continuous at $1$.",
+              "formula": "$$\\lim_{x\\to1} f(x)=2\\neq f(1)\\ (\\text{undefined})$$"
+            },
+            {
+              "step": 5,
+              "title": "Fixing the discontinuity",
+              "content": "Define $f(1)=2$. After this redefinition, the limit equals the value and the hole is removed, so $f$ becomes continuous at $1$.",
+              "formula": "$$\\text{Redefine }f(1)=2\\Rightarrow\\lim_{x\\to1} f(x)=f(1)$$"
+            }
+          ]
+        },
+        {
+          "question": "Let $f(x)=\\begin{cases}\\frac{x^2-1}{x-1}&x<1\\\\2x+1&x\\ge1\\end{cases}$. Is $f$ continuous at $x=1$? Classify the discontinuity.",
+          "answer": "Not continuous at $x=1$. There is a jump discontinuity because the left-hand limit is $2$ while the right-hand limit (and $f(1)$) is $3$.",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Compute the left-hand limit",
+              "content": "For $x<1$ we can simplify $\\frac{x^2-1}{x-1}=x+1$, so the left-hand limit is $\\lim_{x\\to1^-}(x+1)=2$.",
+              "formula": "$$\\lim_{x\\to1^-}\\frac{x^2-1}{x-1}=\\lim_{x\\to1^-}(x+1)=2$$"
+            },
+            {
+              "step": 2,
+              "title": "Compute the right-hand limit",
+              "content": "For $x\\ge1$ the rule is $2x+1$, so the right-hand limit is $\\lim_{x\\to1^+}(2x+1)=3$.",
+              "formula": "$$\\lim_{x\\to1^+}(2x+1)=3$$"
+            },
+            {
+              "step": 3,
+              "title": "Check whether two-sided limit exists",
+              "content": "Compare left and right limits: left is $2$ and right is $3$, so the two-sided limit $\\lim_{x\\to1} f(x)$ does not exist.",
+              "formula": "$$\\lim_{x\\to1^-} f(x)=2\\neq3=\\lim_{x\\to1^+} f(x)$$"
+            },
+            {
+              "step": 4,
+              "title": "Compute the function value at the point",
+              "content": "Because the definition for $x\\ge1$ applies at $1$, $f(1)=2\\cdot1+1=3$.",
+              "formula": "$$f(1)=3$$"
+            },
+            {
+              "step": 5,
+              "title": "Conclusion and classification",
+              "content": "Left and right limits differ, so $f$ has a jump discontinuity at $x=1$; the function value equals the right-hand limit but the two-sided limit does not exist.",
+              "formula": "$$\\text{Jump discontinuity at }x=1$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T15:32:29.137745"
+    },
+    {
+      "id": "2.6",
+      "title": "Limits at Infinity; Horizontal Asymptotes",
+      "calc_level": 1,
+      "order": 8,
+      "priority": "HIGH",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "2.7",
+      "title": "Derivatives and Rates of Change",
+      "calc_level": 1,
+      "order": 9,
+      "priority": "HIGH",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "2.8",
+      "title": "The Derivative as a Function",
+      "calc_level": 1,
+      "order": 10,
+      "priority": "HIGH",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "3.1",
+      "title": "Derivatives of Polynomials and Exponential Functions",
+      "calc_level": 1,
+      "order": 11,
+      "priority": "HIGH",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "3.2",
+      "title": "The Product and Quotient Rules",
+      "calc_level": 1,
+      "order": 12,
+      "priority": "HIGH",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "3.3",
+      "title": "Derivatives of Trigonometric Functions",
+      "calc_level": 1,
+      "order": 13,
+      "priority": "HIGH",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "3.4",
+      "title": "The Chain Rule",
+      "calc_level": 1,
+      "order": 14,
+      "priority": "CRITICAL",
+      "description": "The Chain Rule shows how to differentiate a composition $h(x)=f(g(x))$ by multiplying the derivative of the outer function (evaluated at the inner function) by the derivative of the inner function.",
+      "key_formula": "$$\\frac{d}{dx}\\big[f(g(x))\\big] = f'(g(x)) \\cdot g'(x)$$",
+      "concepts": [
+        {
+          "title": "Composite functions",
+          "explanation": "A composite function is made by feeding one function into another, written $h(x)=f(g(x))$. To apply the Chain Rule, identify the inner function $g(x)$ and the outer function $f(u)$ with $u=g(x)$.",
+          "formula": "$$h(x)=f(g(x))$$",
+          "example": "Example: For $h(x)=\\sqrt{1+x^2}$ take $f(u)=\\sqrt{u}$ and $g(x)=1+x^2$. Then $h'(x)=f'(g(x))\\,g'(x)=\\dfrac{1}{2\\sqrt{1+x^2}}\\cdot 2x=\\dfrac{x}{\\sqrt{1+x^2}}$."
+        },
+        {
+          "title": "Basic derivative rules (review)",
+          "explanation": "Useful rules appear inside the Chain Rule steps: the power rule $\\dfrac{d}{dx}x^n = n x^{n-1}$, constant multiple rule, and standard derivatives like $\\dfrac{d}{dx}\\sin x=\\cos x$. After identifying inner and outer functions, apply these basic rules to each layer.",
+          "formula": "$$\\frac{d}{dx}x^n = n x^{n-1}$$",
+          "example": "Example: If $f(x)=x^3$ then $f'(x)=3x^2$, a building block for chain-rule problems like $(3x+1)^3$."
+        },
+        {
+          "title": "Chain Rule statement and intuition",
+          "explanation": "The Chain Rule says for $h(x)=f(g(x))$ first see how $f$ changes with its input, then scale that change by how $g$ changes with $x$. Intuitively the outer change $f'$ is evaluated at the inner value $g(x)$ and multiplied by $g'(x)$.",
+          "formula": "$$\\frac{d}{dx}f(g(x)) = f'(g(x))\\,g'(x)$$",
+          "example": "Example: For $h(x)=\\sin(x^2)$ set $f(u)=\\sin u$, $g(x)=x^2$. Then $h'(x)=\\cos(x^2)\\cdot 2x=2x\\cos(x^2)$."
+        },
+        {
+          "title": "Step-by-step application",
+          "explanation": "Apply four steps: (1) identify inner $g(x)$ and outer $f(u)$, (2) compute $f'(u)$, (3) compute $g'(x)$, (4) multiply and simplify. This template works for nested compositions too, repeating steps for each layer.",
+          "formula": "$$h'(x)=f'(g(x))\\,g'(x)$$",
+          "example": "Example: For $h(x)=(3x+1)^4$ take $f(u)=u^4$, $g(x)=3x+1$. Then $h'(x)=4(3x+1)^3\\cdot 3=12(3x+1)^3$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Differentiate $h(x)=(5x+2)^3$.",
+          "answer": "$h'(x)=15(5x+2)^2$",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Identify inner and outer",
+              "content": "Set $u=5x+2$ so $h(x)=u^3$.",
+              "formula": "$$u=5x+2$$"
+            },
+            {
+              "step": 2,
+              "title": "Differentiate outer with respect to $u$",
+              "content": "The derivative of $u^3$ with respect to $u$ is $3u^2$.",
+              "formula": "$$\\frac{d}{du}u^3=3u^2$$"
+            },
+            {
+              "step": 3,
+              "title": "Differentiate inner with respect to $x$",
+              "content": "The derivative of $5x+2$ with respect to $x$ is $5$.",
+              "formula": "$$\\frac{d}{dx}(5x+2)=5$$"
+            },
+            {
+              "step": 4,
+              "title": "Multiply and substitute",
+              "content": "Multiply the outer derivative by the inner derivative and substitute $u=5x+2$: $h'(x)=3u^2\\cdot 5=15(5x+2)^2$.",
+              "formula": "$$h'(x)=3(5x+2)^2\\cdot 5=15(5x+2)^2$$"
+            }
+          ]
+        },
+        {
+          "question": "Differentiate $y=\\sin(x^2+1)$.",
+          "answer": "$y'=2x\\cos(x^2+1)$",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Identify inner and outer",
+              "content": "Let $u=x^2+1$, so $y=\\sin u$ and the outer function is $\\sin$.",
+              "formula": "$$u=x^2+1$$"
+            },
+            {
+              "step": 2,
+              "title": "Differentiate outer with respect to $u$",
+              "content": "The derivative of $\\sin u$ with respect to $u$ is $\\cos u$.",
+              "formula": "$$\\frac{d}{du}\\sin u=\\cos u$$"
+            },
+            {
+              "step": 3,
+              "title": "Differentiate inner with respect to $x$",
+              "content": "The derivative of $x^2+1$ is $2x$.",
+              "formula": "$$\\frac{d}{dx}(x^2+1)=2x$$"
+            },
+            {
+              "step": 4,
+              "title": "Multiply and substitute",
+              "content": "Multiply: $y'=\\cos(u)\\cdot 2x$ and substitute $u=x^2+1$ to get $y'=2x\\cos(x^2+1)$.",
+              "formula": "$$y'=2x\\cos(x^2+1)$$"
+            }
+          ]
+        },
+        {
+          "question": "Differentiate $f(x)=e^{\\sin(x^2)}$.",
+          "answer": "$f'(x)=2x\\cos(x^2)\\,e^{\\sin(x^2)}$",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Rewrite and identify layers",
+              "content": "Set $v=x^2$, $u=\\sin v$, so $f(x)=e^{u}$ with $u=\\sin(v)$ and $v=x^2$.",
+              "formula": "$$v=x^2,\\quad u=\\sin v$$"
+            },
+            {
+              "step": 2,
+              "title": "Differentiate the outermost layer",
+              "content": "Derivative of $e^{u}$ with respect to $u$ is $e^{u}$.",
+              "formula": "$$\\frac{d}{du}e^{u}=e^{u}$$"
+            },
+            {
+              "step": 3,
+              "title": "Differentiate the middle layer",
+              "content": "Derivative of $\\sin v$ with respect to $v$ is $\\cos v$.",
+              "formula": "$$\\frac{d}{dv}\\sin v=\\cos v$$"
+            },
+            {
+              "step": 4,
+              "title": "Differentiate the innermost layer",
+              "content": "Derivative of $x^2$ with respect to $x$ is $2x$.",
+              "formula": "$$\\frac{d}{dx}x^2=2x$$"
+            },
+            {
+              "step": 5,
+              "title": "Multiply all derivatives and substitute back",
+              "content": "Multiply: $f'(x)=e^{u}\\cdot\\cos v\\cdot 2x$ and substitute $u=\\sin(x^2)$, $v=x^2$ to obtain $f'(x)=2x\\cos(x^2)e^{\\sin(x^2)}$.",
+              "formula": "$$f'(x)=2x\\cos(x^2)e^{\\sin(x^2)}$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T15:34:31.014008"
+    },
+    {
+      "id": "3.5",
+      "title": "Implicit Differentiation",
+      "calc_level": 1,
+      "order": 15,
+      "priority": "HIGH",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "3.6",
+      "title": "Derivatives of Logarithmic and Inverse Trig Functions",
+      "calc_level": 1,
+      "order": 16,
+      "priority": "HIGH",
+      "description": "Derivatives of logarithmic functions and inverse trigonometric functions, with chain rule and logarithmic-differentiation techniques.",
+      "key_formula": "$$\\frac{d}{dx}\\ln x = \\frac{1}{x},\\quad \\frac{d}{dx}\\log_a x = \\frac{1}{x\\ln a},\\quad \\frac{d}{dx}\\arcsin x = \\frac{1}{\\sqrt{1-x^2}},\\quad \\frac{d}{dx}\\arctan x = \\frac{1}{1+x^2}$$",
+      "concepts": [
+        {
+          "title": "Natural logarithm derivative",
+          "explanation": "The natural logarithm $\\ln x$ has derivative $1/x$ for $x>0$. For a composite $\\ln(g(x))$, use the chain rule: $\\frac{d}{dx}\\ln(g(x))=\\dfrac{g'(x)}{g(x)}$, so differentiate the inside and divide by the inside.",
+          "formula": "$$\\frac{d}{dx}\\ln x = \\frac{1}{x}$$",
+          "example": "Differentiate $y=\\ln(5x^2)$. Let $u=5x^2$, so $u'=10x$. Then $y'=\\dfrac{u'}{u}=\\dfrac{10x}{5x^2}=\\dfrac{2}{x}$."
+        },
+        {
+          "title": "Logarithm with arbitrary base",
+          "explanation": "A log with base $a$ satisfies $\\log_a x=\\dfrac{\\ln x}{\\ln a}$, so its derivative is $1/(x\\ln a)$. For $\\log_a(g(x))$ apply the chain rule: $\\dfrac{g'(x)}{g(x)\\ln a}$.",
+          "formula": "$$\\frac{d}{dx}\\log_a x = \\frac{1}{x\\ln a}$$",
+          "example": "Differentiate $y=\\log_2(x^2+1)$. Using the formula, $y'=\\dfrac{2x}{(x^2+1)\\ln 2}$."
+        },
+        {
+          "title": "Inverse trigonometric derivatives",
+          "explanation": "Common inverse trig derivatives are $\\dfrac{d}{dx}\\arcsin x=1/\\sqrt{1-x^2}$, $\\dfrac{d}{dx}\\arccos x=-1/\\sqrt{1-x^2}$, and $\\dfrac{d}{dx}\\arctan x=1/(1+x^2)$ on their domains. For composites $\\arcsin(g(x))$ or $\\arctan(g(x))$ apply the chain rule, multiplying by $g'(x)$.",
+          "formula": "$$\\frac{d}{dx}\\arcsin x = \\frac{1}{\\sqrt{1-x^2}},\\quad \\frac{d}{dx}\\arccos x = -\\frac{1}{\\sqrt{1-x^2}},\\quad \\frac{d}{dx}\\arctan x = \\frac{1}{1+x^2}$$",
+          "example": "Differentiate $y=\\arctan(3x)$. Using the chain rule, $y'=\\dfrac{3}{1+(3x)^2}=\\dfrac{3}{1+9x^2}$."
+        },
+        {
+          "title": "Logarithmic differentiation",
+          "explanation": "When a function has a variable base and exponent, like $f(x)^{g(x)}$, take logs: $\\ln y=g(x)\\ln f(x)$, then differentiate implicitly. This converts products/powers into sums so derivatives are easier to compute.",
+          "formula": "$$\\frac{d}{dx}f(x)^{g(x)}=f(x)^{g(x)}\\Big(g'(x)\\ln f(x)+g(x)\\frac{f'(x)}{f(x)}\\Big)$$",
+          "example": "Differentiate $y=x^x$. Take logs: $\\ln y=x\\ln x$. Differentiate: $\\dfrac{y'}{y}=\\ln x+1$. So $y'=x^x(\\ln x+1)$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Differentiate $y=\\ln(3x)$.",
+          "answer": "$y'=\\dfrac{1}{x}$.",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Identify inner function",
+              "content": "Write $y=\\ln(u)$ with $u=3x$ so the chain rule will apply.",
+              "formula": "$$u=3x$$"
+            },
+            {
+              "step": 2,
+              "title": "Differentiate inner function",
+              "content": "Compute $u'=\\dfrac{d}{dx}(3x)=3$.",
+              "formula": "$$u'=3$$"
+            },
+            {
+              "step": 3,
+              "title": "Derivative of log",
+              "content": "Derivative of $\\ln u$ with respect to $u$ is $1/u$, so $\\dfrac{dy}{du}=1/u$.",
+              "formula": "$$\\frac{dy}{du}=\\frac{1}{u}$$"
+            },
+            {
+              "step": 4,
+              "title": "Apply chain rule and simplify",
+              "content": "By chain rule $y'=\\dfrac{dy}{du}\\cdot u'=\\dfrac{1}{u}\\cdot 3=\\dfrac{3}{3x}=\\dfrac{1}{x}$.",
+              "formula": "$$y'=\\frac{1}{x}$$"
+            }
+          ]
+        },
+        {
+          "question": "Differentiate $y=\\log_4(x^2+1)$.",
+          "answer": "$y'=\\dfrac{2x}{(x^2+1)\\ln 4}$.",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Use change of base",
+              "content": "Recall $\\log_4 u=\\dfrac{\\ln u}{\\ln 4}$, so write $y=\\dfrac{\\ln(x^2+1)}{\\ln 4}$.",
+              "formula": "$$y=\\frac{\\ln(x^2+1)}{\\ln 4}$$"
+            },
+            {
+              "step": 2,
+              "title": "Differentiate numerator",
+              "content": "Differentiate $\\ln(x^2+1)$: derivative is $\\dfrac{d}{dx}\\ln(x^2+1)=\\dfrac{2x}{x^2+1}$ by the chain rule.",
+              "formula": "$$\\frac{d}{dx}\\ln(x^2+1)=\\frac{2x}{x^2+1}$$"
+            },
+            {
+              "step": 3,
+              "title": "Divide by constant",
+              "content": "Since $\\ln 4$ is constant, $y'=\\dfrac{1}{\\ln 4}\\cdot \\dfrac{2x}{x^2+1}$.",
+              "formula": "$$y'=\\frac{1}{\\ln 4}\\cdot\\frac{2x}{x^2+1}$$"
+            },
+            {
+              "step": 4,
+              "title": "Simplify",
+              "content": "Combine factors to obtain $y'=\\dfrac{2x}{(x^2+1)\\ln 4}$, the final derivative.",
+              "formula": "$$y'=\\frac{2x}{(x^2+1)\\ln 4}$$"
+            }
+          ]
+        },
+        {
+          "question": "Differentiate $y= x^x\\,\\arctan(\\sqrt{x})$.",
+          "answer": "$y'=x^x\\left((\\ln x+1)\\arctan(\\sqrt{x})+\\dfrac{1}{2\\sqrt{x}(1+x)}\\right)$.",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Apply product rule",
+              "content": "Let $u=x^x$ and $v=\\arctan(\\sqrt{x})$. Then $y'=u'v+uv'$ by the product rule.",
+              "formula": "$$y'=u'v+uv'$$"
+            },
+            {
+              "step": 2,
+              "title": "Differentiate $x^x$ via logarithmic differentiation",
+              "content": "For $u=x^x$ take $\\ln u = x\\ln x$. Differentiate: $\\dfrac{u'}{u}=\\ln x+1$, so $u'=x^x(\\ln x+1)$.",
+              "formula": "$$u'=x^x(\\ln x+1)$$"
+            },
+            {
+              "step": 3,
+              "title": "Differentiate $\\arctan(\\sqrt{x})$ with chain rule",
+              "content": "Set $w=\\sqrt{x}=x^{1/2}$ so $v=\\arctan(w)$. Then $v'=\\dfrac{1}{1+w^2}\\cdot w'$. Here $w'=\\dfrac{1}{2\\sqrt{x}}$ and $1+w^2=1+x$, so $v'=\\dfrac{1}{2\\sqrt{x}(1+x)}$.",
+              "formula": "$$v'=\\frac{1}{1+ (\\sqrt{x})^2}\\cdot\\frac{1}{2\\sqrt{x}}=\\frac{1}{2\\sqrt{x}(1+x)}$$"
+            },
+            {
+              "step": 4,
+              "title": "Combine and factor",
+              "content": "Combine $u'v+uv'$: $y'=x^x(\\ln x+1)\\arctan(\\sqrt{x})+x^x\\dfrac{1}{2\\sqrt{x}(1+x)}$. Factor $x^x$ to get the compact form.",
+              "formula": "$$y'=x^x\\Big((\\ln x+1)\\arctan(\\sqrt{x})+\\frac{1}{2\\sqrt{x}(1+x)}\\Big)$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T14:44:41.147978"
+    },
+    {
+      "id": "3.9",
+      "title": "Related Rates",
+      "calc_level": 1,
+      "order": 17,
+      "priority": "HIGH",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "3.10",
+      "title": "Linear Approximations and Differentials",
+      "calc_level": 1,
+      "order": 18,
+      "priority": "MEDIUM",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "4.1",
+      "title": "Maximum and Minimum Values",
+      "calc_level": 1,
+      "order": 19,
+      "priority": "HIGH",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "4.2",
+      "title": "The Mean Value Theorem",
+      "calc_level": 1,
+      "order": 20,
+      "priority": "HIGH",
+      "description": "The Mean Value Theorem says that if a function $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, then there is at least one point where the instantaneous rate equals the average rate of change.",
+      "key_formula": "$$f'(c)=(f(b)-f(a))/(b-a)$$",
+      "concepts": [
+        {
+          "title": "Statement of the Mean Value Theorem",
+          "explanation": "If a function $f$ is continuous on $[a,b]$ and differentiable on $(a,b)$, then there exists a point $c$ in $(a,b)$ where the instantaneous rate $f'(c)$ equals the average rate $(f(b)-f(a))/(b-a)$. This links the derivative (instantaneous change) to the secant slope (average change) across the interval.",
+          "formula": "$$f'(c)=(f(b)-f(a))/(b-a)$$",
+          "example": "Example: For $f(x)=x^2$ on $[1,3]$, the average slope is $(f(3)-f(1))/(3-1)=(9-1)/2=4$. Since $f'(x)=2x$, set $2x=4$ to get $x=2$. Thus $c=2$ and $f'(2)=4$ matches the average slope."
+        },
+        {
+          "title": "Rolle's Theorem (special case)",
+          "explanation": "Rolle's theorem is the special case of MVT when $f(a)=f(b)$, so the average rate is zero; it guarantees a point $c$ with $f'(c)=0$. This ensures at least one horizontal tangent between equal endpoint values.",
+          "formula": "$$f'(c)=0$$",
+          "example": "Example: Take $f(x)=(x-1)(x-3)$ on $[1,3]$. We have $f(1)=0=f(3)$ and $f'(x)=2x-4$. Solving $2x-4=0$ gives $x=2$, so $c=2$ and $f'(2)=0$."
+        },
+        {
+          "title": "Geometric intuition",
+          "explanation": "Geometrically, MVT says there is a tangent line at some $c$ that is parallel to the secant line joining $(a,f(a))$ and $(b,f(b))$. The secant slope is $(f(b)-f(a))/(b-a)$ and the tangent slope is $f'(c)$, so they are equal at that point.",
+          "formula": "$$f'(c)=(f(b)-f(a))/(b-a)$$",
+          "example": "Example: For $f(x)=x^3$ on $[-1,1]$ the secant slope is $(1-(-1))/(1-(-1))=1$. Since $f'(x)=3x^2$, set $3x^2=1$ to get $x=\\pm0.577...$ (approx.), both lying in $[-1,1]$; each corresponding tangent has slope 1 and is parallel to the secant."
+        },
+        {
+          "title": "Applications: velocity and bounds",
+          "explanation": "If $f$ measures position, the average velocity on $[a,b]$ is $(f(b)-f(a))/(b-a)$, so at some time $c$ the instantaneous velocity $f'(c)$ equals that average. Also, if $|f'(x)| <= M$ on $[a,b]$, then $|f(b)-f(a)| <= M|b-a|$, a useful bound on how much $f$ can change.",
+          "formula": "$$|f(b)-f(a)| <= M|b-a|$$",
+          "example": "Example (velocity): A car travels 150 miles in 2 hours, so average speed is $150/2=75$ mph; MVT implies the instantaneous speed was $75$ mph at some moment. Example (bound): For $f(x)=x^2$ on $[1,3]$, $f'(x)=2x$ and $|f'(x)|<=6$, so $|f(3)-f(1)|=8 <= 6\\cdot2=12$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Find a value $c$ guaranteed by the Mean Value Theorem for $f(x)=x^2$ on $[1,4]$.",
+          "answer": "$c=2.5$",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Verify conditions",
+              "content": "$f(x)=x^2$ is a polynomial, so it is continuous on $[1,4]$ and differentiable on $(1,4)$.",
+              "formula": ""
+            },
+            {
+              "step": 2,
+              "title": "Compute average slope",
+              "content": "Average slope = $(f(4)-f(1))/(4-1)=(16-1)/3=5$.",
+              "formula": "$$\\frac{f(4)-f(1)}{4-1}=5$$"
+            },
+            {
+              "step": 3,
+              "title": "Compute derivative",
+              "content": "The derivative is $f'(x)=2x$, the instantaneous slope at any point $x$.",
+              "formula": "$$f'(x)=2x$$"
+            },
+            {
+              "step": 4,
+              "title": "Solve for $c$",
+              "content": "Set $2x=5$ to find $x=5/2=2.5$. Since $2.5$ lies in $(1,4)$, this is the required $c$.",
+              "formula": "$$x=\\frac{5}{2}=2.5$$"
+            }
+          ]
+        },
+        {
+          "question": "Use the Mean Value Theorem to find a $c$ in $(1,e)$ for $f(x)=\\ln x$ on $[1,e]$ (here $e\\approx2.718$).",
+          "answer": "$c=e-1$",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Check hypotheses",
+              "content": "The natural log is continuous on $[1,e]$ and differentiable on $(1,e)$, so MVT applies.",
+              "formula": ""
+            },
+            {
+              "step": 2,
+              "title": "Compute average slope",
+              "content": "Average slope = $(f(e)-f(1))/(e-1)=(1-0)/(e-1)=1/(e-1)$, since $\\ln e=1$ and $\\ln1=0$.",
+              "formula": "$$\\frac{f(e)-f(1)}{e-1}=\\frac{1}{e-1}$$"
+            },
+            {
+              "step": 3,
+              "title": "Compute derivative",
+              "content": "Derivative is $f'(x)=1/x$, the instantaneous rate of change of $\\ln x$.",
+              "formula": "$$f'(x)=1/x$$"
+            },
+            {
+              "step": 4,
+              "title": "Set derivative equal to average and solve",
+              "content": "Solve $1/c=1/(e-1)$ to get $c=e-1$.",
+              "formula": "$$c=e-1$$"
+            },
+            {
+              "step": 5,
+              "title": "Verify $c$ lies in the interval",
+              "content": "Since $e\\approx2.718$, $e-1\\approx1.718$ which lies in $(1,e)$, so the value is valid.",
+              "formula": ""
+            }
+          ]
+        },
+        {
+          "question": "Prove, using the Mean Value Theorem, that if $f'(x)=0$ for all $x$ in an interval $I$, then $f$ is constant on $I$.",
+          "answer": "If $f'(x)=0$ on $I$, then $f$ is constant on $I$.",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Pick arbitrary points",
+              "content": "Let $a$ and $b$ be arbitrary points in the interval $I$ with $a<b$. We will show $f(a)=f(b)$.",
+              "formula": ""
+            },
+            {
+              "step": 2,
+              "title": "Apply the Mean Value Theorem",
+              "content": "By MVT there exists $c$ in $(a,b)$ such that $f'(c)=(f(b)-f(a))/(b-a)$.",
+              "formula": "$$f'(c)=(f(b)-f(a))/(b-a)$$"
+            },
+            {
+              "step": 3,
+              "title": "Use the hypothesis",
+              "content": "Given $f'(x)=0$ for all $x$, in particular $f'(c)=0$. So $(f(b)-f(a))/(b-a)=0$, hence $f(b)-f(a)=0$.",
+              "formula": ""
+            },
+            {
+              "step": 4,
+              "title": "Conclude constancy",
+              "content": "Because $a$ and $b$ were arbitrary, $f$ takes the same value at every point of $I$, so $f$ is constant on $I$.",
+              "formula": ""
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T15:37:37.327921"
+    },
+    {
+      "id": "4.3",
+      "title": "How Derivatives Affect the Shape of a Graph",
+      "calc_level": 1,
+      "order": 21,
+      "priority": "HIGH",
+      "description": "How the first and second derivatives tell where a function rises or falls, where it has peaks/valleys, and how curved (concave) the graph is.",
+      "key_formula": "$$f'(x)>0,\\ f'(x)<0,\\ f''(x)>0,\\ f''(x)<0$$",
+      "concepts": [
+        {
+          "title": "First derivative: increasing and decreasing",
+          "explanation": "The first derivative $f'(x)$ measures the slope of the tangent line. If $f'(x)>0$ on an interval the function increases there; if $f'(x)<0$ it decreases.",
+          "formula": "$$f'(x)>0\\ \\text{(increasing)},\\quad f'(x)<0\\ \\text{(decreasing)}$$",
+          "example": "Example: For $f(x)=x^2$ compute $f'(x)=2x$. So $f'(x)<0$ for $x<0$ (decreasing on $(-\\infty,0)$) and $f'(x)>0$ for $x>0$ (increasing on $(0,\\infty)$)."
+        },
+        {
+          "title": "Critical points and the First Derivative Test",
+          "explanation": "Critical points occur where $f'(x)=0$ or $f'(x)$ is undefined; these are candidates for local maxima or minima. Check the sign of $f'$ on either side: positive\u2192negative gives a local max, negative\u2192positive gives a local min.",
+          "formula": "$$f'(c)=0\\ \\Rightarrow\\ c\\ \\text{is a critical point}$$",
+          "example": "Example: For $f(x)=x^3-3x$ we have $f'(x)=3x^2-3=3(x^2-1)$, so $f'(x)=0$ at $x=\\pm1$. Testing signs shows $f'$ goes + to - at $x=-1$ (local max) and - to + at $x=1$ (local min)."
+        },
+        {
+          "title": "Second derivative: concavity",
+          "explanation": "The second derivative $f''(x)$ measures how the slope $f'(x)$ changes. If $f''(x)>0$ the slope is increasing and the graph is concave up (cup); if $f''(x)<0$ it is concave down (cap).",
+          "formula": "$$f''(x)>0\\ \\text{(concave up)},\\quad f''(x)<0\\ \\text{(concave down)}$$",
+          "example": "Example: For $f(x)=x^2$ we have $f''(x)=2>0$, so $f$ is concave up everywhere."
+        },
+        {
+          "title": "Inflection points",
+          "explanation": "An inflection point is where concavity changes sign, often at points where $f''(x)=0$ or is undefined. To confirm an inflection, verify $f''$ changes sign across the point.",
+          "formula": "$$f''(c)=0\\ \\text{(possible inflection point)}$$",
+          "example": "Example: For $f(x)=x^3$ we have $f''(x)=6x$, so $f''(0)=0$ and $f''$ changes sign at $0$, hence $x=0$ is an inflection point."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Let $f(x)=x^2$. Determine where $f$ is increasing and decreasing and identify any local extrema.",
+          "answer": "$f'(x)=2x$, so $f$ decreases on $(-\\infty,0)$, increases on $(0,\\infty)$, and has a local minimum at $x=0$ with value $0$.",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Differentiate",
+              "content": "Compute the derivative: $f'(x)=2x$.",
+              "formula": "$$f'(x)=2x$$"
+            },
+            {
+              "step": 2,
+              "title": "Find critical points",
+              "content": "Solve $f'(x)=0$, giving $2x=0$ so the critical point is $x=0$.",
+              "formula": "$$2x=0\\Rightarrow x=0$$"
+            },
+            {
+              "step": 3,
+              "title": "Sign chart",
+              "content": "Test a point left of 0, e.g. $x=-1$: $f'(-1)=-2<0$ so $f$ is decreasing on $(-\\infty,0)$. Test $x=1$: $f'(1)=2>0$ so $f$ is increasing on $(0,\\infty)$.",
+              "formula": ""
+            },
+            {
+              "step": 4,
+              "title": "Classify extremum",
+              "content": "Since $f'$ changes from negative to positive at $0$, $x=0$ is a local minimum. Evaluate $f(0)=0$.",
+              "formula": "$$f(0)=0$$"
+            }
+          ]
+        },
+        {
+          "question": "For $f(x)=x^3-3x^2+1$, find intervals of increase/decrease, identify local extrema, and locate any inflection points.",
+          "answer": "$f'(x)=3x(x-2)$ so critical points at $x=0,2$. $f'$ is + on $(-\\infty,0)$, - on $(0,2)$, + on $(2,\\infty)$, giving a local max at $x=0$ with $f(0)=1$ and a local min at $x=2$ with $f(2)=-3$. $f''(x)=6x-6$ so $f''(1)=0$ and concavity changes at $x=1$, an inflection point.",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Differentiate",
+              "content": "Compute $f'(x)=3x^2-6x=3x(x-2)$.",
+              "formula": "$$f'(x)=3x(x-2)$$"
+            },
+            {
+              "step": 2,
+              "title": "Find critical points",
+              "content": "Solve $3x(x-2)=0$, so $x=0$ or $x=2$ are critical points.",
+              "formula": "$$3x(x-2)=0\\Rightarrow x=0,2$$"
+            },
+            {
+              "step": 3,
+              "title": "Sign chart and extrema",
+              "content": "Test intervals: for $x=-1$ we get $f'(-1)>0$, for $x=1$ $f'(1)<0$, for $x=3$ $f'(3)>0$. So $f'$ goes +\u2192\u2212 at $x=0$ (local max) and \u2212\u2192+ at $x=2$ (local min).",
+              "formula": ""
+            },
+            {
+              "step": 4,
+              "title": "Compute extremal values",
+              "content": "Evaluate $f(0)=1$ and $f(2)=8-12+1=-3$ to give the max and min values.",
+              "formula": "$$f(0)=1,\\quad f(2)=-3$$"
+            },
+            {
+              "step": 5,
+              "title": "Inflection via second derivative",
+              "content": "Compute $f''(x)=6x-6$. Solve $6x-6=0$ gives $x=1$. Since $f''$ changes sign across $1$, $x=1$ is an inflection point.",
+              "formula": "$$f''(x)=6x-6$$"
+            }
+          ]
+        },
+        {
+          "question": "Analyze $f(x)=\\dfrac{x}{1+x^2}$: find where $f$ is increasing/decreasing, locate and classify local extrema, determine concavity intervals and find inflection points.",
+          "answer": "$f'(x)=\\dfrac{1-x^2}{(1+x^2)^2}$ so $f'>0$ on $(-1,1)$ and $f'<0$ on $(-\\infty,-1)$ and $(1,\\infty)$. Critical points at $x=\\pm1$ give a local min at $(-1,-1/2)$ and a local max at $(1,1/2)$. $f''(x)=-2x(3-x^2)/(1+x^2)^3$, so $f''=0$ at $x=-\\sqrt3,0,\\sqrt3$ and concavity changes there (inflection points).",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Differentiate (quotient rule)",
+              "content": "Compute the derivative: $f'(x)=\\dfrac{(1+x^2)-x(2x)}{(1+x^2)^2}=\\dfrac{1-x^2}{(1+x^2)^2}$.",
+              "formula": "$$f'(x)=\\frac{1-x^2}{(1+x^2)^2}$$"
+            },
+            {
+              "step": 2,
+              "title": "Critical points and monotonicity",
+              "content": "Set numerator $1-x^2=0$ to get $x=\\pm1$; denominator is always positive. So $f'>0$ when $1-x^2>0$ (i.e. $|x|<1$) and $f'<0$ when $|x|>1$.",
+              "formula": "$$1-x^2=0\\Rightarrow x=\\pm1$$"
+            },
+            {
+              "step": 3,
+              "title": "Classify local extrema",
+              "content": "Sign of $f'$: negative on $(-\\infty,-1)$, positive on $(-1,1)$, negative on $(1,\\infty)$. Thus at $x=-1$ $f'$ goes \u2212\u2192+ (local min) and at $x=1$ $f'$ goes +\u2192\u2212 (local max). Evaluate $f(\\pm1)=\\pm\\tfrac12$.",
+              "formula": "$$f(1)=\\tfrac12,\\quad f(-1)=-\\tfrac12$$"
+            },
+            {
+              "step": 4,
+              "title": "Second derivative for concavity",
+              "content": "Differentiate $f'$ to get $f''(x)=\\dfrac{-2x(3-x^2)}{(1+x^2)^3}$. The denominator is positive, so the sign of $f''$ is given by $-2x(3-x^2)$.",
+              "formula": "$$f''(x)=-2x(3-x^2)/(1+x^2)^3$$"
+            },
+            {
+              "step": 5,
+              "title": "Find inflection points and concavity intervals",
+              "content": "Solve $-2x(3-x^2)=0$ giving $x=0,\\pm\\sqrt3$. Test intervals to see concavity alternates: concave up on $(-\\sqrt3,0)$ and $(\\sqrt3,\\infty)$, concave down on $(-\\infty,-\\sqrt3)$ and $(0,\\sqrt3)$. Thus inflection points at $x=-\\sqrt3,0,\\sqrt3$ with $f(0)=0$ and $f(\\pm\\sqrt3)=\\pm\\dfrac{\\sqrt3}{4}$.",
+              "formula": "$$f(\\pm\\sqrt3)=\\pm\\frac{\\sqrt3}{4},\\quad f(0)=0$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T14:04:34.075263"
+    },
+    {
+      "id": "4.4",
+      "title": "Indeterminate Forms and L'Hopital's Rule",
+      "calc_level": 1,
+      "order": 22,
+      "priority": "HIGH",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "4.5",
+      "title": "Summary of Curve Sketching",
+      "calc_level": 1,
+      "order": 23,
+      "priority": "MEDIUM",
+      "description": "Step-by-step compact guide to sketching a curve using domain, derivatives, concavity, and asymptotes.",
+      "key_formula": "$$f'(x)=\\frac{df}{dx},\\quad f''(x)=\\frac{d^2f}{dx^2};\\quad f'(x)>0\\Rightarrow\\text{increasing},\\ f'(x)<0\\Rightarrow\\text{decreasing},\\ f''(x)>0\\Rightarrow\\text{concave up},\\ f''(x)<0\\Rightarrow\\text{concave down}$$",
+      "concepts": [
+        {
+          "title": "Domain and intercepts",
+          "explanation": "The domain is all $x$ where $f(x)$ is defined (avoid division by zero or invalid roots). X-intercepts are solutions of $f(x)=0$ and the y-intercept is $f(0)$; these give anchor points for the sketch. Always check for removable holes and excluded points.",
+          "formula": "$$\\text{x-intercepts solve }f(x)=0,\\quad\\text{y-intercept }f(0)$$",
+          "example": "For $f(x)=x^2-4$ the domain is $(-\\infty,\\infty)$, x-intercepts solve $x^2-4=0$ giving $x=\\pm 2$, and the y-intercept is $f(0)=-4$."
+        },
+        {
+          "title": "First derivative: monotonicity and extrema",
+          "explanation": "Compute $f'(x)$ to see where the function rises ($f'(x)>0$) or falls ($f'(x)<0$). Critical points occur where $f'(x)=0$ or is undefined; use sign changes of $f'$ across each critical point to classify local maxima or minima.",
+          "formula": "$$f'(x)>0\\Rightarrow\\text{increasing},\\quad f'(x)<0\\Rightarrow\\text{decreasing},\\quad f'(c)=0\\text{ or undefined gives critical points}$$",
+          "example": "For $f(x)=x^3-3x+1$, $f'(x)=3x^2-3=3(x^2-1)$ so $f'(x)=0$ at $x=\\pm1$. Sign analysis: $f'>0$ for $x<-1$, $f'<0$ on $(-1,1)$, $f'>0$ for $x>1$, so $x=-1$ is a local max ($f(-1)=3$) and $x=1$ a local min ($f(1)=-1$)."
+        },
+        {
+          "title": "Second derivative: concavity and inflection points",
+          "explanation": "The second derivative $f''(x)$ tells concavity: $f''(x)>0$ means the graph is concave up (cups upward), $f''(x)<0$ means concave down. Points where $f''(x)=0$ and the sign of $f''$ changes are inflection points.",
+          "formula": "$$f''(x)>0\\Rightarrow\\text{concave up},\\quad f''(x)<0\\Rightarrow\\text{concave down},\\quad f''(c)=0\\text{ may indicate an inflection}$$",
+          "example": "For $f(x)=x^3-3x$, $f''(x)=6x$, so concave down for $x<0$, concave up for $x>0$, and an inflection at $x=0$ with $f(0)=0$."
+        },
+        {
+          "title": "Asymptotes and end behavior",
+          "explanation": "Vertical asymptotes occur at values where the function blows up (e.g. denominator zero). Horizontal or slant asymptotes come from limits as $x\\to\\pm\\infty$; do polynomial long division to find slant asymptotes. Asymptotes describe the function's long-range trend.",
+          "formula": "$$\\text{vertical at }x=a\\text{ if }\\lim_{x\\to a}f(x)=\\pm\\infty,\\quad\\text{horizontal }y=L\\text{ if }\\lim_{x\\to\\pm\\infty}f(x)=L$$",
+          "example": "For $f(x)=\\frac{2x^2+3x-1}{x-1}$ divide to get $f(x)=2x+5+\\frac{4}{x-1}$, so vertical asymptote $x=1$ and slant asymptote $y=2x+5$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Sketch $f(x)=x^2-4$: find domain, x-intercepts, y-intercept, critical points, and concavity.",
+          "answer": "Domain $(-\\infty,\\infty)$; x-intercepts $x=\\pm2$; y-intercept $-4$; critical point $x=0$ with $f(0)=-4$ (local minimum); $f''(x)=2>0$ so concave up everywhere.",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Domain",
+              "content": "Since $f$ is a polynomial, it is defined for all real $x$: domain $(-\\infty,\\infty)$.",
+              "formula": "$$\\text{Domain }(-\\infty,\\infty)$$"
+            },
+            {
+              "step": 2,
+              "title": "Intercepts",
+              "content": "Solve $x^2-4=0$ to get x-intercepts $x=\\pm2$. The y-intercept is $f(0)=-4$.",
+              "formula": "$$x^2-4=0\\Rightarrow x=\\pm2$$"
+            },
+            {
+              "step": 3,
+              "title": "Critical point",
+              "content": "Compute $f'(x)=2x$. Set $2x=0$ gives critical point $x=0$. Evaluate $f(0)=-4$, derivative changes from negative to positive so it's a local minimum.",
+              "formula": "$$f'(x)=2x$$"
+            },
+            {
+              "step": 4,
+              "title": "Concavity",
+              "content": "Second derivative $f''(x)=2>0$ for all $x$, so the graph is concave up everywhere. Combine anchors to sketch a U-shaped parabola shifted down 4 units.",
+              "formula": "$$f''(x)=2$$"
+            }
+          ]
+        },
+        {
+          "question": "For $f(x)=x^3-3x+1$, find critical points, classify them, find any inflection point, and state concavity intervals.",
+          "answer": "Critical points at $x=\\pm1$ with $f(-1)=3$ (local max) and $f(1)=-1$ (local min). Inflection at $x=0$ since $f''(0)=0$. Concave down on $(-\\infty,0)$ and concave up on $(0,\\infty)$.",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Take derivative",
+              "content": "Compute $f'(x)=3x^2-3$ to locate critical points.",
+              "formula": "$$f'(x)=3x^2-3$$"
+            },
+            {
+              "step": 2,
+              "title": "Solve for critical points",
+              "content": "Set $3x^2-3=0\\Rightarrow x^2=1$ so $x=\\pm1$. These are the critical candidates.",
+              "formula": "$$3x^2-3=0\\Rightarrow x=\\pm1$$"
+            },
+            {
+              "step": 3,
+              "title": "Classify by sign",
+              "content": "Test intervals: for $x<-1$ pick $x=-2$ gives $f'( -2)>0$ (increasing); between $-1$ and $1$ pick $0$ gives $f'(0)=-3<0$ (decreasing); for $x>1$ pick $2$ gives $f'(2)>0$. So $x=-1$ is a local max ($f(-1)=3$), $x=1$ is a local min ($f(1)=-1$).",
+              "formula": "$$f(-1)=3,\\quad f(1)=-1$$"
+            },
+            {
+              "step": 4,
+              "title": "Inflection and concavity",
+              "content": "Compute $f''(x)=6x$. Solve $f''(x)=0$ gives $x=0$. Since $f''<0$ for $x<0$ and $f''>0$ for $x>0$, $x=0$ is an inflection point and concavity is down on $(-\\infty,0)$ and up on $(0,\\infty)$.",
+              "formula": "$$f''(x)=6x$$"
+            }
+          ]
+        },
+        {
+          "question": "Sketch $f(x)=\\dfrac{2x^2+3x-1}{x-1}$: find domain, vertical and slant asymptotes, intercepts, critical points and classify them.",
+          "answer": "Domain $x\\neq1$. Vertical asymptote $x=1$. Divide to get $f(x)=2x+5+\\dfrac{4}{x-1}$ so slant asymptote $y=2x+5$. x-intercepts $x=\\dfrac{-3\\pm\\sqrt{17}}{4}$, y-intercept $f(0)=1$. Critical points at $x=1\\pm\\sqrt{2}$; $x=1-\\sqrt2$ is a local max (approx $x\\approx-0.414$, $f\\approx1.34$) and $x=1+\\sqrt2$ is a local min (approx $x\\approx2.414$, $f\\approx12.65$).",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Domain and vertical asymptote",
+              "content": "Denominator zero at $x=1$ and numerator at $x=1$ is $2+3-1=4\\neq0$, so domain is $x\\neq1$ and there is a vertical asymptote at $x=1$.",
+              "formula": "$$\\text{Domain: }x\\neq1,\\quad \\text{vertical asymptote at }x=1$$"
+            },
+            {
+              "step": 2,
+              "title": "Slant asymptote by division",
+              "content": "Divide polynomials: $\\dfrac{2x^2+3x-1}{x-1}=2x+5+\\dfrac{4}{x-1}$, so the slant asymptote is $y=2x+5$ since the remainder term goes to $0$ as $x\\to\\pm\\infty$.",
+              "formula": "$$f(x)=2x+5+\\frac{4}{x-1}$$"
+            },
+            {
+              "step": 3,
+              "title": "Intercepts",
+              "content": "x-intercepts solve $2x^2+3x-1=0$ giving $x=\\dfrac{-3\\pm\\sqrt{17}}{4}$. y-intercept $f(0)=(-1)/( -1)=1$.",
+              "formula": "$$2x^2+3x-1=0\\Rightarrow x=\\frac{-3\\pm\\sqrt{17}}{4}$$"
+            },
+            {
+              "step": 4,
+              "title": "Compute derivative and critical points",
+              "content": "Use quotient rule or simplify derivative: $f'(x)=\\dfrac{(4x+3)(x-1)-(2x^2+3x-1)}{(x-1)^2}=\\dfrac{2(x^2-2x-1)}{(x-1)^2}$. Set numerator zero to get $x^2-2x-1=0$, so $x=1\\pm\\sqrt{2}$ are critical points.",
+              "formula": "$$f'(x)=\\frac{2(x^2-2x-1)}{(x-1)^2}$$"
+            },
+            {
+              "step": 5,
+              "title": "Classify critical points",
+              "content": "Sign chart for $f'$: for $x<1-\\sqrt2$ numerator $>0$ so $f'>0$ (increasing); between $1-\\sqrt2$ and $1$ numerator $<0$ so $f'<0$ (decreasing); on $(1,1+\\sqrt2)$ still $f'<0$; for $x>1+\\sqrt2$ numerator $>0$ so $f'>0$. Thus $x=1-\\sqrt2$ is a local max and $x=1+\\sqrt2$ a local min. Approx: $1-\\sqrt2\\approx-0.414$, $1+\\sqrt2\\approx2.414$.",
+              "formula": "$$x=1\\pm\\sqrt{2}$$"
+            },
+            {
+              "step": 6,
+              "title": "Assemble sketch",
+              "content": "Combine domain, asymptotes, intercepts and critical points: draw vertical line $x=1$, slant line $y=2x+5$ and plot intercepts and extrema; the rational curve approaches the slant at infinity and flips sign near the vertical asymptote.",
+              "formula": ""
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T14:49:26.516697"
+    },
+    {
+      "id": "4.7",
+      "title": "Optimization Problems",
+      "calc_level": 1,
+      "order": 24,
+      "priority": "HIGH",
+      "description": "Optimization finds maxima or minima of a quantity (like area or volume) by using derivatives on a function $f(x)$ and checking constraints.",
+      "key_formula": "$$f'(x)=0$$",
+      "concepts": [
+        {
+          "title": "Translating word problems",
+          "explanation": "Assign variables (e.g., $x$, $y$) to the unknowns. Write the objective to optimize (for example area $A$) and the constraints, then use constraints to express the objective as a single-variable function.",
+          "formula": "$$A(x)=10x-x^2$$",
+          "example": "Example: With perimeter 20 let width be $x$ and length $y$. Then $2x+2y=20$ so $y=10-x$ and $A(x)=x(10-x)=10x-x^2$. Differentiate: $A'(x)=10-2x$, set $A'=0$ to get $x=5$, so the rectangle is $5$ by $5$ with area $25$."
+        },
+        {
+          "title": "Objective function and constraints",
+          "explanation": "The objective is the quantity to maximize or minimize (e.g., area $A$ or volume $V$). Constraints are equations from the problem (fixed perimeter, fixed volume); solve them to eliminate extra variables so the objective depends on one variable.",
+          "formula": "$$V=x^2 h$$",
+          "example": "Example: For a box with square base side $x$ and height $h$ the volume is $V=x^2 h$. If $V$ is fixed then $h=V/x^2$ and the open-top surface area is $S=x^2+4xh$, so substitute to get $S(x)=x^2+4V/x$ which is a single-variable function to optimize."
+        },
+        {
+          "title": "Finding critical points using derivatives",
+          "explanation": "Differentiate the single-variable objective $f(x)$ to obtain $f'(x)$. Critical points occur where $f'(x)=0$ or where $f'(x)$ is undefined; these are candidates for maxima or minima.",
+          "formula": "$$f'(x)=0$$",
+          "example": "Example: Maximize $f(x)=-x^2+4x+1$. Compute $f'(x)=-2x+4$, set $f'=0$ to get $x=2$. Since $f''(x)=-2<0$, $x=2$ gives a maximum $f(2)=5$."
+        },
+        {
+          "title": "Second derivative test and checking endpoints",
+          "explanation": "Use the second derivative $f''(x)$ to classify critical points: if $f''(c)>0$ it's a local minimum, if $f''(c)<0$ it's a local maximum. For problems on a closed interval or with constraints, evaluate the objective at critical points and at endpoints to find the absolute extrema.",
+          "formula": "$$f''(c)>0, f''(c)<0$$",
+          "example": "Example: On $[0,5]$ for $f(x)=-x^2+4x+1$ the critical point is $x=2$ with $f''(2)=-2<0$ so it's a local max; compare $f(0)=1$, $f(2)=5$, $f(5)=-14$ so the absolute maximum on $[0,5]$ is $5$ at $x=2$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Find the maximum area of a rectangle with perimeter $20$.",
+          "answer": "Maximum area $25$, achieved by a $5$ by $5$ square.",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Define variables",
+              "content": "Let width be $x$ and length be $y$. The perimeter constraint is $2x+2y=20$.",
+              "formula": "$$2x+2y=20$$"
+            },
+            {
+              "step": 2,
+              "title": "Express the objective",
+              "content": "Area is $A=xy$. Solve the constraint for $y$: $y=10-x$, so $A(x)=x(10-x)=10x-x^2$.",
+              "formula": "$$A(x)=10x-x^2$$"
+            },
+            {
+              "step": 3,
+              "title": "Differentiate",
+              "content": "Compute the derivative $A'(x)=10-2x$ and set $A'(x)=0$ to find $x=5$.",
+              "formula": "$$A'(x)=10-2x$$"
+            },
+            {
+              "step": 4,
+              "title": "Classify and conclude",
+              "content": "Second derivative $A''(x)=-2<0$ so the critical point is a maximum. Thus $x=5$, $y=5$, max area $A=25$.",
+              "formula": "$$A''(x)=-2$$"
+            }
+          ]
+        },
+        {
+          "question": "A farmer has $100$ m of fencing and uses the barn as one side of a rectangular pen (no fence along the barn). What dimensions maximize the enclosed area?",
+          "answer": "Depth $25$ m (perpendicular to barn) and length $50$ m (along barn), giving area $1250$.",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Define variables",
+              "content": "Let $x$ be the depth (perpendicular to the barn) and $y$ the length along the barn. Fencing covers two depths and one length: $2x+y=100$.",
+              "formula": "$$2x+y=100$$"
+            },
+            {
+              "step": 2,
+              "title": "Form the objective",
+              "content": "Area is $A=xy$. Substitute $y=100-2x$ to get $A(x)=100x-2x^2$.",
+              "formula": "$$A(x)=100x-2x^2$$"
+            },
+            {
+              "step": 3,
+              "title": "Differentiate and solve",
+              "content": "Compute $A'(x)=100-4x$, set $A'(x)=0$ to get $x=25$.",
+              "formula": "$$A'(x)=100-4x$$"
+            },
+            {
+              "step": 4,
+              "title": "Classify and conclude",
+              "content": "Second derivative $A''(x)=-4<0$ so a maximum occurs at $x=25$. Then $y=100-2(25)=50$ and $A=1250$.",
+              "formula": "$$A''(x)=-4$$"
+            }
+          ]
+        },
+        {
+          "question": "An open-top box with a square base must have volume $32000$ cm$^3$. Find the base side length and height that minimize the amount of material (surface area).",
+          "answer": "Base side $40$ cm and height $20$ cm; minimal surface area $4800$ cm$^2$.",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Define variables and constraint",
+              "content": "Let the square base side be $x$ cm and height be $h$ cm. Volume constraint: $x^2 h=32000$.",
+              "formula": "$$x^2 h=32000$$"
+            },
+            {
+              "step": 2,
+              "title": "Write surface area and substitute",
+              "content": "Surface area (open top) is $S=x^2+4xh$. Use $h=32000/x^2$ to get $S(x)=x^2+128000/x$.",
+              "formula": "$$S(x)=x^2+128000/x$$"
+            },
+            {
+              "step": 3,
+              "title": "Differentiate and find critical point",
+              "content": "Compute $S'(x)=2x-128000/x^2$ and set $S'(x)=0$. Solve $2x=128000/x^2$ so $x^3=64000$ and $x=40$ cm.",
+              "formula": "$$S'(x)=2x-128000/x^2$$"
+            },
+            {
+              "step": 4,
+              "title": "Second derivative test and compute height",
+              "content": "Second derivative $S''(x)=2+256000/x^3>0$ at $x=40$, so a minimum. Height $h=32000/x^2=20$ cm and minimal area $S=40^2+128000/40=1600+3200=4800$ cm$^2$.",
+              "formula": "$$S''(x)=2+256000/x^3$$"
+            },
+            {
+              "step": 5,
+              "title": "Conclusion",
+              "content": "The box with base $40$ cm by $40$ cm and height $20$ cm minimizes material; minimal surface area is $4800$ cm$^2$.",
+              "formula": ""
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T15:41:22.089418"
+    },
+    {
+      "id": "4.9",
+      "title": "Antiderivatives",
+      "calc_level": 1,
+      "order": 25,
+      "priority": "HIGH",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "5.1",
+      "title": "Areas and Distances",
+      "calc_level": 1,
+      "order": 26,
+      "priority": "HIGH",
+      "description": "Introduce area under a curve as the limit of rectangle sums and use integrals to compute areas and distances.",
+      "key_formula": "$$\\int_a^b f(x)\\,dx = \\lim_{n\\to\\infty} \\sum_{i=1}^n f(x_i^*)\\,\\Delta x$$",
+      "concepts": [
+        {
+          "title": "Area under a curve",
+          "explanation": "The area between a curve $y=f(x)$ and the $x$-axis from $a$ to $b$ is found by slicing the region into many thin rectangles and adding their areas; as the slices get thinner the sum approaches the definite integral $\\int_a^b f(x)\\,dx$. This gives the net (signed) area: parts above the axis contribute positive area and parts below contribute negative area.",
+          "formula": "$$\\int_a^b f(x)\\,dx$$",
+          "example": "For $y=x$ on $[0,2]$ the region is a triangle, so area $=\\tfrac{1}{2}\\cdot\\text{base}\\cdot\\text{height}=\\tfrac{1}{2}\\cdot2\\cdot2=2$."
+        },
+        {
+          "title": "Riemann sums and approximation",
+          "explanation": "To approximate area divide $[a,b]$ into $n$ subintervals of width $\\Delta x=(b-a)/n$, pick sample points $x_i^*$, and sum the rectangle areas $\\sum_{i=1}^n f(x_i^*)\\Delta x$. As $n\\to\\infty$ this Riemann sum becomes the definite integral and gives the exact area.",
+          "formula": "$$\\int_a^b f(x)\\,dx = \\lim_{n\\to\\infty} \\sum_{i=1}^n f(x_i^*)\\,\\Delta x$$",
+          "example": "Approximate $\\int_0^2 x^2\\,dx$ with $n=4$ right-endpoint rectangles: $\\Delta x=0.5$, sample points $0.5,1,1.5,2$, sum $=0.5(0.25+1+2.25+4)=0.5\\cdot7.5=3.75$ (an overestimate because $x^2$ is increasing)."
+        },
+        {
+          "title": "Signed area and motion (displacement vs distance)",
+          "explanation": "The definite integral measures signed area: when a function is below the axis the integral is negative. For motion, displacement over $[a,b]$ is $\\int_a^b v(t)\\,dt$ while total distance traveled is $\\int_a^b |v(t)|\\,dt$ (break the interval where $v$ changes sign).",
+          "formula": "$$\\text{displacement}=\\int_a^b v(t)\\,dt,\\qquad \\text{distance}=\\int_a^b |v(t)|\\,dt$$",
+          "example": "If $v(t)=t-2$ on $[0,3]$ then displacement $=\\int_0^3 (t-2)\\,dt=[\\tfrac{t^2}{2}-2t]_0^3=\\tfrac{9}{2}-6=-\\tfrac{3}{2}$. Distance $=\\int_0^3 |t-2|\\,dt=\\int_0^2 (2-t)\\,dt+\\int_2^3 (t-2)\\,dt=2+\\tfrac{1}{2}=\\tfrac{5}{2}$."
+        },
+        {
+          "title": "Fundamental Theorem of Calculus (FTC)",
+          "explanation": "If $F$ is any antiderivative of $f$ (so $F'(x)=f(x)$), then the definite integral from $a$ to $b$ equals $F(b)-F(a)$, turning area problems into evaluating antiderivatives. This is the main tool for computing exact areas and displacements.",
+          "formula": "$$\\int_a^b f(x)\\,dx = F(b)-F(a)\\quad\\text{where }F'=f$$",
+          "example": "For $f(x)=x^2$ an antiderivative is $F(x)=\\tfrac{x^3}{3}$, so $\\int_0^2 x^2\\,dx=F(2)-F(0)=\\tfrac{8}{3}$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Find the area under $y=2x$ from $x=0$ to $x=3$.",
+          "answer": "9",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Set up the integral",
+              "content": "Area is the definite integral $\\int_0^3 2x\\,dx$.",
+              "formula": "$$\\int_0^3 2x\\,dx$$"
+            },
+            {
+              "step": 2,
+              "title": "Find an antiderivative",
+              "content": "An antiderivative of $2x$ is $x^2$ because $\\dfrac{d}{dx}(x^2)=2x$.",
+              "formula": "$$F(x)=x^2$$"
+            },
+            {
+              "step": 3,
+              "title": "Evaluate the antiderivative at the bounds",
+              "content": "Compute $F(3)-F(0)=3^2-0=9$.",
+              "formula": "$$F(3)-F(0)=3^2-0=9$$"
+            },
+            {
+              "step": 4,
+              "title": "State the result",
+              "content": "Therefore the area is $9$ square units.",
+              "formula": "$$9$$"
+            }
+          ]
+        },
+        {
+          "question": "A particle has velocity $v(t)=t-2$ (m/s) for $0\\le t\\le3$. Find the displacement and the total distance traveled on $[0,3]$.",
+          "answer": "displacement $=-\\tfrac{3}{2}$ m, distance $=\\tfrac{5}{2}$ m",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Write displacement as an integral",
+              "content": "Displacement $=\\int_0^3 (t-2)\\,dt$; this is a signed area.",
+              "formula": "$$\\int_0^3 (t-2)\\,dt$$"
+            },
+            {
+              "step": 2,
+              "title": "Find an antiderivative",
+              "content": "An antiderivative is $F(t)=\\tfrac{t^2}{2}-2t$ since $F'(t)=t-2$.",
+              "formula": "$$F(t)=\\tfrac{t^2}{2}-2t$$"
+            },
+            {
+              "step": 3,
+              "title": "Compute displacement",
+              "content": "Evaluate $F(3)-F(0)=\\bigl(\\tfrac{9}{2}-6\\bigr)-0=-\\tfrac{3}{2}$, so the particle is $\\tfrac{3}{2}$ m left of start.",
+              "formula": "$$\\int_0^3 (t-2)\\,dt= -\\tfrac{3}{2}$$"
+            },
+            {
+              "step": 4,
+              "title": "Find where velocity changes sign",
+              "content": "Solve $t-2=0$ to get $t=2$, so split the interval at $t=2$ for distance (absolute value).",
+              "formula": "$$t-2=0\\implies t=2$$"
+            },
+            {
+              "step": 5,
+              "title": "Compute total distance",
+              "content": "Distance $=\\int_0^2 (2-t)\\,dt + \\int_2^3 (t-2)\\,dt = 2 + \\tfrac{1}{2}=\\tfrac{5}{2}$.",
+              "formula": "$$\\int_0^3 |t-2|\\,dt=2+\\tfrac{1}{2}=\\tfrac{5}{2}$$"
+            }
+          ]
+        },
+        {
+          "question": "An object moves with velocity $v(t)=t^2-4t$ m/s on $0\\le t\\le5$. Find the displacement and the total distance traveled over this time.",
+          "answer": "displacement $=-\\tfrac{25}{3}$ m, total distance $=13$ m",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Set up displacement integral",
+              "content": "Displacement $=\\int_0^5 (t^2-4t)\\,dt$.",
+              "formula": "$$\\int_0^5 (t^2-4t)\\,dt$$"
+            },
+            {
+              "step": 2,
+              "title": "Find an antiderivative",
+              "content": "An antiderivative is $F(t)=\\tfrac{t^3}{3}-2t^2$, because $F'(t)=t^2-4t$.",
+              "formula": "$$F(t)=\\tfrac{t^3}{3}-2t^2$$"
+            },
+            {
+              "step": 3,
+              "title": "Evaluate displacement",
+              "content": "Compute $F(5)-F(0)=\\bigl(\\tfrac{125}{3}-50\\bigr)-0=\\tfrac{125-150}{3}=-\\tfrac{25}{3}$ m.",
+              "formula": "$$\\int_0^5 (t^2-4t)\\,dt = -\\tfrac{25}{3}$$"
+            },
+            {
+              "step": 4,
+              "title": "Locate sign changes of velocity",
+              "content": "Solve $t^2-4t=0$ gives $t(t-4)=0$, so zeros at $t=0$ and $t=4$. Velocity is negative on $(0,4)$ and positive on $(4,5)$.",
+              "formula": "$$t(t-4)=0\\implies t=0,4$$"
+            },
+            {
+              "step": 5,
+              "title": "Write distance as sum of absolute integrals",
+              "content": "Distance $= -\\int_0^4 (t^2-4t)\\,dt + \\int_4^5 (t^2-4t)\\,dt$ because the first piece is negative.",
+              "formula": "$$\\text{distance}= -\\int_0^4 (t^2-4t)\\,dt + \\int_4^5 (t^2-4t)\\,dt$$"
+            },
+            {
+              "step": 6,
+              "title": "Compute each piece and sum",
+              "content": "Compute $-\\bigl[\\tfrac{t^3}{3}-2t^2\\bigr]_0^4 = -\\bigl(\\tfrac{64}{3}-32\\bigr)=\\tfrac{32}{3}$ and $\\bigl[\\tfrac{t^3}{3}-2t^2\\bigr]_4^5=\\tfrac{7}{3}$. Sum $\\tfrac{32}{3}+\\tfrac{7}{3}=\\tfrac{39}{3}=13$ m.",
+              "formula": "$$\\text{distance}=\\tfrac{32}{3}+\\tfrac{7}{3}=13$$"
+            },
+            {
+              "step": 7,
+              "title": "State final answers",
+              "content": "Displacement is $-\\tfrac{25}{3}$ m (net left), total distance traveled is $13$ m.",
+              "formula": "$$\\text{displacement}=-\\tfrac{25}{3},\\ \\text{distance}=13$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T14:54:14.921529"
+    },
+    {
+      "id": "5.2",
+      "title": "The Definite Integral",
+      "calc_level": 1,
+      "order": 27,
+      "priority": "CRITICAL",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "5.3",
+      "title": "The Fundamental Theorem of Calculus",
+      "calc_level": 1,
+      "order": 28,
+      "priority": "CRITICAL",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "5.4",
+      "title": "Indefinite Integrals and the Net Change Theorem",
+      "calc_level": 1,
+      "order": 29,
+      "priority": "HIGH",
+      "description": "Indefinite integrals produce antiderivatives $F(x)+C$, and the Net Change Theorem uses definite integrals to turn a rate $Q'(t)$ into the net change $Q(b)-Q(a)$.",
+      "key_formula": "$$\\int f(x)\\,dx = F(x)+C \\quad\\text{and}\\quad \\int_a^b F'(x)\\,dx = F(b)-F(a)$$",
+      "concepts": [
+        {
+          "title": "Antiderivative / Indefinite Integral",
+          "explanation": "An antiderivative of $f(x)$ is a function $F(x)$ with $F'(x)=f(x)$. The indefinite integral $\\int f(x)\\,dx$ denotes the family of all antiderivatives $F(x)+C$, where $C$ is an arbitrary constant. Finding an indefinite integral is 'undoing' differentiation.",
+          "formula": "$$\\int x^n\\,dx = \\frac{x^{n+1}}{n+1}+C \\quad(n\\neq -1)$$",
+          "example": "Find $\\int 3x^2\\,dx$. Use the power rule $\\int x^n\\,dx=\\frac{x^{n+1}}{n+1}+C$ with $n=2$: $\\int 3x^2\\,dx = 3\\cdot \\frac{x^3}{3}+C = x^3 + C$."
+        },
+        {
+          "title": "Basic Integration Rules (linearity & constants)",
+          "explanation": "Integration is linear: sums split and constants pull out. That means $\\int (a f(x)+b g(x))\\,dx = a\\int f(x)\\,dx + b\\int g(x)\\,dx$. Use this plus the power rule and constant-multiple rule to handle polynomials and simple sums.",
+          "formula": "$$\\int (a f(x)+b g(x))\\,dx = a\\int f(x)\\,dx + b\\int g(x)\\,dx$$",
+          "example": "Compute $\\int (2x+3)\\,dx$. Split: $\\int 2x\\,dx + \\int 3\\,dx = 2\\int x\\,dx + 3\\int 1\\,dx = 2\\cdot \\frac{x^2}{2}+3x + C = x^2+3x+C$."
+        },
+        {
+          "title": "Check antiderivatives by differentiating",
+          "explanation": "To verify an answer $F(x)$ is an antiderivative of $f(x)$ check $F'(x)=f(x)$. Many common derivative/antiderivative pairs are memorized (e.g. $\\frac{d}{dx}\\sin x=\\cos x$), so $\\int \\cos x\\,dx=\\sin x + C$. Differentiation is the test for correctness.",
+          "formula": "$$F'(x)=f(x) \\Longleftrightarrow \\int f(x)\\,dx = F(x)+C$$",
+          "example": "Find $\\int \\cos x\\,dx$. Since $\\frac{d}{dx}\\sin x=\\cos x$, one antiderivative is $\\sin x$, so $\\int \\cos x\\,dx=\\sin x + C$. Check: $\\frac{d}{dx}(\\sin x)=\\cos x$."
+        },
+        {
+          "title": "Net Change Theorem (rate \u2192 net change)",
+          "explanation": "If $Q(t)$ is a quantity and $Q'(t)$ is its rate, then the definite integral of the rate from $a$ to $b$ equals the net change: $Q(b)-Q(a)=\\int_a^b Q'(t)\\,dt$. This converts a rate function (like velocity or growth rate) into how much the quantity changed over the interval.",
+          "formula": "$$Q(b)-Q(a)=\\int_a^b Q'(t)\\,dt$$",
+          "example": "If acceleration is $a(t)=2t$, the change in velocity from $t=0$ to $t=2$ is $\\int_0^2 2t\\,dt=[t^2]_0^2=4$, so the velocity increases by $4$ units over that interval."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Compute the indefinite integral $\\int 4x^3\\,dx$.",
+          "answer": "$x^4 + C$",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Recall the power rule",
+              "content": "Use the power rule $\\int x^n\\,dx = \\frac{x^{n+1}}{n+1}+C$.",
+              "formula": "$$\\int x^n\\,dx = \\frac{x^{n+1}}{n+1}+C$$"
+            },
+            {
+              "step": 2,
+              "title": "Pull out the constant",
+              "content": "Rewrite $\\int 4x^3\\,dx$ as $4\\int x^3\\,dx$ so the constant 4 is outside the integral.",
+              "formula": "$$4\\int x^3\\,dx$$"
+            },
+            {
+              "step": 3,
+              "title": "Apply the power rule",
+              "content": "With $n=3$, $\\int x^3\\,dx=\\frac{x^4}{4}$, so $4\\cdot \\frac{x^4}{4}=x^4$.",
+              "formula": "$$4\\cdot \\frac{x^4}{4}=x^4$$"
+            },
+            {
+              "step": 4,
+              "title": "Add the constant of integration",
+              "content": "Include the arbitrary constant: the result is $x^4 + C$.",
+              "formula": "$$x^4 + C$$"
+            }
+          ]
+        },
+        {
+          "question": "Find $\\int (6x^2 - 5x + 4)\\,dx$.",
+          "answer": "$2x^3 - \\frac{5}{2}x^2 + 4x + C$",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Use linearity",
+              "content": "Split the integral: $\\int 6x^2\\,dx - \\int 5x\\,dx + \\int 4\\,dx$.",
+              "formula": "$$\\int (6x^2-5x+4)\\,dx = \\int 6x^2\\,dx - \\int 5x\\,dx + \\int 4\\,dx$$"
+            },
+            {
+              "step": 2,
+              "title": "Pull out constants and apply power rule",
+              "content": "Compute each: $6\\int x^2\\,dx=6\\cdot \\frac{x^3}{3}=2x^3$, $-5\\int x\\,dx=-5\\cdot \\frac{x^2}{2}=-\\frac{5}{2}x^2$, $\\int 4\\,dx=4x$.",
+              "formula": "$$6\\cdot \\frac{x^3}{3}=2x^3\\quad -5\\cdot \\frac{x^2}{2}=-\\frac{5}{2}x^2\\quad 4x$$"
+            },
+            {
+              "step": 3,
+              "title": "Combine terms",
+              "content": "Add the parts and include $+C$: $2x^3 - \\frac{5}{2}x^2 + 4x + C$.",
+              "formula": "$$2x^3 - \\tfrac{5}{2}x^2 + 4x + C$$"
+            },
+            {
+              "step": 4,
+              "title": "Quick check by differentiating",
+              "content": "Differentiate the result: $\\frac{d}{dx}(2x^3 - \\frac{5}{2}x^2 + 4x + C)=6x^2-5x+4$, which matches the integrand.",
+              "formula": "$$\\frac{d}{dx}\\big(2x^3 - \\tfrac{5}{2}x^2 + 4x + C\\big)=6x^2-5x+4$$"
+            }
+          ]
+        },
+        {
+          "question": "A car has acceleration $a(t)=2t$ m/s$^2$. If $v(0)=3$ m/s, find the velocity $v(4)$ using the Net Change Theorem.",
+          "answer": "$19\\ \\text{m/s}$",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Recognize the rate and quantity",
+              "content": "Acceleration is the derivative of velocity: $a(t)=v'(t)$, so the Net Change Theorem applies to get $v(4)-v(0)$ from the integral of $a(t)$.",
+              "formula": "$$v'(t)=a(t)$$"
+            },
+            {
+              "step": 2,
+              "title": "Write the Net Change equation",
+              "content": "By the theorem, $v(4)-v(0)=\\int_0^4 a(t)\\,dt$.",
+              "formula": "$$v(4)-v(0)=\\int_0^4 a(t)\\,dt$$"
+            },
+            {
+              "step": 3,
+              "title": "Compute the definite integral",
+              "content": "Evaluate $\\int_0^4 2t\\,dt$. Use the power rule: $\\int 2t\\,dt=2\\cdot \\frac{t^2}{2}=t^2$, so $[t^2]_0^4=4^2-0=16$.",
+              "formula": "$$\\int_0^4 2t\\,dt = [t^2]_0^4 = 16$$"
+            },
+            {
+              "step": 4,
+              "title": "Add the initial value",
+              "content": "Now $v(4)=v(0)+16=3+16=19\\ \\text{m/s}$, so the velocity at $t=4$ is $19$ m/s.",
+              "formula": "$$v(4)=3+16=19\\ \\text{m/s}$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T15:45:08.687866"
+    },
+    {
+      "id": "5.5",
+      "title": "The Substitution Rule",
+      "calc_level": 1,
+      "order": 30,
+      "priority": "CRITICAL",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "6.1",
+      "title": "Areas Between Curves",
+      "calc_level": 2,
+      "order": 31,
+      "priority": "REVIEW",
+      "chapter_title": "Applications of Integration",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "6.2",
+      "title": "Volumes by Disks/Washers",
+      "calc_level": 2,
+      "order": 32,
+      "priority": "REVIEW",
+      "chapter_title": "Applications of Integration",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "6.3",
+      "title": "Volumes by Cylindrical Shells",
+      "calc_level": 2,
+      "order": 33,
+      "priority": "REVIEW",
+      "chapter_title": "Applications of Integration",
+      "description": "Find volumes of solids of revolution by integrating the volumes of thin cylindrical shells formed by revolving strips about an axis.",
+      "key_formula": "$$V = 2\\pi \\int_a^b (\\text{radius})(\\text{height})\\,dx$$",
+      "concepts": [
+        {
+          "title": "Cylindrical shell idea",
+          "explanation": "When a thin strip is revolved around an axis it forms a hollow cylinder (a shell); for a strip at radius $r$ and height $h$ with thickness $dx$ the small volume is $dV\\approx 2\\pi r h\\,dx$. Adding all shells by integration from $a$ to $b$ gives the total volume.",
+          "formula": "$$dV = 2\\pi r h\\,dx$$",
+          "example": "Revolve the region under $y=x^2$ for $0\\le x\\le 1$ about the $y$-axis. A vertical strip at $x$ has radius $r=x$, height $h=x^2$, so $dV=2\\pi x\\cdot x^2\\,dx=2\\pi x^3\\,dx$. Integrate: $V=2\\pi\\int_0^1 x^3\\,dx=2\\pi\\cdot\\tfrac{1}{4}=\\tfrac{\\pi}{2}$."
+        },
+        {
+          "title": "Radius and height identification",
+          "explanation": "Radius is the distance from the strip to the axis (for vertical strips about a vertical axis $r=|x-x_{axis}|$) and height is the difference between top and bottom curves $h=y_{top}(x)-y_{bottom}(x)$. Correct identification of $r$ and $h$ is the key setup step for the shell integral.",
+          "formula": "$$r=|x-x_{axis}|,\\quad h=y_{top}(x)-y_{bottom}(x)$$",
+          "example": "Region bounded by $y=2-x$ and $y=0$ for $0\\le x\\le2$ rotated about the $y$-axis has $r=x$, $h=2-x$, so $V=2\\pi\\int_0^2 x(2-x)\\,dx=2\\pi\\bigl[ x^2-\\tfrac{x^3}{3}\\bigr]_0^2=\\tfrac{8\\pi}{3}$."
+        },
+        {
+          "title": "Choosing the variable of integration",
+          "explanation": "Use $dx$ (vertical strips) when rotating around a vertical axis and use $dy$ (horizontal strips) when rotating around a horizontal axis; if needed invert the function so height/length are functions of the integration variable. The differential ($dx$ or $dy$) must match how you sliced the region.",
+          "formula": "$$V = 2\\pi \\int_{c}^{d} r(y)\\,h(y)\\,dy$$",
+          "example": "For $y=\\sqrt{x}$ (so $x=y^2$) revolving the region $0\\le x\\le4$ about the $x$-axis use horizontal slices: $r=y$, $h=x=y^2$, hence $V=2\\pi\\int_0^2 y\\cdot y^2\\,dy=2\\pi\\int_0^2 y^3\\,dy=8\\pi$."
+        },
+        {
+          "title": "When shells are easier than washers",
+          "explanation": "Shells avoid computing inner and outer radii required by washers, so they are often simpler when the region is given in terms of the variable parallel to the axis of rotation (e.g. $y=f(x)$ rotated about a vertical line). Choose the method that keeps the setup and algebra simpler.",
+          "formula": "$$V = \\pi \\int_a^b \\bigl( R(x)^2 - r(x)^2 \\bigr)\\,dx$$",
+          "example": "Region between $y=x$ and $y=x^2$ for $0\\le x\\le1$ rotated about the $y$-axis: shells give $r=x$, $h=x-x^2$, so $V=2\\pi\\int_0^1 x(x-x^2)\\,dx=2\\pi\\int_0^1 (x^2-x^3)\\,dx=\\tfrac{\\pi}{6}$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Find the volume generated by revolving the region under $y=x^2$ from $x=0$ to $x=1$ about the $y$-axis.",
+          "answer": "$V=\\tfrac{\\pi}{2}$",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Choose a slice",
+              "content": "Use a vertical strip at position $x$ with width $dx$; revolving it around the $y$-axis makes a cylindrical shell.",
+              "formula": ""
+            },
+            {
+              "step": 2,
+              "title": "Identify radius and height",
+              "content": "The shell's radius is $r=x$ (distance to the $y$-axis) and its height is $h=x^2$ (function value).",
+              "formula": "$$r=x,\\quad h=x^2$$"
+            },
+            {
+              "step": 3,
+              "title": "Write the differential volume",
+              "content": "The thin shell volume is $dV=2\\pi r h\\,dx$, so here $dV=2\\pi x\\cdot x^2\\,dx=2\\pi x^3\\,dx$.",
+              "formula": "$$dV=2\\pi x^3\\,dx$$"
+            },
+            {
+              "step": 4,
+              "title": "Integrate",
+              "content": "Integrate from $0$ to $1$: $V=2\\pi\\int_0^1 x^3\\,dx=2\\pi\\cdot\\tfrac{1}{4}=\\tfrac{\\pi}{2}$.",
+              "formula": "$$V=2\\pi\\int_0^1 x^3\\,dx=\\tfrac{\\pi}{2}$$"
+            }
+          ]
+        },
+        {
+          "question": "The region bounded by $y=\\sqrt{x}$, $y=0$, and $x=4$ is revolved about the $x$-axis. Find the volume using cylindrical shells.",
+          "answer": "$V=8\\pi$",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Decide slice orientation",
+              "content": "Rotation is about the $x$-axis, so use horizontal slices (thickness $dy$) which produce shells with radius measured in $y$.",
+              "formula": ""
+            },
+            {
+              "step": 2,
+              "title": "Express $x$ in terms of $y$",
+              "content": "Since $y=\\sqrt{x}$ we have $x=y^2$. The region runs from $y=0$ to $y=2$ because $x=4$ gives $y=2$.",
+              "formula": "$$x=y^2,\\quad 0\\le y\\le2$$"
+            },
+            {
+              "step": 3,
+              "title": "Identify radius and height",
+              "content": "For a horizontal slice at $y$ the shell radius is $r=y$ and the shell height (length along $x$) is $h=x=y^2$.",
+              "formula": "$$r=y,\\quad h=y^2$$"
+            },
+            {
+              "step": 4,
+              "title": "Set up $dV$ and integrate",
+              "content": "The differential volume is $dV=2\\pi r h\\,dy=2\\pi y\\cdot y^2\\,dy=2\\pi y^3\\,dy$. Integrate $\\int_0^2 2\\pi y^3\\,dy=2\\pi\\cdot4=8\\pi$.",
+              "formula": "$$V=2\\pi\\int_0^2 y^3\\,dy=8\\pi$$"
+            }
+          ]
+        },
+        {
+          "question": "The region bounded by $y=x$ and $y=x^2$ for $0\\le x\\le1$ is revolved about the line $x=-1$. Find the volume using cylindrical shells.",
+          "answer": "$V=\\tfrac{\\pi}{2}$",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Sketch and determine bounds",
+              "content": "For $0\\le x\\le1$ the curves satisfy $y=x$ (top) and $y=x^2$ (bottom); these give the height of shells and the integration limits $0$ to $1$.",
+              "formula": ""
+            },
+            {
+              "step": 2,
+              "title": "Find radius",
+              "content": "The axis is $x=-1$, so the distance from a vertical strip at $x$ to the axis is $r=x-(-1)=x+1$.",
+              "formula": "$$r=x+1$$"
+            },
+            {
+              "step": 3,
+              "title": "Find height",
+              "content": "The shell height is the vertical gap $h=y_{top}-y_{bottom}=x-x^2$.",
+              "formula": "$$h=x-x^2$$"
+            },
+            {
+              "step": 4,
+              "title": "Write $dV$ and simplify",
+              "content": "The differential volume is $dV=2\\pi r h\\,dx=2\\pi (x+1)(x-x^2)\\,dx$, and expanding gives $2\\pi(x-x^3)\\,dx$.",
+              "formula": "$$dV=2\\pi (x+1)(x-x^2)\\,dx=2\\pi(x-x^3)\\,dx$$"
+            },
+            {
+              "step": 5,
+              "title": "Integrate and evaluate",
+              "content": "Integrate from $0$ to $1$: $V=2\\pi\\int_0^1 (x-x^3)\\,dx=2\\pi\\bigl[\\tfrac{x^2}{2}-\\tfrac{x^4}{4}\\bigr]_0^1=2\\pi\\bigl(\\tfrac{1}{2}-\\tfrac{1}{4}\\bigr)=\\tfrac{\\pi}{2}$.",
+              "formula": "$$V=2\\pi\\int_0^1 (x-x^3)\\,dx=\\tfrac{\\pi}{2}$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T15:03:31.826816"
+    },
+    {
+      "id": "6.4",
+      "title": "Work",
+      "calc_level": 2,
+      "order": 34,
+      "priority": "REVIEW",
+      "chapter_title": "Applications of Integration",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "6.5",
+      "title": "Average Value of a Function",
+      "calc_level": 2,
+      "order": 35,
+      "priority": "REVIEW",
+      "chapter_title": "Applications of Integration",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "7.1",
+      "title": "Integration by Parts",
+      "calc_level": 2,
+      "order": 36,
+      "priority": "HIGH",
+      "chapter_title": "Techniques of Integration",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "7.2",
+      "title": "Trigonometric Integrals",
+      "calc_level": 2,
+      "order": 37,
+      "priority": "HIGH",
+      "chapter_title": "Techniques of Integration",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "7.3",
+      "title": "Trigonometric Substitution",
+      "calc_level": 2,
+      "order": 38,
+      "priority": "HIGH",
+      "chapter_title": "Techniques of Integration",
+      "description": "A method for integrals containing $\\sqrt{a^2-x^2}$, $\\sqrt{a^2+x^2}$, or $\\sqrt{x^2-a^2}$ that substitutes $x$ with trigonometric functions to turn radicals into simple trig expressions.",
+      "key_formula": "$$\\begin{aligned}\\text{If }&\\sqrt{a^2-x^2}:&x&=a\\sin\\theta,\\quad dx=a\\cos\\theta\\,d\\theta,\\quad \\sqrt{a^2-x^2}=a\\cos\\theta\\\\\\text{If }&\\sqrt{a^2+x^2}:&x&=a\\tan\\theta,\\quad dx=a\\sec^2\\theta\\,d\\theta,\\quad \\sqrt{a^2+x^2}=a\\sec\\theta\\\\\\text{If }&\\sqrt{x^2-a^2}:&x&=a\\sec\\theta,\\quad dx=a\\sec\\theta\\tan\\theta\\,d\\theta,\\quad \\sqrt{x^2-a^2}=a\\tan\\theta\\end{aligned}$$",
+      "concepts": [
+        {
+          "title": "Recognizing substitution forms",
+          "explanation": "Trig substitution is used when the integrand has a square root of a quadratic: $\\sqrt{a^2-x^2}$, $\\sqrt{a^2+x^2}$, or $\\sqrt{x^2-a^2}$. Each form matches a substitution ($x=a\\sin\\theta$, $x=a\\tan\\theta$, $x=a\\sec\\theta$) that uses a Pythagorean identity to simplify the radical.",
+          "formula": "$$x=a\\sin\\theta$$",
+          "example": "Example: Evaluate $\\int \\frac{dx}{\\sqrt{a^2-x^2}}$. Let $x=a\\sin\\theta$, then $dx=a\\cos\\theta\\,d\\theta$ and $\\sqrt{a^2-x^2}=a\\cos\\theta$. The integral becomes $\\int \\frac{a\\cos\\theta\\,d\\theta}{a\\cos\\theta}=\\int d\\theta=\\theta+C$. Back-substitute $\\theta=\\arcsin\\left(\\frac{x}{a}\\right)$ to get $\\arcsin\\left(\\frac{x}{a}\\right)+C$."
+        },
+        {
+          "title": "Computing $dx$ and choosing domains",
+          "explanation": "After choosing a substitution compute $dx$ by differentiating, e.g. for $x=a\\sin\\theta$ we get $dx=a\\cos\\theta\\,d\\theta$. Also choose a domain for $\\theta$ where the trig function is invertible so the back-substitution $\\theta=\\arcsin(x/a)$ (or $\\arctan,\\ \\arcsec$) is valid.",
+          "formula": "$$dx=a\\cos\\theta\\,d\\theta$$",
+          "example": "Example: $\\int \\frac{dx}{\\sqrt{a^2+x^2}}$. Use $x=a\\tan\\theta$, so $dx=a\\sec^2\\theta\\,d\\theta$ and $\\sqrt{a^2+x^2}=a\\sec\\theta$. The integral becomes $\\int \\frac{a\\sec^2\\theta\\,d\\theta}{a\\sec\\theta}=\\int \\sec\\theta\\,d\\theta=\\ln|\\sec\\theta+\\tan\\theta|+C$. Back-substitute $\\tan\\theta=\\frac{x}{a}$ and $\\sec\\theta=\\frac{\\sqrt{x^2+a^2}}{a}$ to get $\\ln\\left|x+\\sqrt{x^2+a^2}\\right|+C$."
+        },
+        {
+          "title": "Using trig identities to simplify",
+          "explanation": "Pythagorean identities like $1-\\sin^2\\theta=\\cos^2\\theta$ and $1+\\tan^2\\theta=\\sec^2\\theta$ turn radicals into single trig functions, often cancelling factors with $dx$. For powers such as $\\cos^2\\theta$ use power-reduction (e.g. $\\cos^2\\theta=(1+\\cos 2\\theta)/2$) to integrate.",
+          "formula": "$$1+\\tan^2\\theta=\\sec^2\\theta$$",
+          "example": "Example: $\\int \\sqrt{a^2-x^2}\\,dx$. Let $x=a\\sin\\theta$, so $\\sqrt{a^2-x^2}=a\\cos\\theta$ and $dx=a\\cos\\theta\\,d\\theta$. The integrand becomes $a^2\\cos^2\\theta\\,d\\theta=a^2\\frac{1+\\cos2\\theta}{2}\\,d\\theta$. Integrate: $\\frac{a^2}{2}\\left(\\theta+\\frac{\\sin2\\theta}{2}\\right)+C$. Use $\\sin2\\theta=2\\sin\\theta\\cos\\theta$ and substitute back $\\sin\\theta=\\frac{x}{a},\\cos\\theta=\\frac{\\sqrt{a^2-x^2}}{a}$ to obtain $\\frac{x}{2}\\sqrt{a^2-x^2}+\\frac{a^2}{2}\\arcsin\\left(\\frac{x}{a}\\right)+C$."
+        },
+        {
+          "title": "Back-substitution and definite integrals",
+          "explanation": "After integrating in $\\theta$ convert results back to $x$ by inverse trig or a right triangle: e.g. if $x=a\\sin\\theta$ then $\\theta=\\arcsin(x/a)$. For definite integrals you may change the limits to $\\theta$ (using $\\theta=\\arcsin(x/a)$ etc.) to avoid re-substitution.",
+          "formula": "$$\\theta=\\arcsin\\left(\\frac{x}{a}\\right)$$",
+          "example": "Example: Evaluate $\\int_{0}^{a/2}\\frac{dx}{\\sqrt{a^2-x^2}}$. With $x=a\\sin\\theta$ the $x$-limits $0\\to a/2$ become $\\theta:0\\to\\arcsin(1/2)=\\pi/6$. The integral becomes $\\int_{0}^{\\pi/6}d\\theta=\\pi/6$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Evaluate $\\int \\frac{dx}{\\sqrt{9-x^2}}$",
+          "answer": "$\\arcsin\\left(\\dfrac{x}{3}\\right)+C$",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Recognize the form",
+              "content": "The integrand has $\\sqrt{9-x^2}$ so it matches $\\sqrt{a^2-x^2}$ with $a=3$, suggest $x=3\\sin\\theta$.",
+              "formula": "$$x=3\\sin\\theta$$"
+            },
+            {
+              "step": 2,
+              "title": "Compute $dx$ and the radical",
+              "content": "Differentiate: $dx=3\\cos\\theta\\,d\\theta$, and $\\sqrt{9-x^2}=3\\cos\\theta$.",
+              "formula": "$$dx=3\\cos\\theta\\,d\\theta\\quad\\sqrt{9-x^2}=3\\cos\\theta$$"
+            },
+            {
+              "step": 3,
+              "title": "Substitute",
+              "content": "Substitute into the integral: $\\int \\dfrac{dx}{\\sqrt{9-x^2}}=\\int \\dfrac{3\\cos\\theta\\,d\\theta}{3\\cos\\theta}=\\int d\\theta$.",
+              "formula": "$$\\int d\\theta$$"
+            },
+            {
+              "step": 4,
+              "title": "Integrate and back-substitute",
+              "content": "Integrate to get $\\theta+C$, then back-substitute $\\theta=\\arcsin\\left(\\dfrac{x}{3}\\right)$ to obtain $\\arcsin\\left(\\dfrac{x}{3}\\right)+C$.",
+              "formula": "$$\\theta=\\arcsin\\left(\\dfrac{x}{3}\\right)$$"
+            }
+          ]
+        },
+        {
+          "question": "Evaluate $\\int \\dfrac{x^2}{\\sqrt{x^2+4}}\\,dx$",
+          "answer": "$\\dfrac{x\\sqrt{x^2+4}}{2}-2\\ln\\left|x+\\sqrt{x^2+4}\\right|+C$",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Choose substitution",
+              "content": "The radical is $\\sqrt{x^2+4}$, use $x=2\\tan\\theta$ so $\\sqrt{x^2+4}=2\\sec\\theta$.",
+              "formula": "$$x=2\\tan\\theta$$"
+            },
+            {
+              "step": 2,
+              "title": "Compute $dx$ and substitute",
+              "content": "Compute $dx=2\\sec^2\\theta\\,d\\theta$. Substitute: the integrand becomes $\\dfrac{4\\tan^2\\theta}{2\\sec\\theta}\\cdot2\\sec^2\\theta\\,d\\theta=4\\tan^2\\theta\\sec\\theta\\,d\\theta$.",
+              "formula": "$$dx=2\\sec^2\\theta\\,d\\theta\\quad \\Rightarrow \\quad 4\\tan^2\\theta\\sec\\theta\\,d\\theta$$"
+            },
+            {
+              "step": 3,
+              "title": "Use identities",
+              "content": "Write $\\tan^2\\theta=\\sec^2\\theta-1$ so integrand becomes $4(\\sec^3\\theta-\\sec\\theta)$. Integrate termwise.",
+              "formula": "$$4\\int(\\sec^3\\theta-\\sec\\theta)\\,d\\theta$$"
+            },
+            {
+              "step": 4,
+              "title": "Integrate known forms",
+              "content": "Use $\\int\\sec\\theta\\,d\\theta=\\ln|\\sec\\theta+\\tan\\theta|$ and $\\int\\sec^3\\theta\\,d\\theta=\\tfrac12\\sec\\theta\\tan\\theta+\\tfrac12\\ln|\\sec\\theta+\\tan\\theta|$. Combine to get $2\\sec\\theta\\tan\\theta-2\\ln|\\sec\\theta+\\tan\\theta|+C$.",
+              "formula": "$$2\\sec\\theta\\tan\\theta-2\\ln|\\sec\\theta+\\tan\\theta|+C$$"
+            },
+            {
+              "step": 5,
+              "title": "Back-substitute to $x$",
+              "content": "Replace $\\tan\\theta=\\dfrac{x}{2}$ and $\\sec\\theta=\\dfrac{\\sqrt{x^2+4}}{2}$ to obtain $\\dfrac{x\\sqrt{x^2+4}}{2}-2\\ln\\left|x+\\sqrt{x^2+4}\\right|+C$.",
+              "formula": "$$\\dfrac{x\\sqrt{x^2+4}}{2}-2\\ln\\left|x+\\sqrt{x^2+4}\\right|+C$$"
+            }
+          ]
+        },
+        {
+          "question": "Evaluate $\\int \\dfrac{x^3}{\\sqrt{x^2-9}}\\,dx$",
+          "answer": "$9\\sqrt{x^2-9}+\\dfrac{(x^2-9)^{3/2}}{3}+C$",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Recognize and substitute",
+              "content": "The integrand has $\\sqrt{x^2-9}$ so use $x=3\\sec\\theta$, which gives $\\sqrt{x^2-9}=3\\tan\\theta$.",
+              "formula": "$$x=3\\sec\\theta$$"
+            },
+            {
+              "step": 2,
+              "title": "Compute $dx$ and transform",
+              "content": "Differentiate: $dx=3\\sec\\theta\\tan\\theta\\,d\\theta$. Plugging in: numerator $x^3=27\\sec^3\\theta$, so the integrand becomes $\\dfrac{27\\sec^3\\theta\\cdot3\\sec\\theta\\tan\\theta\\,d\\theta}{3\\tan\\theta}=27\\sec^4\\theta\\,d\\theta$.",
+              "formula": "$$27\\sec^4\\theta\\,d\\theta$$"
+            },
+            {
+              "step": 3,
+              "title": "Use $u$-sub for powers",
+              "content": "Write $\\sec^4\\theta=\\sec^2\\theta\\cdot\\sec^2\\theta=(1+\\tan^2\\theta)\\sec^2\\theta$. Let $u=\\tan\\theta$, then $du=\\sec^2\\theta\\,d\\theta$, so $\\int\\sec^4\\theta\\,d\\theta=\\int(1+u^2)\\,du=u+\\tfrac{u^3}{3}+C$.",
+              "formula": "$$\\int\\sec^4\\theta\\,d\\theta=\\tan\\theta+\\tfrac{\\tan^3\\theta}{3}+C$$"
+            },
+            {
+              "step": 4,
+              "title": "Multiply back the constant",
+              "content": "Multiply by $27$ to get $27\\tan\\theta+9\\tan^3\\theta+C$.",
+              "formula": "$$27\\tan\\theta+9\\tan^3\\theta+C$$"
+            },
+            {
+              "step": 5,
+              "title": "Back-substitute to $x$",
+              "content": "Since $\\tan\\theta=\\dfrac{\\sqrt{x^2-9}}{3}$, compute $27\\tan\\theta=9\\sqrt{x^2-9}$ and $9\\tan^3\\theta=\\dfrac{(x^2-9)^{3/2}}{3}$. Thus the antiderivative is $9\\sqrt{x^2-9}+\\dfrac{(x^2-9)^{3/2}}{3}+C$.",
+              "formula": "$$9\\sqrt{x^2-9}+\\dfrac{(x^2-9)^{3/2}}{3}+C$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T15:55:02.558481"
+    },
+    {
+      "id": "7.4",
+      "title": "Partial Fractions",
+      "calc_level": 2,
+      "order": 39,
+      "priority": "HIGH",
+      "chapter_title": "Techniques of Integration",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "7.5",
+      "title": "Strategy for Integration",
+      "calc_level": 2,
+      "order": 40,
+      "priority": "MEDIUM",
+      "chapter_title": "Techniques of Integration",
+      "description": "Compact strategies to choose and apply integration methods (substitution, algebraic rewrite, parts, partial fractions) with step-by-step thinking for a student with only high-school algebra.",
+      "key_formula": "$$\\\\int f(g(x))g'(x)\\\\,dx = \\\\int f(u)\\\\,du$$",
+      "concepts": [
+        {
+          "title": "Recognize inner derivatives (use substitution)",
+          "explanation": "When you see a function composed with another whose derivative appears elsewhere in the integrand, substitution simplifies the integral. Set $u=g(x)$ so $du=g'(x)\\\\,dx$ and rewrite the integral in $u$ to integrate easily.",
+          "formula": "$$\\\\int f(g(x))g'(x)\\\\,dx = \\\\int f(u)\\\\,du$$",
+          "example": "Example: $\\\\int 2x\\\\cos(x^2)\\\\,dx$. Let $u=x^2$, then $du=2x\\\\,dx$. The integral becomes $\\\\int \\\\cos(u)\\\\,du=\\\\sin(u)+C=\\\\sin(x^2)+C$."
+        },
+        {
+          "title": "Algebraic simplification and linearity",
+          "explanation": "Simplify algebraic expressions before integrating: factor, cancel, or divide polynomials and split sums using linearity. Use $\\$\\int (a f(x)+b g(x))\\\\,dx = a\\\\int f(x)\\\\,dx + b\\\\int g(x)\\\\,dx$ to handle sums term-by-term.",
+          "formula": "$$\\\\int (a f(x)+b g(x))\\\\,dx = a\\\\int f(x)\\\\,dx + b\\\\int g(x)\\\\,dx$$",
+          "example": "Example: $\\\\int \\\\frac{x^2+2x}{x}\\\\,dx$. Simplify to $\\\\int (x+2)\\\\,dx$. Integrate to get $\\\\tfrac{1}{2}x^2+2x+C$."
+        },
+        {
+          "title": "Integration by parts",
+          "explanation": "Use integration by parts for a product where differentiating one factor simplifies it (e.g., $\\\\ln x$) and the other is easy to integrate. Pick $u$ to differentiate and $dv$ to integrate, then apply the parts formula.",
+          "formula": "$$\\\\int u\\\\,dv = uv - \\\\int v\\\\,du$$",
+          "example": "Example: $\\\\int x e^{x}\\\\,dx$. Choose $u=x$ ($du=dx$) and $dv=e^{x}\\\\,dx$ ($v=e^{x}$). Then $\\\\int x e^{x}\\\\,dx = x e^{x} - \\\\int e^{x}\\\\,dx = x e^{x}-e^{x}+C = e^{x}(x-1)+C$."
+        },
+        {
+          "title": "Partial fractions (and trig substitution for radicals)",
+          "explanation": "For rational functions, do polynomial division if numerator degree \u2265 denominator degree, then decompose into simple fractions to integrate. For square-root forms like $\\\\sqrt{x^2+a^2}$, trig substitution turns radicals into trig expressions that are easier to integrate.",
+          "formula": "$$\\\\frac{1}{x^2-1}=\\\\tfrac{1}{2}\\\\left(\\\\frac{1}{x-1}-\\\\frac{1}{x+1}\\\\right)$$",
+          "example": "Example: $\\\\int \\\\dfrac{1}{x^2-1}\\\\,dx$. Decompose: $\\\\dfrac{1}{x^2-1}=\\\\tfrac{1}{2}\\\\left(\\\\dfrac{1}{x-1}-\\\\dfrac{1}{x+1}\\\\right)$. Integrate: $\\\\tfrac{1}{2}\\\\ln|x-1|-\\\\tfrac{1}{2}\\\\ln|x+1|+C = \\\\tfrac{1}{2}\\\\ln\\\\left|\\\\dfrac{x-1}{x+1}\\\\right|+C$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "$\\\\int 2x\\\\cos(x^2)\\\\,dx$",
+          "answer": "$\\\\sin(x^2)+C$",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Spot the inner derivative",
+              "content": "See that $2x$ is the derivative of $x^2$, so substitution will convert the integral to a simple form.",
+              "formula": ""
+            },
+            {
+              "step": 2,
+              "title": "Make the substitution",
+              "content": "Let $u=x^2$, then $du=2x\\\\,dx$, so $2x\\\\,dx=du$.",
+              "formula": "$$u=x^2,\\\\quad du=2x\\\\,dx$$"
+            },
+            {
+              "step": 3,
+              "title": "Rewrite the integral",
+              "content": "Replace to get $\\\\int \\\\cos(u)\\\\,du$, which is an elementary integral.",
+              "formula": "$$\\\\int \\\\cos(u)\\\\,du$$"
+            },
+            {
+              "step": 4,
+              "title": "Integrate and back-substitute",
+              "content": "Integrate: $\\\\sin(u)+C$, then substitute $u=x^2$ to obtain $\\\\sin(x^2)+C$.",
+              "formula": "$$\\\\sin(x^2)+C$$"
+            }
+          ]
+        },
+        {
+          "question": "$\\\\int x\\\\ln x\\\\,dx$",
+          "answer": "$\\\\tfrac{1}{2}x^2\\\\ln x - \\\\tfrac{1}{4}x^2 + C$",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Choose parts",
+              "content": "Pick $u=\\\\ln x$ (simplifies on differentiation) and $dv=x\\\\,dx$ (easy to integrate).",
+              "formula": "$$u=\\\\ln x,\\\\quad dv=x\\\\,dx$$"
+            },
+            {
+              "step": 2,
+              "title": "Differentiate and integrate parts",
+              "content": "Compute $du=\\\\tfrac{1}{x}\\\\,dx$ and $v=\\\\tfrac{1}{2}x^2$.",
+              "formula": "$$du=\\\\tfrac{1}{x}\\\\,dx,\\\\quad v=\\\\tfrac{1}{2}x^2$$"
+            },
+            {
+              "step": 3,
+              "title": "Apply formula",
+              "content": "Use $\\\\int u\\\\,dv=uv-\\\\int v\\\\,du$ to get $\\\\tfrac{1}{2}x^2\\\\ln x - \\\\int \\\\tfrac{1}{2}x^2\\\\cdot\\\\tfrac{1}{x}\\\\,dx$.",
+              "formula": "$$\\\\tfrac{1}{2}x^2\\\\ln x - \\\\tfrac{1}{2}\\\\int x\\\\,dx$$"
+            },
+            {
+              "step": 4,
+              "title": "Finish the arithmetic",
+              "content": "Compute $\\\\tfrac{1}{2}\\\\int x\\\\,dx=\\\\tfrac{1}{4}x^2$ and combine to get $\\\\tfrac{1}{2}x^2\\\\ln x - \\\\tfrac{1}{4}x^2 + C$ (valid for $x>0$).",
+              "formula": "$$\\\\tfrac{1}{2}x^2\\\\ln x - \\\\tfrac{1}{4}x^2 + C$$"
+            }
+          ]
+        },
+        {
+          "question": "$\\\\int \\\\dfrac{x^3}{x^2-1}\\\\,dx$",
+          "answer": "$\\\\tfrac{1}{2}x^2 + \\\\tfrac{1}{2}\\\\ln|x^2-1| + C$",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Divide polynomials",
+              "content": "Perform division: $\\\\dfrac{x^3}{x^2-1}=x+\\\\dfrac{x}{x^2-1}$, which splits the integrand into simpler parts.",
+              "formula": ""
+            },
+            {
+              "step": 2,
+              "title": "Split the integral",
+              "content": "Write $\\\\int \\\\dfrac{x^3}{x^2-1}\\\\,dx=\\\\int x\\\\,dx + \\\\int \\\\dfrac{x}{x^2-1}\\\\,dx$ and plan to handle each term.",
+              "formula": "$$\\\\int x\\\\,dx + \\\\int \\\\dfrac{x}{x^2-1}\\\\,dx$$"
+            },
+            {
+              "step": 3,
+              "title": "Substitute for the rational part",
+              "content": "For $\\\\int \\\\dfrac{x}{x^2-1}\\\\,dx$ set $u=x^2-1$ so $du=2x\\\\,dx$, hence $x\\\\,dx=\\\\tfrac{1}{2}du$.",
+              "formula": "$$u=x^2-1,\\\\quad du=2x\\\\,dx$$"
+            },
+            {
+              "step": 4,
+              "title": "Integrate each term",
+              "content": "Integrate: $\\\\int x\\\\,dx=\\\\tfrac{1}{2}x^2$. The second becomes $\\\\tfrac{1}{2}\\\\int \\\\dfrac{1}{u}\\\\,du=\\\\tfrac{1}{2}\\\\ln|u|$.",
+              "formula": "$$\\\\tfrac{1}{2}x^2 + \\\\tfrac{1}{2}\\\\ln|u| + C$$"
+            },
+            {
+              "step": 5,
+              "title": "Back-substitute and conclude",
+              "content": "Replace $u$ by $x^2-1$ and combine: $\\\\tfrac{1}{2}x^2 + \\\\tfrac{1}{2}\\\\ln|x^2-1| + C$.",
+              "formula": "$$\\\\tfrac{1}{2}x^2 + \\\\tfrac{1}{2}\\\\ln|x^2-1| + C$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T15:06:12.347922"
+    },
+    {
+      "id": "7.7",
+      "title": "Approximate Integration",
+      "calc_level": 2,
+      "order": 41,
+      "priority": "MEDIUM",
+      "chapter_title": "Techniques of Integration",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "7.8",
+      "title": "Improper Integrals",
+      "calc_level": 2,
+      "order": 42,
+      "priority": "HIGH",
+      "chapter_title": "Techniques of Integration",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "8.1",
+      "title": "Arc Length",
+      "calc_level": 2,
+      "order": 43,
+      "priority": "MEDIUM",
+      "chapter_title": "Further Applications of Integration",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "8.2",
+      "title": "Surface Area of Revolution",
+      "calc_level": 2,
+      "order": 44,
+      "priority": "MEDIUM",
+      "chapter_title": "Further Applications of Integration",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "8.3",
+      "title": "Applications to Physics/Engineering",
+      "calc_level": 2,
+      "order": 45,
+      "priority": "LOW",
+      "chapter_title": "Further Applications of Integration",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "10.1",
+      "title": "Curves Defined by Parametric Equations",
+      "calc_level": 2,
+      "order": 46,
+      "priority": "CURRENT",
+      "chapter_title": "Parametric Equations and Polar Coordinates",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "10.2",
+      "title": "Calculus with Parametric Curves",
+      "calc_level": 2,
+      "order": 47,
+      "priority": "CURRENT",
+      "chapter_title": "Parametric Equations and Polar Coordinates",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "10.3",
+      "title": "Polar Coordinates",
+      "calc_level": 2,
+      "order": 48,
+      "priority": "HIGH",
+      "chapter_title": "Parametric Equations and Polar Coordinates",
+      "description": "Polar coordinates locate a point by distance $r$ and angle $\\theta$, an alternate to Cartesian coordinates useful for circles and radial symmetry.",
+      "key_formula": "$$x=r\\cos\\theta,\\quad y=r\\sin\\theta,\\quad r=\\sqrt{x^2+y^2},\\quad \\theta=\\arctan\\left(\\frac{y}{x}\\right)$$",
+      "concepts": [
+        {
+          "title": "Polar coordinates (r, \u03b8)",
+          "explanation": "Polar coordinates locate a point by distance $r$ from the origin and angle $\\theta$ from the positive $x$-axis. Angles are measured in radians (or degrees); a negative $r$ means move $|r|$ in the opposite direction (equivalently add $\\pi$ to $\\theta$).",
+          "formula": "$$x=r\\cos\\theta,\\ y=r\\sin\\theta$$",
+          "example": "Convert $r=4$, $\\theta=\\pi/6$ to Cartesian. Compute $x=4\\cos(\\pi/6)=4\\cdot(\\sqrt{3}/2)=2\\sqrt{3}$ and $y=4\\sin(\\pi/6)=4\\cdot(1/2)=2$. The Cartesian point is $(2\\sqrt{3},\\,2)$."
+        },
+        {
+          "title": "Converting between polar and Cartesian",
+          "explanation": "To go from polar $(r,\\theta)$ to Cartesian use $x=r\\cos\\theta$ and $y=r\\sin\\theta$. To go from Cartesian $(x,y)$ to polar use $r=\\sqrt{x^2+y^2}$ and $\\theta=\\arctan\\left(\\frac{y}{x}\\right)$ with quadrant correction.",
+          "formula": "$$r=\\sqrt{x^2+y^2},\\quad \\theta=\\arctan\\left(\\frac{y}{x}\\right)$$",
+          "example": "Convert $(-1,\\sqrt{3})$ to polar. Compute $r=\\sqrt{(-1)^2+(\\sqrt{3})^2}=\\sqrt{1+3}=2$. Naively $\\arctan(\\sqrt{3}/-1)=\\arctan(-\\sqrt{3})=-\\pi/3$, but $(x,y)$ is in quadrant II, so add $\\pi$ to get $\\theta=2\\pi/3$. Final polar: $(r,\\theta)=(2,\\,2\\pi/3)$."
+        },
+        {
+          "title": "Polar equations and common curves",
+          "explanation": "Polar equations write curves as $r=f(\\theta)$, which is natural for circles, lima\\c{c}ons, and roses. Simple forms like $r=a\\cos\\theta$ and $r=a\\sin\\theta$ often produce circles (or shifted circles) when converted to Cartesian.",
+          "formula": "$$r=2\\cos\\theta\\ \\Rightarrow\\ x^2+y^2=2x\\ \\Rightarrow\\ (x-1)^2+y^2=1$$",
+          "example": "For $r=2\\cos\\theta$ multiply both sides by $r$ to get $r^2=2r\\cos\\theta$. Substitute $r^2=x^2+y^2$ and $r\\cos\\theta=x$ to obtain $x^2+y^2=2x$, i.e. $(x-1)^2+y^2=1$, a circle centered at $(1,0)$ with radius $1$."
+        },
+        {
+          "title": "Calculus in polar: slope and area",
+          "explanation": "Treat $x$ and $y$ as parametric in $\\theta$: $x=r(\\theta)\\cos\\theta$, $y=r(\\theta)\\sin\\theta$, then compute derivatives to find slope. The area swept by a polar curve from $\\alpha$ to $\\beta$ is $\\tfrac12\\int_{\\alpha}^{\\beta}r(\\theta)^2\\,d\\theta$.",
+          "formula": "$$\\frac{dy}{dx}=\\frac{\\dfrac{dr}{d\\theta}\\sin\\theta + r\\cos\\theta}{\\dfrac{dr}{d\\theta}\\cos\\theta - r\\sin\\theta},\\qquad A=\\frac12\\int_{\\alpha}^{\\beta} r(\\theta)^2\\,d\\theta$$",
+          "example": "Find the slope for $r=2+3\\cos\\theta$ at $\\theta=\\pi/3$. Compute $dr/d\\theta=-3\\sin\\theta$. Then $dx/d\\theta=(dr/d\\theta)\\cos\\theta - r\\sin\\theta$ and $dy/d\\theta=(dr/d\\theta)\\sin\\theta + r\\cos\\theta$. Evaluate at $\\theta=\\pi/3$ to get slope $dy/dx=\\sqrt{3}/15$ (details in practice problems)."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Convert the polar point $\\left(5,\\,\\frac{\\pi}{3}\\right)$ to Cartesian coordinates.",
+          "answer": "$\\displaystyle\\left(\\frac{5}{2},\\,\\frac{5\\sqrt{3}}{2}\\right)$",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Recall formulas",
+              "content": "Use $x=r\\cos\\theta$ and $y=r\\sin\\theta$.",
+              "formula": "$$x=r\\cos\\theta,\\quad y=r\\sin\\theta$$"
+            },
+            {
+              "step": 2,
+              "title": "Evaluate trig values",
+              "content": "Compute $\\cos\\left(\\frac{\\pi}{3}\\right)=\\frac{1}{2}$ and $\\sin\\left(\\frac{\\pi}{3}\\right)=\\frac{\\sqrt{3}}{2}$.",
+              "formula": "$$\\cos\\frac{\\pi}{3}=\\frac{1}{2},\\quad \\sin\\frac{\\pi}{3}=\\frac{\\sqrt{3}}{2}$$"
+            },
+            {
+              "step": 3,
+              "title": "Multiply by $r$",
+              "content": "Compute $x=5\\cdot\\frac{1}{2}=\\frac{5}{2}$ and $y=5\\cdot\\frac{\\sqrt{3}}{2}=\\frac{5\\sqrt{3}}{2}$.",
+              "formula": "$$x=\\frac{5}{2},\\quad y=\\frac{5\\sqrt{3}}{2}$$"
+            },
+            {
+              "step": 4,
+              "title": "Write the point",
+              "content": "The Cartesian coordinates are $\\left(\\frac{5}{2},\\,\\frac{5\\sqrt{3}}{2}\\right)$.",
+              "formula": "$$\\left(\\tfrac{5}{2},\\,\\tfrac{5\\sqrt{3}}{2}\\right)$$"
+            }
+          ]
+        },
+        {
+          "question": "Show that the polar equation $r=2\\cos\\theta$ is a circle; find its center and radius.",
+          "answer": "Circle with center $(1,0)$ and radius $1$ (i.e. $(x-1)^2+y^2=1$).",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Start with the polar equation",
+              "content": "Write $r=2\\cos\\theta$.",
+              "formula": "$$r=2\\cos\\theta$$"
+            },
+            {
+              "step": 2,
+              "title": "Multiply both sides by $r$",
+              "content": "Multiplying by $r$ gives $r^2=2r\\cos\\theta$.",
+              "formula": "$$r^2=2r\\cos\\theta$$"
+            },
+            {
+              "step": 3,
+              "title": "Substitute Cartesian expressions",
+              "content": "Use $r^2=x^2+y^2$ and $r\\cos\\theta=x$ to get $x^2+y^2=2x$.",
+              "formula": "$$x^2+y^2=2x$$"
+            },
+            {
+              "step": 4,
+              "title": "Complete the square",
+              "content": "Rearrange: $x^2-2x+y^2=0\\Rightarrow (x-1)^2+y^2=1$, so center $(1,0)$ and radius $1$.",
+              "formula": "$$(x-1)^2+y^2=1$$"
+            }
+          ]
+        },
+        {
+          "question": "For the polar curve $r(\\theta)=2+3\\cos\\theta$, find the slope $\\dfrac{dy}{dx}$ at $\\theta=\\dfrac{\\pi}{3}$.",
+          "answer": "$\\displaystyle \\frac{\\sqrt{3}}{15}$",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Write parametric derivatives",
+              "content": "Recall $x=r\\cos\\theta$, $y=r\\sin\\theta$, and $\\dfrac{dy}{dx}=\\dfrac{dy/d\\theta}{dx/d\\theta}$ with $\\dfrac{dx}{d\\theta}=\\dfrac{dr}{d\\theta}\\cos\\theta - r\\sin\\theta$ and $\\dfrac{dy}{d\\theta}=\\dfrac{dr}{d\\theta}\\sin\\theta + r\\cos\\theta$.",
+              "formula": "$$\\frac{dy}{dx}=\\frac{\\dfrac{dr}{d\\theta}\\sin\\theta + r\\cos\\theta}{\\dfrac{dr}{d\\theta}\\cos\\theta - r\\sin\\theta}$$"
+            },
+            {
+              "step": 2,
+              "title": "Differentiate $r(\\theta)$",
+              "content": "Compute $\\dfrac{dr}{d\\theta}=\\dfrac{d}{d\\theta}(2+3\\cos\\theta)=-3\\sin\\theta$.",
+              "formula": "$$\\frac{dr}{d\\theta}=-3\\sin\\theta$$"
+            },
+            {
+              "step": 3,
+              "title": "Evaluate at $\\theta=\\pi/3$",
+              "content": "Plug in $\\sin\\frac{\\pi}{3}=\\frac{\\sqrt{3}}{2}$ and $\\cos\\frac{\\pi}{3}=\\frac{1}{2}$. Then $r=2+3\\cdot\\frac{1}{2}=\\tfrac{7}{2}$ and $\\dfrac{dr}{d\\theta}=-3\\cdot\\frac{\\sqrt{3}}{2}=-\\tfrac{3\\sqrt{3}}{2}$.",
+              "formula": "$$r\\Big|_{\\pi/3}=\\tfrac{7}{2},\\quad \\frac{dr}{d\\theta}\\Big|_{\\pi/3}=-\\tfrac{3\\sqrt{3}}{2}$$"
+            },
+            {
+              "step": 4,
+              "title": "Compute $dx/d\\theta$ and $dy/d\\theta$",
+              "content": "Compute $\\dfrac{dx}{d\\theta}=(-\\tfrac{3\\sqrt{3}}{2})\\cdot\\tfrac{1}{2} - (\\tfrac{7}{2})\\cdot\\tfrac{\\sqrt{3}}{2}= -\\tfrac{10\\sqrt{3}}{4}=-\\tfrac{5\\sqrt{3}}{2}$. Compute $\\dfrac{dy}{d\\theta}=(-\\tfrac{3\\sqrt{3}}{2})\\cdot\\tfrac{\\sqrt{3}}{2} + (\\tfrac{7}{2})\\cdot\\tfrac{1}{2}= -\\tfrac{9}{4}+\\tfrac{7}{4}=-\\tfrac{1}{2}$.",
+              "formula": "$$\\frac{dx}{d\\theta}=-\\frac{5\\sqrt{3}}{2},\\quad \\frac{dy}{d\\theta}=-\\frac{1}{2}$$"
+            },
+            {
+              "step": 5,
+              "title": "Form the slope and simplify",
+              "content": "Now $\\dfrac{dy}{dx}=\\dfrac{-\\tfrac{1}{2}}{-\\tfrac{5\\sqrt{3}}{2}}=\\dfrac{1}{5\\sqrt{3}}=\\dfrac{\\sqrt{3}}{15}$ after rationalizing.",
+              "formula": "$$\\frac{dy}{dx}=\\frac{1}{5\\sqrt{3}}=\\frac{\\sqrt{3}}{15}$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T14:08:24.600372"
+    },
+    {
+      "id": "10.4",
+      "title": "Calculus in Polar Coordinates",
+      "calc_level": 2,
+      "order": 49,
+      "priority": "HIGH",
+      "chapter_title": "Parametric Equations and Polar Coordinates",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "11.1",
+      "title": "Sequences",
+      "calc_level": 2,
+      "order": 50,
+      "priority": "HIGH",
+      "chapter_title": "Sequences and Series",
+      "description": "A sequence is an ordered list of numbers written $a_1,a_2,a_3,\\dots$ and described by a rule for the $n$th term $a_n$.",
+      "key_formula": "$$a_n=f(n),\\quad a_n=a_1+(n-1)d,\\quad a_n=a_1 r^{n-1}$$",
+      "concepts": [
+        {
+          "title": "Definition and notation",
+          "explanation": "A sequence is an ordered list of numbers indexed by $n$ (usually $n=1,2,3,\\dots$). We write a sequence as $a_1,a_2,a_3,\\dots$ or $\\{a_n\\}_{n=1}^\\infty$, and $a_n$ denotes the $n$th term.",
+          "formula": "$$\\{a_n\\}_{n=1}^\\infty$$",
+          "example": "Example: define $a_n=2n+1$. Then $a_1=2(1)+1=3$, $a_2=5$, $a_3=7$, so the sequence starts $3,5,7,\\dots$."
+        },
+        {
+          "title": "Explicit (closed-form) formula",
+          "explanation": "An explicit formula gives $a_n$ directly in terms of $n$, so any term can be computed without knowing earlier terms. For example $a_n=2n+1$ tells you $a_5$ by plugging in $n=5$.",
+          "formula": "$$a_n=2n+1$$",
+          "example": "Compute $a_5$ for $a_n=2n+1$: $a_5=2(5)+1=11$, so the 5th term is $11$."
+        },
+        {
+          "title": "Recursive definitions",
+          "explanation": "A recursive definition gives one or more starting term(s) and a rule that uses earlier terms, e.g. $a_{n+1}=a_n+3$ with $a_1=2$. You must build terms in order using the rule.",
+          "formula": "$$a_{n+1}=a_n+d,\\quad a_1=c$$",
+          "example": "With $a_1=2$ and $a_{n+1}=a_n+3$, compute: $a_2=a_1+3=5$, $a_3=8$, $a_4=11$, so the sequence is $2,5,8,11,\\dots$."
+        },
+        {
+          "title": "Arithmetic and geometric sequences",
+          "explanation": "An arithmetic sequence adds a constant difference $d$ each step; a geometric sequence multiplies by a constant ratio $r$. Their formulas are $a_n=a_1+(n-1)d$ and $a_n=a_1 r^{n-1}$ respectively.",
+          "formula": "$$a_n=a_1+(n-1)d,\\quad a_n=a_1 r^{n-1}$$",
+          "example": "Arithmetic: $a_1=5,d=3$ gives $a_4=5+(4-1)3=14$. Geometric: $a_1=2,r=3$ gives $a_4=2\\cdot 3^{3}=54$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "List the first four terms of the sequence $a_n=3n-2$.",
+          "answer": "$1,4,7,10$",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Compute $a_1$",
+              "content": "Plug $n=1$ into $a_n=3n-2$: $a_1=3(1)-2$ so $a_1=1$.",
+              "formula": "$$a_1=3(1)-2=1$$"
+            },
+            {
+              "step": 2,
+              "title": "Compute $a_2$",
+              "content": "Plug $n=2$: $a_2=3(2)-2=6-2=4$.",
+              "formula": "$$a_2=3(2)-2=4$$"
+            },
+            {
+              "step": 3,
+              "title": "Compute $a_3$",
+              "content": "Plug $n=3$: $a_3=3(3)-2=9-2=7$.",
+              "formula": "$$a_3=3(3)-2=7$$"
+            },
+            {
+              "step": 4,
+              "title": "Compute $a_4$ and list terms",
+              "content": "Plug $n=4$: $a_4=3(4)-2=12-2=10$. The first four terms are $1,4,7,10$.",
+              "formula": "$$a_4=3(4)-2=10$$"
+            }
+          ]
+        },
+        {
+          "question": "Given $a_1=4$ and $a_{n+1}=a_n+5$, find an explicit formula for $a_n$ and compute $a_{10}$.",
+          "answer": "Explicit formula $a_n=5n-1$, and $a_{10}=49$.",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Compute first terms to see pattern",
+              "content": "Start from $a_1=4$. Then $a_2=a_1+5=9$, $a_3=14$, $a_4=19$; each step adds $5$.",
+              "formula": "$$a_1=4,\\ a_2=9,\\ a_3=14$$"
+            },
+            {
+              "step": 2,
+              "title": "Recognize arithmetic sequence",
+              "content": "The difference $d$ is $5$, so this is arithmetic with $a_n=a_1+(n-1)d$.",
+              "formula": "$$d=5$$"
+            },
+            {
+              "step": 3,
+              "title": "Write explicit formula",
+              "content": "Use $a_n=a_1+(n-1)d$: substitute $a_1=4$ and $d=5$ to get $a_n=4+(n-1)5$.",
+              "formula": "$$a_n=4+(n-1)5$$"
+            },
+            {
+              "step": 4,
+              "title": "Simplify the formula",
+              "content": "Simplify $4+(n-1)5$ to get $a_n=5n-1$ by distributing and combining like terms.",
+              "formula": "$$a_n=5n-1$$"
+            },
+            {
+              "step": 5,
+              "title": "Compute $a_{10}$",
+              "content": "Plug $n=10$ into $a_n=5n-1$: $a_{10}=5(10)-1=50-1=49$.",
+              "formula": "$$a_{10}=5\\cdot10-1=49$$"
+            }
+          ]
+        },
+        {
+          "question": "A geometric sequence has $a_3=12$ and $a_6=96$. Find the common ratio $r$, the first term $a_1$, an explicit formula for $a_n$, and $a_{10}$.",
+          "answer": "Common ratio $r=2$, $a_1=3$, $a_n=3\\cdot 2^{n-1}$, and $a_{10}=1536$.",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Write equations from the geometric formula",
+              "content": "For a geometric sequence $a_n=a_1 r^{n-1}$. So $a_3=a_1 r^{2}=12$ and $a_6=a_1 r^{5}=96$.",
+              "formula": "$$a_3=a_1 r^{2}=12,\\quad a_6=a_1 r^{5}=96$$"
+            },
+            {
+              "step": 2,
+              "title": "Eliminate $a_1$ by dividing",
+              "content": "Divide $a_6$ by $a_3$: $\\dfrac{a_6}{a_3}=\\dfrac{a_1 r^{5}}{a_1 r^{2}}=r^{3}=\\dfrac{96}{12}=8$.",
+              "formula": "$$r^{3}=8$$"
+            },
+            {
+              "step": 3,
+              "title": "Solve for $r$",
+              "content": "Solve $r^{3}=8$. Since $8=2^{3}$, we get $r=2$ (real positive ratio).",
+              "formula": "$$r=2$$"
+            },
+            {
+              "step": 4,
+              "title": "Find $a_1$ using $a_3$",
+              "content": "Use $a_3=a_1 r^{2}=12$ with $r=2$: $a_1\\cdot 2^{2}=12$, so $a_1=12/4=3$.",
+              "formula": "$$a_1=\\dfrac{12}{2^{2}}=3$$"
+            },
+            {
+              "step": 5,
+              "title": "Write explicit formula",
+              "content": "Now $a_n=a_1 r^{n-1}$ becomes $a_n=3\\cdot 2^{n-1}$.",
+              "formula": "$$a_n=3\\cdot 2^{n-1}$$"
+            },
+            {
+              "step": 6,
+              "title": "Compute $a_{10}$",
+              "content": "Evaluate $a_{10}=3\\cdot 2^{9}=3\\cdot 512=1536$.",
+              "formula": "$$a_{10}=3\\cdot 2^{9}=1536$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T16:01:20.596701"
+    },
+    {
+      "id": "11.2",
+      "title": "Series",
+      "calc_level": 2,
+      "order": 51,
+      "priority": "HIGH",
+      "chapter_title": "Sequences and Series",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "11.3",
+      "title": "The Integral Test",
+      "calc_level": 2,
+      "order": 52,
+      "priority": "HIGH",
+      "chapter_title": "Sequences and Series",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "11.4",
+      "title": "Comparison Tests",
+      "calc_level": 2,
+      "order": 53,
+      "priority": "HIGH",
+      "chapter_title": "Sequences and Series",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "11.5",
+      "title": "Alternating Series",
+      "calc_level": 2,
+      "order": 54,
+      "priority": "HIGH",
+      "chapter_title": "Sequences and Series",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "11.6",
+      "title": "Absolute Convergence; Ratio and Root Tests",
+      "calc_level": 2,
+      "order": 55,
+      "priority": "HIGH",
+      "chapter_title": "Sequences and Series",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "11.7",
+      "title": "Strategy for Testing Series",
+      "calc_level": 2,
+      "order": 56,
+      "priority": "CRITICAL",
+      "chapter_title": "Sequences and Series",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "11.8",
+      "title": "Power Series",
+      "calc_level": 2,
+      "order": 57,
+      "priority": "CRITICAL",
+      "chapter_title": "Sequences and Series",
+      "description": "Power series are infinite-polynomial expressions used to represent functions near a point and analyze convergence.",
+      "key_formula": "$$\\sum_{n=0}^{\\infty} c_n (x-a)^n$$",
+      "concepts": [
+        {
+          "title": "What is a power series?",
+          "explanation": "A power series is an infinite polynomial centered at a point $a$, written as $\\sum_{n=0}^{\\infty} c_n (x-a)^n$. Each $c_n$ is a coefficient and $x$ is the variable; for different $x$ the infinite sum may converge to a finite value or diverge. It behaves like a polynomial but can represent more functions by allowing infinitely many terms.",
+          "formula": "$$\\sum_{n=0}^{\\infty} c_n (x-a)^n$$",
+          "example": "Example: The geometric series $\\sum_{n=0}^{\\infty} x^n$ represents $\\frac{1}{1-x}$ for $|x|<1$, so $\\frac{1}{1-x}=\\sum_{n=0}^{\\infty} x^n$ on that interval."
+        },
+        {
+          "title": "Radius and interval of convergence",
+          "explanation": "A power series only converges for $x$ within a certain distance $R$ from the center $a$, called the radius of convergence. Inside $|x-a|<R$ the series converges, outside it diverges; convergence at the endpoints $x=a\\pm R$ must be checked separately. Use the root or ratio test on the coefficients $c_n$ to compute $R$.",
+          "formula": "$$R=\\frac{1}{\\limsup_{n\\to\\infty} \\sqrt[n]{|c_n|}}$$",
+          "example": "Example: For $\\sum x^n$ we have $c_n=1$, so $R=1$; the geometric series converges for $|x|<1$ and diverges for $|x|\\ge 1$."
+        },
+        {
+          "title": "Taylor and Maclaurin series",
+          "explanation": "If a function $f$ is infinitely differentiable at $a$, it may be expressed as a Taylor series $\\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!}(x-a)^n$ near $a$. The Maclaurin series is the special case centered at $a=0$. Not every function equals its Taylor series everywhere, but many elementary functions do within their radius of convergence.",
+          "formula": "$$f(x)=\\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!}(x-a)^n$$",
+          "example": "Example: For $f(x)=e^x$, all derivatives at $0$ are $1$, so $e^x=\\sum_{n=0}^{\\infty} \\frac{x^n}{n!}$ (valid for all real $x$)."
+        },
+        {
+          "title": "Operations: differentiate and integrate termwise",
+          "explanation": "Inside the radius of convergence you may differentiate or integrate a power series term-by-term, producing new power series with the same radius. This makes it easy to get series for derivatives or antiderivatives by simple algebra on coefficients. The formulas follow from termwise operations on each power of $(x-a)$.",
+          "formula": "$$\\frac{d}{dx}\\sum_{n=0}^{\\infty} c_n (x-a)^n=\\sum_{n=1}^{\\infty} n c_n (x-a)^{n-1},\\qquad \\int \\sum_{n=0}^{\\infty} c_n (x-a)^n\\,dx=C+\\sum_{n=0}^{\\infty} c_n\\frac{(x-a)^{n+1}}{n+1}$$",
+          "example": "Example: Differentiate $\\sum_{n=0}^{\\infty} x^n=1/(1-x)$ termwise to get $\\sum_{n=1}^{\\infty} n x^{n-1}=1/(1-x)^2$ for $|x|<1$."
+        }
+      ],
+      "practice_problems": [
+        {
+          "question": "Find the radius of convergence and the interval of convergence for the power series $\\sum_{n=0}^{\\infty} x^n$.",
+          "answer": "Radius $R=1$. The series converges for $|x|<1$ and diverges for $|x|\\ge 1$ (diverges at $x=1$ and $x=-1$).",
+          "difficulty": "easy",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Recognize geometric series",
+              "content": "This is the geometric series with ratio $r=x$. A geometric series $\\sum_{n=0}^{\\infty} r^n$ converges exactly when $|r|<1$.",
+              "formula": "$$\\sum_{n=0}^{\\infty} r^n=\\frac{1}{1-r}\\quad(|r|<1)$$"
+            },
+            {
+              "step": 2,
+              "title": "Apply the ratio test",
+              "content": "Use the ratio test on terms $a_n=x^n$: compute $\\lim_{n\\to\\infty}|a_{n+1}/a_n|=|x|$. The series converges when this limit is $<1$.",
+              "formula": "$$\\lim_{n\\to\\infty}\\left|\\frac{x^{n+1}}{x^n}\\right|=|x|$$"
+            },
+            {
+              "step": 3,
+              "title": "Conclude radius",
+              "content": "Thus convergence requires $|x|<1$, so the radius of convergence is $R=1$.",
+              "formula": "$$R=1$$"
+            },
+            {
+              "step": 4,
+              "title": "Check endpoints",
+              "content": "At $x=1$ the series is $1+1+1+\\dots$ which diverges. At $x=-1$ the series is $1-1+1-1+\\dots$ which oscillates and does not converge in the usual sense.",
+              "formula": "$$\\sum_{n=0}^{\\infty}1=\\infty,\\qquad \\sum_{n=0}^{\\infty}(-1)^n\\text{ diverges}$$"
+            }
+          ]
+        },
+        {
+          "question": "Find the Maclaurin series for $e^x$ and state its radius of convergence.",
+          "answer": "Maclaurin series $\\displaystyle\\sum_{n=0}^{\\infty}\\frac{x^n}{n!}$. Radius of convergence $R=\\infty$ (converges for all real $x$).",
+          "difficulty": "medium",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Compute derivatives",
+              "content": "For $f(x)=e^x$ every derivative is $e^x$, so at $0$ we have $f^{(n)}(0)=1$ for all $n$.",
+              "formula": "$$f^{(n)}(0)=1$$"
+            },
+            {
+              "step": 2,
+              "title": "Write Taylor formula at 0",
+              "content": "The Maclaurin (Taylor at $0$) formula is $f(x)=\\sum_{n=0}^{\\infty}\\frac{f^{(n)}(0)}{n!}x^n$.",
+              "formula": "$$f(x)=\\sum_{n=0}^{\\infty}\\frac{f^{(n)}(0)}{n!}x^n$$"
+            },
+            {
+              "step": 3,
+              "title": "Plug in derivatives",
+              "content": "Since $f^{(n)}(0)=1$, the series becomes $\\sum_{n=0}^{\\infty} \\frac{x^n}{n!}$, the well-known expansion of $e^x$.",
+              "formula": "$$e^x=\\sum_{n=0}^{\\infty}\\frac{x^n}{n!}$$"
+            },
+            {
+              "step": 4,
+              "title": "Show convergence for all $x$",
+              "content": "Use the ratio test on $a_n=\\frac{x^n}{n!}$: $|a_{n+1}/a_n|=\\frac{|x|}{n+1}\\to0$, so the series converges for every real $x$, i.e. $R=\\infty$.",
+              "formula": "$$\\lim_{n\\to\\infty}\\frac{|x|}{n+1}=0$$"
+            }
+          ]
+        },
+        {
+          "question": "Find a power series centered at $0$ for $\\dfrac{1}{1+x^2}$ and determine its radius and interval of convergence.",
+          "answer": "Power series $\\displaystyle\\sum_{n=0}^{\\infty}(-1)^n x^{2n}$. Radius $R=1$, converges for $|x|<1$ and diverges at $x=\\pm1$.",
+          "difficulty": "hard",
+          "walkthrough": [
+            {
+              "step": 1,
+              "title": "Rewrite as geometric form",
+              "content": "Write the function as $\\dfrac{1}{1+x^2}=\\dfrac{1}{1-(-x^2)}$, so it matches the geometric form $1/(1-r)$ with $r=-x^2$.",
+              "formula": "$$\\frac{1}{1+x^2}=\\frac{1}{1-(-x^2)}$$"
+            },
+            {
+              "step": 2,
+              "title": "Apply geometric-series formula",
+              "content": "Apply $\\sum_{n=0}^{\\infty} r^n=1/(1-r)$ (for $|r|<1$) with $r=-x^2$ to get the power series.",
+              "formula": "$$\\sum_{n=0}^{\\infty}(-x^2)^n$$"
+            },
+            {
+              "step": 3,
+              "title": "Simplify the terms",
+              "content": "Simplify $(-x^2)^n=(-1)^n x^{2n}$, so the series is $\\sum_{n=0}^{\\infty}(-1)^n x^{2n}$.",
+              "formula": "$$\\sum_{n=0}^{\\infty}(-1)^n x^{2n}$$"
+            },
+            {
+              "step": 4,
+              "title": "Determine convergence",
+              "content": "Convergence requires $|-x^2|<1$, i.e. $|x|<1$, so $R=1$. At $x=\\pm1$ the series becomes $\\sum (-1)^n$, which does not converge in the usual sense, so endpoints fail.",
+              "formula": "$$|x|<1\\quad\\Rightarrow\\quad R=1$$"
+            }
+          ]
+        }
+      ],
+      "generated": true,
+      "generated_at": "2026-04-09T15:09:26.277857"
+    },
+    {
+      "id": "11.9",
+      "title": "Representations as Power Series",
+      "calc_level": 2,
+      "order": 58,
+      "priority": "CRITICAL",
+      "chapter_title": "Sequences and Series",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "11.10",
+      "title": "Taylor and Maclaurin Series",
+      "calc_level": 2,
+      "order": 59,
+      "priority": "CURRENT",
+      "chapter_title": "Sequences and Series",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    },
+    {
+      "id": "11.11",
+      "title": "Applications of Taylor Polynomials",
+      "calc_level": 2,
+      "order": 60,
+      "priority": "CURRENT",
+      "chapter_title": "Sequences and Series",
+      "description": "",
+      "key_formula": "",
+      "concepts": [],
+      "practice_problems": [],
+      "generated": false
+    }
+  ]
+}

@@ -125,11 +125,51 @@ export const courseAPI = {
   getTopics: () => fetchAPI('/course/topics'),
 };
 
+// Load curriculum from static file (works on GitHub Pages without backend)
+let cachedCurriculum = null;
+
+async function loadStaticCurriculum() {
+  if (cachedCurriculum) return cachedCurriculum;
+  const response = await fetch('/calc/curriculum.json');
+  if (!response.ok) throw new Error('Failed to load curriculum');
+  cachedCurriculum = await response.json();
+  return cachedCurriculum;
+}
+
 // Personalized Curriculum API — Canvas-scraped + AI-generated
 export const curriculumAPI = {
-  getTopics: () => fetchAPI('/curriculum/topics'),
-  getTopic: (topicId) => fetchAPI(`/curriculum/topic/${topicId}`),
-  getProblems: (topicId) => fetchAPI(`/curriculum/topic/${topicId}/problems`),
+  getTopics: async () => {
+    try {
+      // Try backend first for real-time updates
+      return await fetchAPI('/curriculum/topics');
+    } catch {
+      // Fall back to static file (works on GitHub Pages)
+      const curriculum = await loadStaticCurriculum();
+      return { topics: curriculum.topics || [] };
+    }
+  },
+  getTopic: async (topicId) => {
+    try {
+      return await fetchAPI(`/curriculum/topic/${topicId}`);
+    } catch {
+      // Fall back to static file
+      const curriculum = await loadStaticCurriculum();
+      const topic = curriculum.topics?.find(t => t.id === topicId);
+      if (!topic) throw new Error(`Topic ${topicId} not found`);
+      return topic;
+    }
+  },
+  getProblems: async (topicId) => {
+    try {
+      return await fetchAPI(`/curriculum/topic/${topicId}/problems`);
+    } catch {
+      // Fall back to static file
+      const curriculum = await loadStaticCurriculum();
+      const topic = curriculum.topics?.find(t => t.id === topicId);
+      if (!topic) throw new Error(`Topic ${topicId} not found`);
+      return { problems: topic.practice_problems || [] };
+    }
+  },
   getWalkthrough: (topicId, problemIndex) =>
     fetchAPI(`/curriculum/topic/${topicId}/problem/${problemIndex}/walkthrough`),
   generateTopic: (topicId) => fetchAPI(`/curriculum/topic/${topicId}/generate`, { method: 'POST' }),
