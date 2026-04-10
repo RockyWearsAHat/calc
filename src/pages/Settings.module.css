@@ -1,0 +1,299 @@
+/* Settings — flat sections with dividers (no cards) */
+
+.page {
+  flex: 1;
+  padding: 48px 32px 96px;
+  max-width: 720px;
+  margin: 0 auto;
+  width: 100%;
+  animation: rise 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(18px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+  margin-bottom: 48px;
+  position: relative;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.savedBadge {
+  position: absolute;
+  top: 4px;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 12px;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--color-success, #4ade80) 10%, transparent);
+  color: var(--color-success, #4ade80);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  animation: rise 0.3s ease;
+}
+
+/* Sections — flat, no card container */
+.section {
+  padding-top: 8px;
+  padding-bottom: 32px;
+  margin-bottom: 32px;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 50%, transparent);
+}
+
+.section:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin: 0 0 20px;
+  padding: 0;
+  border: none;
+  display: block;
+}
+
+.sectionTitle::before {
+  display: none;
+}
+
+/* Setting rows */
+.settingRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
+}
+
+.settingRow:last-child {
+  border-bottom: none;
+}
+
+.settingInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.settingLabel {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.settingHint {
+  font-size: 0.76rem;
+  color: var(--color-text-muted);
+}
+
+/* Select dropdown */
+.select {
+  padding: 6px 12px;
+  font-size: 0.86rem;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: border-color var(--transition-fast);
+  min-width: 130px;
+}
+
+.select:focus {
+  border-color: var(--color-accent-primary);
+  outline: none;
+}
+
+.select:hover:not(:focus) {
+  border-color: var(--color-text-muted);
+}
+
+/* Toggle switch */
+.toggle {
+  position: relative;
+  display: inline-flex;
+  cursor: pointer;
+}
+
+.toggle input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggleTrack {
+  width: 44px;
+  height: 24px;
+  border-radius: 12px;
+  background: var(--color-border);
+  transition: background var(--transition-fast);
+  position: relative;
+}
+
+.toggleTrack::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--color-bg-primary);
+  transition: transform var(--transition-fast);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.toggle input:checked + .toggleTrack {
+  background: var(--color-accent-primary);
+}
+
+.toggle input:checked + .toggleTrack::after {
+  transform: translateX(20px);
+}
+
+/* Buttons */
+.themeBtn,
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 6px;
+  background: transparent;
+  color: var(--color-text-primary);
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+  white-space: nowrap;
+}
+
+.themeBtn:hover,
+.actionBtn:hover {
+  background: color-mix(in srgb, var(--color-accent-primary) 6%, transparent);
+  border-color: var(--color-accent-primary);
+}
+
+.dangerBtn {
+  border-color: color-mix(in srgb, var(--color-error, #f87171) 40%, transparent);
+  color: var(--color-error, #f87171);
+}
+
+.dangerBtn:hover {
+  background: color-mix(in srgb, var(--color-error, #f87171) 8%, transparent);
+  border-color: var(--color-error, #f87171);
+}
+
+/* Info  left accent, no card */boxes 
+.infoBox {
+  padding: 16px 0 16px 16px;
+  border-left: 2px solid var(--color-accent-primary);
+  margin-top: 8px;
+}
+
+.infoTitle {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  color: var(--color-text-primary);
+}
+
+.infoText {
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+  line-height: 1.65;
+}
+
+.infoText ol {
+  margin-left: 20px;
+  margin-top: 8px;
+}
+
+.infoText li {
+  margin-bottom: 6px;
+}
+
+.infoText code {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  padding: 2px 6px;
+  background: var(--color-bg-secondary);
+  border-radius: 3px;
+}
+
+/* Shortcut  flat rows */grid 
+.shortcutGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0;
+}
+
+.shortcutRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--color-border) 30%, transparent);
+}
+
+.shortcutRow kbd {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  padding: 2px 8px;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  box-shadow: 0 1px 0 var(--color-border);
+}
+
+.shortcutRow span {
+  font-size: 0.84rem;
+  color: var(--color-text-secondary);
+}
+
+/* Footer */
+.footer {
+  margin-top: 48px;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 600px) {
+  .page { padding: 24px 16px 64px; }
+  .settingRow { flex-direction: column; align-items: flex-start; gap: 10px; }
+}

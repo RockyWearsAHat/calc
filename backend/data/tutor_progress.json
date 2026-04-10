@@ -1,0 +1,61 @@
+{
+  "mastery": {
+    "integration_by_parts": {
+      "attempts": 4,
+      "correct": 1.0,
+      "score": 0.25
+    }
+  },
+  "current_level": {
+    "integration_by_parts": 1
+  },
+  "weak_spots": [
+    [
+      "integration_by_parts",
+      "ibp_1_3"
+    ],
+    [
+      "integration_by_parts",
+      "ibp_1_2"
+    ],
+    [
+      "integration_by_parts",
+      "ibp_1_1"
+    ]
+  ],
+  "history": [
+    {
+      "topic": "integration_by_parts",
+      "problem_id": "ibp_1_3",
+      "correct": false,
+      "used_hints": 1,
+      "used_walkthrough": false,
+      "timestamp": "2026-04-08T18:16:53.038126"
+    },
+    {
+      "topic": "integration_by_parts",
+      "problem_id": "ibp_1_2",
+      "correct": false,
+      "used_hints": 0,
+      "used_walkthrough": false,
+      "timestamp": "2026-04-08T18:23:19.951491"
+    },
+    {
+      "topic": "integration_by_parts",
+      "problem_id": "ibp_1_2",
+      "correct": true,
+      "used_hints": 0,
+      "used_walkthrough": false,
+      "timestamp": "2026-04-08T18:25:43.736721"
+    },
+    {
+      "topic": "integration_by_parts",
+      "problem_id": "ibp_1_1",
+      "correct": false,
+      "used_hints": 0,
+      "used_walkthrough": true,
+      "timestamp": "2026-04-08T18:25:59.217702"
+    }
+  ],
+  "streak": 0
+}

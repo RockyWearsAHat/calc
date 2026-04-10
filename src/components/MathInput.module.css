@@ -1,0 +1,36 @@
+.wrapper {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.preview {
+  margin-top: 6px;
+  padding: 8px 14px;
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-sm);
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  animation: previewFade 0.15s ease-out;
+}
+
+.preview .katex-display {
+  margin: 0;
+}
+
+.preview .katex {
+  font-size: 1.15em;
+  color: var(--color-text-primary);
+}
+
+@keyframes previewFade {
+  from { opacity: 0; transform: translateY(-3px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

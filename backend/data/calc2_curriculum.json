@@ -1,0 +1,84 @@
+{
+  "course": "MATH 1220 - Calculus II",
+  "textbook": "Stewart Calculus (likely)",
+  "current_focus": ["Taylor Series", "Parametric Equations"],
+  "chapters": [
+    {
+      "chapter": "6",
+      "title": "Applications of Integration",
+      "sections": [
+        {"id": "6.1", "name": "Areas Between Curves", "priority": "REVIEW"},
+        {"id": "6.2", "name": "Volumes by Disks/Washers", "priority": "REVIEW"},
+        {"id": "6.3", "name": "Volumes by Cylindrical Shells", "priority": "REVIEW"},
+        {"id": "6.4", "name": "Work", "priority": "REVIEW"},
+        {"id": "6.5", "name": "Average Value of a Function", "priority": "REVIEW"}
+      ]
+    },
+    {
+      "chapter": "7",
+      "title": "Techniques of Integration",
+      "sections": [
+        {"id": "7.1", "name": "Integration by Parts", "priority": "HIGH"},
+        {"id": "7.2", "name": "Trigonometric Integrals", "priority": "HIGH"},
+        {"id": "7.3", "name": "Trigonometric Substitution", "priority": "HIGH"},
+        {"id": "7.4", "name": "Partial Fractions", "priority": "HIGH"},
+        {"id": "7.5", "name": "Strategy for Integration", "priority": "MEDIUM"},
+        {"id": "7.7", "name": "Approximate Integration", "priority": "MEDIUM"},
+        {"id": "7.8", "name": "Improper Integrals", "priority": "HIGH"}
+      ]
+    },
+    {
+      "chapter": "8",
+      "title": "Further Applications of Integration",
+      "sections": [
+        {"id": "8.1", "name": "Arc Length", "priority": "MEDIUM"},
+        {"id": "8.2", "name": "Surface Area of Revolution", "priority": "MEDIUM"},
+        {"id": "8.3", "name": "Applications to Physics/Engineering", "priority": "LOW"}
+      ]
+    },
+    {
+      "chapter": "10",
+      "title": "Parametric Equations and Polar Coordinates",
+      "sections": [
+        {"id": "10.1", "name": "Curves Defined by Parametric Equations", "priority": "CURRENT"},
+        {"id": "10.2", "name": "Calculus with Parametric Curves", "priority": "CURRENT"},
+        {"id": "10.3", "name": "Polar Coordinates", "priority": "HIGH"},
+        {"id": "10.4", "name": "Calculus in Polar Coordinates", "priority": "HIGH"}
+      ]
+    },
+    {
+      "chapter": "11",
+      "title": "Sequences and Series",
+      "sections": [
+        {"id": "11.1", "name": "Sequences", "priority": "HIGH"},
+        {"id": "11.2", "name": "Series", "priority": "HIGH"},
+        {"id": "11.3", "name": "The Integral Test", "priority": "HIGH"},
+        {"id": "11.4", "name": "Comparison Tests", "priority": "HIGH"},
+        {"id": "11.5", "name": "Alternating Series", "priority": "HIGH"},
+        {"id": "11.6", "name": "Absolute Convergence; Ratio and Root Tests", "priority": "HIGH"},
+        {"id": "11.7", "name": "Strategy for Testing Series", "priority": "CRITICAL"},
+        {"id": "11.8", "name": "Power Series", "priority": "CRITICAL"},
+        {"id": "11.9", "name": "Representations as Power Series", "priority": "CRITICAL"},
+        {"id": "11.10", "name": "Taylor and Maclaurin Series", "priority": "CURRENT"},
+        {"id": "11.11", "name": "Applications of Taylor Polynomials", "priority": "CURRENT"}
+      ]
+    }
+  ],
+  "final_exam_likely_topics": [
+    "Integration techniques (by parts, trig sub, partial fractions)",
+    "Improper integrals",
+    "Series convergence tests (ALL of them)",
+    "Taylor/Maclaurin series",
+    "Power series radius/interval of convergence",
+    "Parametric equations calculus",
+    "Polar coordinates and area"
+  ],
+  "common_exam_questions": [
+    "Evaluate the integral using an appropriate technique",
+    "Determine if the series converges or diverges",
+    "Find the Taylor series for f(x) centered at a",
+    "Find the radius and interval of convergence",
+    "Find dy/dx for the parametric curve",
+    "Find the area enclosed by the polar curve"
+  ]
+}

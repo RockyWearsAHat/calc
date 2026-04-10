@@ -1,0 +1,473 @@
+{
+  "course_id": "1220325",
+  "scraped_at": "2026-04-08T22:23:32.649066",
+  "syllabus": {
+    "html": "<div class=\"user_content enhanced\" data-resource-id=\"1220325\" data-resource-type=\"syllabus.body\" id=\"course_syllabus\" style=\"margin-bottom: 10px;\">\n<p><span class=\"instructure_file_holder link_holder instructure_file_link_holder ally-file-link-holder\"><a aria-controls=\"preview_1\" aria-expanded=\"true\" class=\"auto_open file_preview_link previewable\" data-id=\"191764145\" href=\"https://utah.instructure.com/courses/1220325/files/191764145?wrap=1\" style=\"\" target=\"_blank\" title=\"CalcII_Syllabus_Spring2026.pdf\">CalcII_Syllabus_Spring2026.pdf</a><div class=\"inline-block ally-enhancement ally-user-content-dropdown\">\n<a class=\"al-trigger\" href=\"#\" role=\"button\" tabindex=\"0\">\n<img alt=\"\" role=\"presentation\" src=\"/images/svg-icons/svg_icon_download.svg\" style=\"width:16px; height:16px\"/>\n<span class=\"screenreader-only\">Actions</span>\n</a>\n<ul class=\"al-options\">\n<li><a data-id=\"191764145\" href=\"https://utah.instructure.com/courses/1220325/files/191764145/download?download_frd=1\">Download</a></li>\n<li><a class=\"ally-accessible-versions\" data-id=\"191764145\" href=\"#\">Alternative formats</a></li>\n</ul>\n</div><div class=\"preview_container\" id=\"preview_1\" role=\"region\" style=\"display: block;\"><a class=\"hide_file_preview_link\" href=\"#\" style=\"font-size: 0.8em;\">Minimize File Preview</a><div style=\"overflow: auto; resize: vertical; border: 1px solid transparent; height: 100%;\"><iframe allowfullscreen=\"1\" aria-label=\"File preview for CalcII_Syllabus_Spring2026.pdf\" id=\"undefined\" src=\"https://utah.instructure.com/api/v1/canvadoc_session?blob=%7B%22user_id%22:20000003068647,%22attachment_id%22:191764145,%22type%22:%22canvadoc%22%7D&amp;hmac=dd285179335563d03685da8afa37ae0431179611\" style=\"border: 0; overflow: auto; height: 99%; min-height: 800px\" width=\"100%\"></iframe></div></div></span></p>\n</div>",
+    "text": "CalcII_Syllabus_Spring2026.pdf\nActions\nDownload\nAlternative formats\nMinimize File Preview"
+  },
+  "assignments": [
+    {
+      "id": "18063678",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/18063678"
+    },
+    {
+      "id": "18063679",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/18063679"
+    },
+    {
+      "id": "18063694",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/18063694"
+    },
+    {
+      "id": "17519615",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\"><p><span>Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.</span> \u00a0It is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.</p>\n<p>Please submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\u00a0\u00a0</p>\n<p><span class=\"instructure_file_holder link_holder instructure_file_link_holder ally-file-link-holder\"><a aria-controls=\"preview_1\" aria-expanded=\"true\" class=\"auto_open file_preview_link previewable\" data-api-endpoint=\"https://utah.instructure.com/api/v1/courses/1220325/files/196797098\" data-api-returntype=\"File\" data-id=\"196797098\" href=\"https://utah.instructure.com/courses/1220325/files/196797098?wrap=1\" style=\"\" target=\"_blank\" title=\"written10.pdf\">written10.pdf</a><div class=\"inline-block ally-enhancement ally-user-content-dropdown\">\n<a class=\"al-trigger\" href=\"#\" role=\"button\" tabindex=\"0\">\n<img alt=\"\" role=\"presentation\" src=\"/images/svg-icons/svg_icon_download.svg\" style=\"width:16px; height:16px\"/>\n<span class=\"screenreader-only\">Actions</span>\n</a>\n<ul class=\"al-options\">\n<li><a data-id=\"196797098\" href=\"https://utah.instructure.com/courses/1220325/files/196797098/download?download_frd=1\">Download</a></li>\n<li><a class=\"ally-accessible-versions\" data-id=\"196797098\" href=\"#\">Alternative formats</a></li>\n</ul>\n</div><div class=\"preview_container\" id=\"preview_1\" role=\"region\" style=\"display: block;\"><a class=\"hide_file_preview_link\" href=\"#\" style=\"font-size: 0.8em;\">Minimize File Preview</a><div style=\"overflow: auto; resize: vertical; border: 1px solid transparent; height: 100%;\"><iframe allowfullscreen=\"1\" aria-label=\"File preview for written10.pdf\" id=\"undefined\" src=\"https://utah.instructure.com/api/v1/canvadoc_session?blob=%7B%22user_id%22:20000003068647,%22attachment_id%22:196797098,%22type%22:%22canvadoc%22%7D&amp;hmac=6b4985c3aab96b3f5f297f2cdc78b99a9681a6ee\" style=\"border: 0; overflow: auto; height: 99%; min-height: 800px\" width=\"100%\"></iframe></div></div></span></p></div>",
+      "description_text": "Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.\nIt is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.\nPlease submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\nwritten10.pdf\nActions\nDownload\nAlternative formats\nMinimize File Preview",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519615"
+    },
+    {
+      "id": "17519616",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "",
+      "description_text": "",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519616"
+    },
+    {
+      "id": "17519575",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "",
+      "description_text": "",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519575"
+    },
+    {
+      "id": "17913295",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17913295"
+    },
+    {
+      "id": "17519632",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\"><p><span>Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.</span> \u00a0It is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.</p>\n<p>Please submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\u00a0\u00a0</p>\n<p><span class=\"instructure_file_holder link_holder instructure_file_link_holder ally-file-link-holder\"><a aria-controls=\"preview_1\" aria-expanded=\"true\" class=\"auto_open file_preview_link previewable\" data-api-endpoint=\"https://utah.instructure.com/api/v1/courses/1220325/files/196052549\" data-api-returntype=\"File\" data-id=\"196052549\" data-udoit-dropdown-added=\"true\" href=\"https://utah.instructure.com/courses/1220325/files/196052549?wrap=1\" style=\"\" target=\"_blank\" title=\"written9.pdf\">written9.pdf</a><div class=\"udoit-student-access\" style=\"display: inline-block; position: relative; margin-left: 8px; vertical-align: middle;\"><div class=\"css-138gh4t-view\" dir=\"ltr\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover\" data-position=\"Popover___1\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover Tooltip\" data-position=\"Popover___2\" data-position-target=\"Popover___1\"><button aria-describedby=\"Tooltip___0\" class=\"css-8ocedz-view--inlineBlock-baseButton\" cursor=\"pointer\" data-cid=\"BaseButton IconButton\" data-popover-trigger=\"true\" data-position-target=\"Popover___2\" dir=\"ltr\" type=\"button\"><span class=\"css-15kmxr7-baseButton__content\"><span class=\"css-qi8ml9-baseButton__childrenLayout\"><span class=\"css-5udsuu-baseButton__iconOnly\"><span class=\"css-31gkb3-baseButton__iconSVG\"><svg aria-hidden=\"true\" class=\"css-1uh2md0-inlineSVG-svgIcon\" data-cid=\"InlineSVG SVGIcon\" focusable=\"false\" height=\"1em\" name=\"IconMiniArrowDown\" role=\"presentation\" rotate=\"0\" style=\"width: 1em; height: 1em;\" viewbox=\"0 0 1920 1920\" width=\"1em\"><g role=\"presentation\"><path d=\"M994.034 1226.26c-18.796 27.296-49.269 27.3-68.067 0L574.893 716.424C556.096 689.128 567.713 667 600.852 667h718.297c33.133 0 44.757 22.125 25.959 49.424L994.034 1226.26Z\" fill-rule=\"evenodd\"></path></g></svg></span><span class=\"css-r9cwls-screenReaderContent\">Manage Alternates</span></span></span></span></button></span></span></div></div><div class=\"inline-block ally-enhancement ally-user-content-dropdown\">\n<a class=\"al-trigger\" href=\"#\" role=\"button\" tabindex=\"0\">\n<img alt=\"\" role=\"presentation\" src=\"/images/svg-icons/svg_icon_download.svg\" style=\"width:16px; height:16px\"/>\n<span class=\"screenreader-only\">Actions</span>\n</a>\n<ul class=\"al-options\">\n<li><a class=\"ally_trigger_inline_preview\" data-preview-id=\"preview_1\" href=\"#\">Preview</a></li>\n<li><a data-id=\"196052549\" href=\"https://utah.instructure.com/courses/1220325/files/196052549/download?download_frd=1\">Download</a></li>\n<li><a class=\"ally-accessible-versions\" data-id=\"196052549\" href=\"#\">Alternative formats</a></li>\n</ul>\n</div><div class=\"preview_container\" id=\"preview_1\" role=\"region\" style=\"display: block;\"><a class=\"hide_file_preview_link\" href=\"#\" style=\"font-size: 0.8em;\">Minimize File Preview</a><div style=\"overflow: auto; resize: vertical; border: 1px solid transparent; height: 100%;\"><iframe allowfullscreen=\"1\" aria-label=\"File preview for written9.pdf\" id=\"undefined\" src=\"https://utah.instructure.com/api/v1/canvadoc_session?blob=%7B%22user_id%22:20000003068647,%22attachment_id%22:196052549,%22type%22:%22canvadoc%22%7D&amp;hmac=7350d4e22e4546f6fe288afac8837c8c5acb8112\" style=\"border: 0; overflow: auto; height: 99%; min-height: 800px\" width=\"100%\"></iframe></div></div></span></p>\n<p>\u00a0</p></div>",
+      "description_text": "Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.\nIt is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.\nPlease submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\nwritten9.pdf\nManage Alternates\nActions\nPreview\nDownload\nAlternative formats\nMinimize File Preview",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519632"
+    },
+    {
+      "id": "18024127",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/18024127"
+    },
+    {
+      "id": "18024130",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/18024130"
+    },
+    {
+      "id": "18024131",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/18024131"
+    },
+    {
+      "id": "18024148",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/18024148"
+    },
+    {
+      "id": "17519582",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div aria-label=\"Quiz Instructions\" class=\"description user_content enhanced\" role=\"region\">\n<p>Please answer the multiple choice and fill in the blank questions on the computer.\u00a0 <strong>Answer the last three questions on the provided written answer sheets. Make sure to write the problem label in the provided blank.\u00a0 </strong></p>\n<p>There are three pages of scrap paper attached to the written answer sheets; you may request more paper, however, this additional scrap paper will be destroyed unless you specifically request that it be attached to your exam.</p>\n</div>",
+      "description_text": "Please answer the multiple choice and fill in the blank questions on the computer.\nAnswer the last three questions on the provided written answer sheets. Make sure to write the problem label in the provided blank.\nThere are three pages of scrap paper attached to the written answer sheets; you may request more paper, however, this additional scrap paper will be destroyed unless you specifically request that it be attached to your exam.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519582"
+    },
+    {
+      "id": "17971822",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17971822"
+    },
+    {
+      "id": "17971823",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17971823"
+    },
+    {
+      "id": "17971824",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17971824"
+    },
+    {
+      "id": "17519630",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\"><p><span>Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.</span> \u00a0It is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.</p>\n<p>Please submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\u00a0\u00a0</p>\n<p><span class=\"ally-file-link-holder link_holder\"><span class=\"instructure_file_holder link_holder instructure_file_link_holder ally-file-link-holder\"><a aria-controls=\"preview_1\" aria-expanded=\"true\" class=\"auto_open file_preview_link previewable\" data-api-endpoint=\"https://utah.instructure.com/api/v1/courses/1220325/files/195443661\" data-api-returntype=\"File\" data-id=\"195443661\" data-udoit-dropdown-added=\"true\" href=\"https://utah.instructure.com/courses/1220325/files/195443661?wrap=1\" style=\"\" target=\"_blank\" title=\"written8.pdf\">written8.pdf</a><div class=\"udoit-student-access\" style=\"display: inline-block; position: relative; margin-left: 8px; vertical-align: middle;\"><div class=\"css-138gh4t-view\" dir=\"ltr\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover\" data-position=\"Popover___1\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover Tooltip\" data-position=\"Popover___2\" data-position-target=\"Popover___1\"><button aria-describedby=\"Tooltip___0\" class=\"css-8ocedz-view--inlineBlock-baseButton\" cursor=\"pointer\" data-cid=\"BaseButton IconButton\" data-popover-trigger=\"true\" data-position-target=\"Popover___2\" dir=\"ltr\" type=\"button\"><span class=\"css-15kmxr7-baseButton__content\"><span class=\"css-qi8ml9-baseButton__childrenLayout\"><span class=\"css-5udsuu-baseButton__iconOnly\"><span class=\"css-31gkb3-baseButton__iconSVG\"><svg aria-hidden=\"true\" class=\"css-1uh2md0-inlineSVG-svgIcon\" data-cid=\"InlineSVG SVGIcon\" focusable=\"false\" height=\"1em\" name=\"IconMiniArrowDown\" role=\"presentation\" rotate=\"0\" style=\"width: 1em; height: 1em;\" viewbox=\"0 0 1920 1920\" width=\"1em\"><g role=\"presentation\"><path d=\"M994.034 1226.26c-18.796 27.296-49.269 27.3-68.067 0L574.893 716.424C556.096 689.128 567.713 667 600.852 667h718.297c33.133 0 44.757 22.125 25.959 49.424L994.034 1226.26Z\" fill-rule=\"evenodd\"></path></g></svg></span><span class=\"css-r9cwls-screenReaderContent\">Manage Alternates</span></span></span></span></button></span></span></div></div><div class=\"inline-block ally-enhancement ally-user-content-dropdown\">\n<a class=\"al-trigger\" href=\"#\" role=\"button\" tabindex=\"0\">\n<img alt=\"\" role=\"presentation\" src=\"/images/svg-icons/svg_icon_download.svg\" style=\"width:16px; height:16px\"/>\n<span class=\"screenreader-only\">Actions</span>\n</a>\n<ul class=\"al-options\">\n<li><a class=\"ally_trigger_inline_preview\" data-preview-id=\"preview_1\" href=\"#\">Preview</a></li>\n<li><a data-id=\"195443661\" href=\"https://utah.instructure.com/courses/1220325/files/195443661/download?download_frd=1\">Download</a></li>\n<li><a class=\"ally-accessible-versions\" data-id=\"195443661\" href=\"#\">Alternative formats</a></li>\n</ul>\n</div><div class=\"preview_container\" id=\"preview_1\" role=\"region\" style=\"display: block;\"><a class=\"hide_file_preview_link\" href=\"#\" style=\"font-size: 0.8em;\">Minimize File Preview</a><div style=\"overflow: auto; resize: vertical; border: 1px solid transparent; height: 100%;\"><iframe allowfullscreen=\"1\" aria-label=\"File preview for written8.pdf\" id=\"undefined\" src=\"https://utah.instructure.com/api/v1/canvadoc_session?blob=%7B%22user_id%22:20000003068647,%22attachment_id%22:195443661,%22type%22:%22canvadoc%22%7D&amp;hmac=6b1e97184fc85842a7ce777bd7963f50231ea11a\" style=\"border: 0; overflow: auto; height: 99%; min-height: 800px\" width=\"100%\"></iframe></div></div></span></span></p></div>",
+      "description_text": "Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.\nIt is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.\nPlease submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\nwritten8.pdf\nManage Alternates\nActions\nPreview\nDownload\nAlternative formats\nMinimize File Preview",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519630"
+    },
+    {
+      "id": "17958115",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17958115"
+    },
+    {
+      "id": "17958116",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17958116"
+    },
+    {
+      "id": "17958117",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17958117"
+    },
+    {
+      "id": "17958119",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17958119"
+    },
+    {
+      "id": "17963089",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17963089"
+    },
+    {
+      "id": "17519628",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\"><p><span>Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.</span> \u00a0It is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.</p>\n<p>Please submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\u00a0\u00a0</p>\n<p><span class=\"instructure_file_holder link_holder instructure_file_link_holder ally-file-link-holder\"><a aria-controls=\"preview_1\" aria-expanded=\"true\" class=\"auto_open file_preview_link previewable\" data-api-endpoint=\"https://utah.instructure.com/api/v1/courses/1220325/files/195115746\" data-api-returntype=\"File\" data-id=\"195115746\" data-udoit-dropdown-added=\"true\" href=\"https://utah.instructure.com/courses/1220325/files/195115746?wrap=1\" style=\"\" target=\"_blank\" title=\"written7.pdf\">written7.pdf</a><div class=\"udoit-student-access\" style=\"display: inline-block; position: relative; margin-left: 8px; vertical-align: middle;\"><div class=\"css-138gh4t-view\" dir=\"ltr\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover\" data-position=\"Popover___1\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover Tooltip\" data-position=\"Popover___2\" data-position-target=\"Popover___1\"><button aria-describedby=\"Tooltip___0\" class=\"css-8ocedz-view--inlineBlock-baseButton\" cursor=\"pointer\" data-cid=\"BaseButton IconButton\" data-popover-trigger=\"true\" data-position-target=\"Popover___2\" dir=\"ltr\" type=\"button\"><span class=\"css-15kmxr7-baseButton__content\"><span class=\"css-qi8ml9-baseButton__childrenLayout\"><span class=\"css-5udsuu-baseButton__iconOnly\"><span class=\"css-31gkb3-baseButton__iconSVG\"><svg aria-hidden=\"true\" class=\"css-1uh2md0-inlineSVG-svgIcon\" data-cid=\"InlineSVG SVGIcon\" focusable=\"false\" height=\"1em\" name=\"IconMiniArrowDown\" role=\"presentation\" rotate=\"0\" style=\"width: 1em; height: 1em;\" viewbox=\"0 0 1920 1920\" width=\"1em\"><g role=\"presentation\"><path d=\"M994.034 1226.26c-18.796 27.296-49.269 27.3-68.067 0L574.893 716.424C556.096 689.128 567.713 667 600.852 667h718.297c33.133 0 44.757 22.125 25.959 49.424L994.034 1226.26Z\" fill-rule=\"evenodd\"></path></g></svg></span><span class=\"css-r9cwls-screenReaderContent\">Manage Alternates</span></span></span></span></button></span></span></div></div><div class=\"inline-block ally-enhancement ally-user-content-dropdown\">\n<a class=\"al-trigger\" href=\"#\" role=\"button\" tabindex=\"0\">\n<img alt=\"\" role=\"presentation\" src=\"/images/svg-icons/svg_icon_download.svg\" style=\"width:16px; height:16px\"/>\n<span class=\"screenreader-only\">Actions</span>\n</a>\n<ul class=\"al-options\">\n<li><a data-id=\"195115746\" href=\"https://utah.instructure.com/courses/1220325/files/195115746/download?download_frd=1\">Download</a></li>\n<li><a class=\"ally-accessible-versions\" data-id=\"195115746\" href=\"#\">Alternative formats</a></li>\n</ul>\n</div><div class=\"preview_container\" id=\"preview_1\" role=\"region\" style=\"display: block;\"><a class=\"hide_file_preview_link\" href=\"#\" style=\"font-size: 0.8em;\">Minimize File Preview</a><div style=\"overflow: auto; resize: vertical; border: 1px solid transparent; height: 100%;\"><iframe allowfullscreen=\"1\" aria-label=\"File preview for written7.pdf\" id=\"undefined\" src=\"https://utah.instructure.com/api/v1/canvadoc_session?blob=%7B%22user_id%22:20000003068647,%22attachment_id%22:195115746,%22type%22:%22canvadoc%22%7D&amp;hmac=178e0ee05aac4348d42d923e6da67a0949fa20f1\" style=\"border: 0; overflow: auto; height: 99%; min-height: 800px\" width=\"100%\"></iframe></div></div></span></p>\n<p>\u00a0</p></div>",
+      "description_text": "Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.\nIt is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.\nPlease submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\nwritten7.pdf\nManage Alternates\nActions\nDownload\nAlternative formats\nMinimize File Preview",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519628"
+    },
+    {
+      "id": "17519625",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\"><p><span>Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.</span> \u00a0It is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.</p>\n<p>Please submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\u00a0\u00a0</p>\n<p><span class=\"instructure_file_holder link_holder instructure_file_link_holder ally-file-link-holder\"><a aria-controls=\"preview_1\" aria-expanded=\"true\" class=\"auto_open file_preview_link previewable\" data-api-endpoint=\"https://utah.instructure.com/api/v1/courses/1220325/files/194716338\" data-api-returntype=\"File\" data-id=\"194716338\" data-udoit-dropdown-added=\"true\" href=\"https://utah.instructure.com/courses/1220325/files/194716338?wrap=1\" style=\"\" target=\"_blank\" title=\"written6.pdf\">written6.pdf</a><div class=\"udoit-student-access\" style=\"display: inline-block; position: relative; margin-left: 8px; vertical-align: middle;\"><div class=\"css-138gh4t-view\" dir=\"ltr\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover\" data-position=\"Popover___1\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover Tooltip\" data-position=\"Popover___2\" data-position-target=\"Popover___1\"><button aria-describedby=\"Tooltip___0\" class=\"css-8ocedz-view--inlineBlock-baseButton\" cursor=\"pointer\" data-cid=\"BaseButton IconButton\" data-popover-trigger=\"true\" data-position-target=\"Popover___2\" dir=\"ltr\" type=\"button\"><span class=\"css-15kmxr7-baseButton__content\"><span class=\"css-qi8ml9-baseButton__childrenLayout\"><span class=\"css-5udsuu-baseButton__iconOnly\"><span class=\"css-31gkb3-baseButton__iconSVG\"><svg aria-hidden=\"true\" class=\"css-1uh2md0-inlineSVG-svgIcon\" data-cid=\"InlineSVG SVGIcon\" focusable=\"false\" height=\"1em\" name=\"IconMiniArrowDown\" role=\"presentation\" rotate=\"0\" style=\"width: 1em; height: 1em;\" viewbox=\"0 0 1920 1920\" width=\"1em\"><g role=\"presentation\"><path d=\"M994.034 1226.26c-18.796 27.296-49.269 27.3-68.067 0L574.893 716.424C556.096 689.128 567.713 667 600.852 667h718.297c33.133 0 44.757 22.125 25.959 49.424L994.034 1226.26Z\" fill-rule=\"evenodd\"></path></g></svg></span><span class=\"css-r9cwls-screenReaderContent\">Manage Alternates</span></span></span></span></button></span></span></div></div><div class=\"inline-block ally-enhancement ally-user-content-dropdown\">\n<a class=\"al-trigger\" href=\"#\" role=\"button\" tabindex=\"0\">\n<img alt=\"\" role=\"presentation\" src=\"/images/svg-icons/svg_icon_download.svg\" style=\"width:16px; height:16px\"/>\n<span class=\"screenreader-only\">Actions</span>\n</a>\n<ul class=\"al-options\">\n<li><a class=\"ally_trigger_inline_preview\" data-preview-id=\"preview_1\" href=\"#\">Preview</a></li>\n<li><a data-id=\"194716338\" href=\"https://utah.instructure.com/courses/1220325/files/194716338/download?download_frd=1\">Download</a></li>\n<li><a class=\"ally-accessible-versions\" data-id=\"194716338\" href=\"#\">Alternative formats</a></li>\n</ul>\n</div><div class=\"preview_container\" id=\"preview_1\" role=\"region\" style=\"display: block;\"><a class=\"hide_file_preview_link\" href=\"#\" style=\"font-size: 0.8em;\">Minimize File Preview</a><div style=\"overflow: auto; resize: vertical; border: 1px solid transparent; height: 100%;\"><iframe allowfullscreen=\"1\" aria-label=\"File preview for written6.pdf\" id=\"undefined\" src=\"https://utah.instructure.com/api/v1/canvadoc_session?blob=%7B%22user_id%22:20000003068647,%22attachment_id%22:194716338,%22type%22:%22canvadoc%22%7D&amp;hmac=4f05083ac30889241ebfe86d987e52a9dbf9ee53\" style=\"border: 0; overflow: auto; height: 99%; min-height: 800px\" width=\"100%\"></iframe></div></div></span></p>\n<p>\u00a0</p></div>",
+      "description_text": "Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.\nIt is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.\nPlease submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\nwritten6.pdf\nManage Alternates\nActions\nPreview\nDownload\nAlternative formats\nMinimize File Preview",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519625"
+    },
+    {
+      "id": "17939918",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17939918"
+    },
+    {
+      "id": "17939920",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17939920"
+    },
+    {
+      "id": "17939919",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17939919"
+    },
+    {
+      "id": "17519623",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\"><p><span>Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.</span> \u00a0It is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.</p>\n<p>Please submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\u00a0\u00a0</p>\n<p><span class=\"instructure_file_holder link_holder instructure_file_link_holder ally-file-link-holder\"><a aria-controls=\"preview_1\" aria-expanded=\"true\" class=\"auto_open file_preview_link previewable\" data-api-endpoint=\"https://utah.instructure.com/api/v1/courses/1220325/files/194330330\" data-api-returntype=\"File\" data-id=\"194330330\" data-udoit-dropdown-added=\"true\" href=\"https://utah.instructure.com/courses/1220325/files/194330330?wrap=1\" style=\"\" target=\"_blank\" title=\"written5.pdf\">written5.pdf</a><div class=\"udoit-student-access\" style=\"display: inline-block; position: relative; margin-left: 8px; vertical-align: middle;\"><div class=\"css-138gh4t-view\" dir=\"ltr\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover\" data-position=\"Popover___1\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover Tooltip\" data-position=\"Popover___2\" data-position-target=\"Popover___1\"><button aria-describedby=\"Tooltip___0\" class=\"css-8ocedz-view--inlineBlock-baseButton\" cursor=\"pointer\" data-cid=\"BaseButton IconButton\" data-popover-trigger=\"true\" data-position-target=\"Popover___2\" dir=\"ltr\" type=\"button\"><span class=\"css-15kmxr7-baseButton__content\"><span class=\"css-qi8ml9-baseButton__childrenLayout\"><span class=\"css-5udsuu-baseButton__iconOnly\"><span class=\"css-31gkb3-baseButton__iconSVG\"><svg aria-hidden=\"true\" class=\"css-1uh2md0-inlineSVG-svgIcon\" data-cid=\"InlineSVG SVGIcon\" focusable=\"false\" height=\"1em\" name=\"IconMiniArrowDown\" role=\"presentation\" rotate=\"0\" style=\"width: 1em; height: 1em;\" viewbox=\"0 0 1920 1920\" width=\"1em\"><g role=\"presentation\"><path d=\"M994.034 1226.26c-18.796 27.296-49.269 27.3-68.067 0L574.893 716.424C556.096 689.128 567.713 667 600.852 667h718.297c33.133 0 44.757 22.125 25.959 49.424L994.034 1226.26Z\" fill-rule=\"evenodd\"></path></g></svg></span><span class=\"css-r9cwls-screenReaderContent\">Manage Alternates</span></span></span></span></button></span></span></div></div><div class=\"inline-block ally-enhancement ally-user-content-dropdown\">\n<a class=\"al-trigger\" href=\"#\" role=\"button\" tabindex=\"0\">\n<img alt=\"\" role=\"presentation\" src=\"/images/svg-icons/svg_icon_download.svg\" style=\"width:16px; height:16px\"/>\n<span class=\"screenreader-only\">Actions</span>\n</a>\n<ul class=\"al-options\">\n<li><a data-id=\"194330330\" href=\"https://utah.instructure.com/courses/1220325/files/194330330/download?download_frd=1\">Download</a></li>\n<li><a class=\"ally-accessible-versions\" data-id=\"194330330\" href=\"#\">Alternative formats</a></li>\n</ul>\n</div><div class=\"preview_container\" id=\"preview_1\" role=\"region\" style=\"display: block;\"><a class=\"hide_file_preview_link\" href=\"#\" style=\"font-size: 0.8em;\">Minimize File Preview</a><div style=\"overflow: auto; resize: vertical; border: 1px solid transparent; height: 100%;\"><iframe allowfullscreen=\"1\" aria-label=\"File preview for written5.pdf\" id=\"undefined\" src=\"https://utah.instructure.com/api/v1/canvadoc_session?blob=%7B%22user_id%22:20000003068647,%22attachment_id%22:194330330,%22type%22:%22canvadoc%22%7D&amp;hmac=d0551c419e412f0f104b722bbbc6f56713b44f4c\" style=\"border: 0; overflow: auto; height: 99%; min-height: 800px\" width=\"100%\"></iframe></div></div></span></p></div>",
+      "description_text": "Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.\nIt is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.\nPlease submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\nwritten5.pdf\nManage Alternates\nActions\nDownload\nAlternative formats\nMinimize File Preview",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519623"
+    },
+    {
+      "id": "17923988",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17923988"
+    },
+    {
+      "id": "17923990",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17923990"
+    },
+    {
+      "id": "17923989",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17923989"
+    },
+    {
+      "id": "17519562",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div aria-label=\"Quiz Instructions\" class=\"description user_content enhanced\" role=\"region\">\n<p>Please answer the multiple choice and fill in the blank questions on the computer.\u00a0 <strong>Answer the last three questions on the provided written answer sheets. Make sure to write the problem label in the provided blank.\u00a0 </strong></p>\n<p>There are three pages of scrap paper attached to the written answer sheets; you may request more paper, however, this additional scrap paper will be destroyed unless you specifically request that it be attached to your exam.</p>\n</div>",
+      "description_text": "Please answer the multiple choice and fill in the blank questions on the computer.\nAnswer the last three questions on the provided written answer sheets. Make sure to write the problem label in the provided blank.\nThere are three pages of scrap paper attached to the written answer sheets; you may request more paper, however, this additional scrap paper will be destroyed unless you specifically request that it be attached to your exam.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519562"
+    },
+    {
+      "id": "17519621",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\"><p><span>Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.</span> \u00a0It is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.</p>\n<p>Please submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\u00a0\u00a0</p>\n<p><span class=\"ally-file-link-holder link_holder\"><span class=\"instructure_file_holder link_holder instructure_file_link_holder ally-file-link-holder\"><a aria-controls=\"preview_1\" aria-expanded=\"true\" class=\"auto_open file_preview_link previewable\" data-api-endpoint=\"https://utah.instructure.com/api/v1/courses/1220325/files/193741053\" data-api-returntype=\"File\" data-id=\"193741053\" data-udoit-dropdown-added=\"true\" href=\"https://utah.instructure.com/courses/1220325/files/193741053?wrap=1\" style=\"\" target=\"_blank\" title=\"written4.pdf\">written4.pdf</a><div class=\"udoit-student-access\" style=\"display: inline-block; position: relative; margin-left: 8px; vertical-align: middle;\"><div class=\"css-138gh4t-view\" dir=\"ltr\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover\" data-position=\"Popover___1\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover Tooltip\" data-position=\"Popover___2\" data-position-target=\"Popover___1\"><button aria-describedby=\"Tooltip___0\" class=\"css-8ocedz-view--inlineBlock-baseButton\" cursor=\"pointer\" data-cid=\"BaseButton IconButton\" data-popover-trigger=\"true\" data-position-target=\"Popover___2\" dir=\"ltr\" type=\"button\"><span class=\"css-15kmxr7-baseButton__content\"><span class=\"css-qi8ml9-baseButton__childrenLayout\"><span class=\"css-5udsuu-baseButton__iconOnly\"><span class=\"css-31gkb3-baseButton__iconSVG\"><svg aria-hidden=\"true\" class=\"css-1uh2md0-inlineSVG-svgIcon\" data-cid=\"InlineSVG SVGIcon\" focusable=\"false\" height=\"1em\" name=\"IconMiniArrowDown\" role=\"presentation\" rotate=\"0\" style=\"width: 1em; height: 1em;\" viewbox=\"0 0 1920 1920\" width=\"1em\"><g role=\"presentation\"><path d=\"M994.034 1226.26c-18.796 27.296-49.269 27.3-68.067 0L574.893 716.424C556.096 689.128 567.713 667 600.852 667h718.297c33.133 0 44.757 22.125 25.959 49.424L994.034 1226.26Z\" fill-rule=\"evenodd\"></path></g></svg></span><span class=\"css-r9cwls-screenReaderContent\">Manage Alternates</span></span></span></span></button></span></span></div></div><div class=\"inline-block ally-enhancement ally-user-content-dropdown\">\n<a class=\"al-trigger\" href=\"#\" role=\"button\" tabindex=\"0\">\n<img alt=\"\" role=\"presentation\" src=\"/images/svg-icons/svg_icon_download.svg\" style=\"width:16px; height:16px\"/>\n<span class=\"screenreader-only\">Actions</span>\n</a>\n<ul class=\"al-options\">\n<li><a class=\"ally_trigger_inline_preview\" data-preview-id=\"preview_1\" href=\"#\">Preview</a></li>\n<li><a data-id=\"193741053\" href=\"https://utah.instructure.com/courses/1220325/files/193741053/download?download_frd=1\">Download</a></li>\n<li><a class=\"ally-accessible-versions\" data-id=\"193741053\" href=\"#\">Alternative formats</a></li>\n</ul>\n</div><div class=\"preview_container\" id=\"preview_1\" role=\"region\" style=\"display: block;\"><a class=\"hide_file_preview_link\" href=\"#\" style=\"font-size: 0.8em;\">Minimize File Preview</a><div style=\"overflow: auto; resize: vertical; border: 1px solid transparent; height: 100%;\"><iframe allowfullscreen=\"1\" aria-label=\"File preview for written4.pdf\" id=\"undefined\" src=\"https://utah.instructure.com/api/v1/canvadoc_session?blob=%7B%22user_id%22:20000003068647,%22attachment_id%22:193741053,%22type%22:%22canvadoc%22%7D&amp;hmac=f777efb42ae3286c22026b066606791232477fb9\" style=\"border: 0; overflow: auto; height: 99%; min-height: 800px\" width=\"100%\"></iframe></div></div></span></span></p></div>",
+      "description_text": "Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.\nIt is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.\nPlease submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\nwritten4.pdf\nManage Alternates\nActions\nPreview\nDownload\nAlternative formats\nMinimize File Preview",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519621"
+    },
+    {
+      "id": "17899691",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17899691"
+    },
+    {
+      "id": "17899692",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17899692"
+    },
+    {
+      "id": "17899694",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17899694"
+    },
+    {
+      "id": "17519619",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\"><p><span>Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.</span> \u00a0It is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.</p>\n<p>Please submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\u00a0\u00a0</p>\n<p><span class=\"ally-file-link-holder link_holder\"><span class=\"instructure_file_holder link_holder instructure_file_link_holder ally-file-link-holder\"><a aria-controls=\"preview_1\" aria-expanded=\"true\" class=\"auto_open file_preview_link previewable\" data-api-endpoint=\"https://utah.instructure.com/api/v1/courses/1220325/files/193296435\" data-api-returntype=\"File\" data-id=\"193296435\" data-udoit-dropdown-added=\"true\" href=\"https://utah.instructure.com/courses/1220325/files/193296435?wrap=1\" style=\"\" target=\"_blank\" title=\"written3.pdf\">written3.pdf</a><div class=\"udoit-student-access\" style=\"display: inline-block; position: relative; margin-left: 8px; vertical-align: middle;\"><div class=\"css-138gh4t-view\" dir=\"ltr\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover\" data-position=\"Popover___1\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover Tooltip\" data-position=\"Popover___2\" data-position-target=\"Popover___1\"><button aria-describedby=\"Tooltip___0\" class=\"css-8ocedz-view--inlineBlock-baseButton\" cursor=\"pointer\" data-cid=\"BaseButton IconButton\" data-popover-trigger=\"true\" data-position-target=\"Popover___2\" dir=\"ltr\" type=\"button\"><span class=\"css-15kmxr7-baseButton__content\"><span class=\"css-qi8ml9-baseButton__childrenLayout\"><span class=\"css-5udsuu-baseButton__iconOnly\"><span class=\"css-31gkb3-baseButton__iconSVG\"><svg aria-hidden=\"true\" class=\"css-1uh2md0-inlineSVG-svgIcon\" data-cid=\"InlineSVG SVGIcon\" focusable=\"false\" height=\"1em\" name=\"IconMiniArrowDown\" role=\"presentation\" rotate=\"0\" style=\"width: 1em; height: 1em;\" viewbox=\"0 0 1920 1920\" width=\"1em\"><g role=\"presentation\"><path d=\"M994.034 1226.26c-18.796 27.296-49.269 27.3-68.067 0L574.893 716.424C556.096 689.128 567.713 667 600.852 667h718.297c33.133 0 44.757 22.125 25.959 49.424L994.034 1226.26Z\" fill-rule=\"evenodd\"></path></g></svg></span><span class=\"css-r9cwls-screenReaderContent\">Manage Alternates</span></span></span></span></button></span></span></div></div><div class=\"inline-block ally-enhancement ally-user-content-dropdown\">\n<a class=\"al-trigger\" href=\"#\" role=\"button\" tabindex=\"0\">\n<img alt=\"\" role=\"presentation\" src=\"/images/svg-icons/svg_icon_download.svg\" style=\"width:16px; height:16px\"/>\n<span class=\"screenreader-only\">Actions</span>\n</a>\n<ul class=\"al-options\">\n<li><a class=\"ally_trigger_inline_preview\" data-preview-id=\"preview_1\" href=\"#\">Preview</a></li>\n<li><a data-id=\"193296435\" href=\"https://utah.instructure.com/courses/1220325/files/193296435/download?download_frd=1\">Download</a></li>\n<li><a class=\"ally-accessible-versions\" data-id=\"193296435\" href=\"#\">Alternative formats</a></li>\n</ul>\n</div><div class=\"preview_container\" id=\"preview_1\" role=\"region\" style=\"display: block;\"><a class=\"hide_file_preview_link\" href=\"#\" style=\"font-size: 0.8em;\">Minimize File Preview</a><div style=\"overflow: auto; resize: vertical; border: 1px solid transparent; height: 100%;\"><iframe allowfullscreen=\"1\" aria-label=\"File preview for written3.pdf\" id=\"undefined\" src=\"https://utah.instructure.com/api/v1/canvadoc_session?blob=%7B%22user_id%22:20000003068647,%22attachment_id%22:193296435,%22type%22:%22canvadoc%22%7D&amp;hmac=df107066a4641b5fd39400e9ce3c9c3b23aab1f5\" style=\"border: 0; overflow: auto; height: 99%; min-height: 800px\" width=\"100%\"></iframe></div></div></span></span></p></div>",
+      "description_text": "Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.\nIt is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.\nPlease submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\nwritten3.pdf\nManage Alternates\nActions\nPreview\nDownload\nAlternative formats\nMinimize File Preview",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519619"
+    },
+    {
+      "id": "17875032",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17875032"
+    },
+    {
+      "id": "17875036",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17875036"
+    },
+    {
+      "id": "17875037",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17875037"
+    },
+    {
+      "id": "17849905",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17849905"
+    },
+    {
+      "id": "17849908",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17849908"
+    },
+    {
+      "id": "17849911",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17849911"
+    },
+    {
+      "id": "17519617",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\"><p><span>Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.</span> \u00a0It is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.</p>\n<p>Please submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\u00a0\u00a0</p>\n<p><span class=\"instructure_file_holder link_holder instructure_file_link_holder ally-file-link-holder\"><a aria-controls=\"preview_1\" aria-expanded=\"true\" class=\"auto_open file_preview_link previewable\" data-api-endpoint=\"https://utah.instructure.com/api/v1/courses/1220325/files/192945852\" data-api-returntype=\"File\" data-id=\"192945852\" data-udoit-dropdown-added=\"true\" href=\"https://utah.instructure.com/courses/1220325/files/192945852?wrap=1\" style=\"\" target=\"_blank\" title=\"written2.pdf\">written2.pdf</a><div class=\"udoit-student-access\" style=\"display: inline-block; position: relative; margin-left: 8px; vertical-align: middle;\"><div class=\"css-138gh4t-view\" dir=\"ltr\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover\" data-position=\"Popover___1\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover Tooltip\" data-position=\"Popover___2\" data-position-target=\"Popover___1\"><button aria-describedby=\"Tooltip___0\" class=\"css-8ocedz-view--inlineBlock-baseButton\" cursor=\"pointer\" data-cid=\"BaseButton IconButton\" data-popover-trigger=\"true\" data-position-target=\"Popover___2\" dir=\"ltr\" type=\"button\"><span class=\"css-15kmxr7-baseButton__content\"><span class=\"css-qi8ml9-baseButton__childrenLayout\"><span class=\"css-5udsuu-baseButton__iconOnly\"><span class=\"css-31gkb3-baseButton__iconSVG\"><svg aria-hidden=\"true\" class=\"css-1uh2md0-inlineSVG-svgIcon\" data-cid=\"InlineSVG SVGIcon\" focusable=\"false\" height=\"1em\" name=\"IconMiniArrowDown\" role=\"presentation\" rotate=\"0\" style=\"width: 1em; height: 1em;\" viewbox=\"0 0 1920 1920\" width=\"1em\"><g role=\"presentation\"><path d=\"M994.034 1226.26c-18.796 27.296-49.269 27.3-68.067 0L574.893 716.424C556.096 689.128 567.713 667 600.852 667h718.297c33.133 0 44.757 22.125 25.959 49.424L994.034 1226.26Z\" fill-rule=\"evenodd\"></path></g></svg></span><span class=\"css-r9cwls-screenReaderContent\">Manage Alternates</span></span></span></span></button></span></span></div></div><div class=\"inline-block ally-enhancement ally-user-content-dropdown\">\n<a class=\"al-trigger\" href=\"#\" role=\"button\" tabindex=\"0\">\n<img alt=\"\" role=\"presentation\" src=\"/images/svg-icons/svg_icon_download.svg\" style=\"width:16px; height:16px\"/>\n<span class=\"screenreader-only\">Actions</span>\n</a>\n<ul class=\"al-options\">\n<li><a class=\"ally_trigger_inline_preview\" data-preview-id=\"preview_1\" href=\"#\">Preview</a></li>\n<li><a data-id=\"192945852\" href=\"https://utah.instructure.com/courses/1220325/files/192945852/download?download_frd=1\">Download</a></li>\n<li><a class=\"ally-accessible-versions\" data-id=\"192945852\" href=\"#\">Alternative formats</a></li>\n</ul>\n</div><div class=\"preview_container\" id=\"preview_1\" role=\"region\" style=\"display: block;\"><a class=\"hide_file_preview_link\" href=\"#\" style=\"font-size: 0.8em;\">Minimize File Preview</a><div style=\"overflow: auto; resize: vertical; border: 1px solid transparent; height: 100%;\"><iframe allowfullscreen=\"1\" aria-label=\"File preview for written2.pdf\" id=\"undefined\" src=\"https://utah.instructure.com/api/v1/canvadoc_session?blob=%7B%22user_id%22:20000003068647,%22attachment_id%22:192945852,%22type%22:%22canvadoc%22%7D&amp;hmac=8493bc06c4d0fec3af1c4868c336a6635f94c7f5\" style=\"border: 0; overflow: auto; height: 99%; min-height: 800px\" width=\"100%\"></iframe></div></div></span></p>\n<p>\u00a0</p></div>",
+      "description_text": "Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.\nIt is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.\nPlease submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\nwritten2.pdf\nManage Alternates\nActions\nPreview\nDownload\nAlternative formats\nMinimize File Preview",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519617"
+    },
+    {
+      "id": "17519614",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\"><p><span>Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.</span> \u00a0It is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.</p>\n<p>Please submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\u00a0\u00a0</p>\n<p><span class=\"instructure_file_holder link_holder instructure_file_link_holder ally-file-link-holder\"><a aria-controls=\"preview_1\" aria-expanded=\"true\" class=\"auto_open file_preview_link previewable\" data-api-endpoint=\"https://utah.instructure.com/api/v1/courses/1220325/files/192364948\" data-api-returntype=\"File\" data-id=\"192364948\" data-udoit-dropdown-added=\"true\" href=\"https://utah.instructure.com/courses/1220325/files/192364948?wrap=1\" style=\"\" target=\"_blank\" title=\"written1.pdf\">written1.pdf</a><div class=\"udoit-student-access\" style=\"display: inline-block; position: relative; margin-left: 8px; vertical-align: middle;\"><div class=\"css-138gh4t-view\" dir=\"ltr\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover\" data-position=\"Popover___1\"><span class=\"css-1ihz85b-position\" data-cid=\"Position Popover Tooltip\" data-position=\"Popover___2\" data-position-target=\"Popover___1\"><button aria-describedby=\"Tooltip___0\" class=\"css-8ocedz-view--inlineBlock-baseButton\" cursor=\"pointer\" data-cid=\"BaseButton IconButton\" data-popover-trigger=\"true\" data-position-target=\"Popover___2\" dir=\"ltr\" type=\"button\"><span class=\"css-15kmxr7-baseButton__content\"><span class=\"css-qi8ml9-baseButton__childrenLayout\"><span class=\"css-5udsuu-baseButton__iconOnly\"><span class=\"css-31gkb3-baseButton__iconSVG\"><svg aria-hidden=\"true\" class=\"css-1uh2md0-inlineSVG-svgIcon\" data-cid=\"InlineSVG SVGIcon\" focusable=\"false\" height=\"1em\" name=\"IconMiniArrowDown\" role=\"presentation\" rotate=\"0\" style=\"width: 1em; height: 1em;\" viewbox=\"0 0 1920 1920\" width=\"1em\"><g role=\"presentation\"><path d=\"M994.034 1226.26c-18.796 27.296-49.269 27.3-68.067 0L574.893 716.424C556.096 689.128 567.713 667 600.852 667h718.297c33.133 0 44.757 22.125 25.959 49.424L994.034 1226.26Z\" fill-rule=\"evenodd\"></path></g></svg></span><span class=\"css-r9cwls-screenReaderContent\">Manage Alternates</span></span></span></span></button></span></span></div></div><div class=\"inline-block ally-enhancement ally-user-content-dropdown\">\n<a class=\"al-trigger\" href=\"#\" role=\"button\" tabindex=\"0\">\n<img alt=\"\" role=\"presentation\" src=\"/images/svg-icons/svg_icon_download.svg\" style=\"width:16px; height:16px\"/>\n<span class=\"screenreader-only\">Actions</span>\n</a>\n<ul class=\"al-options\">\n<li><a class=\"ally_trigger_inline_preview\" data-preview-id=\"preview_1\" href=\"#\">Preview</a></li>\n<li><a data-id=\"192364948\" href=\"https://utah.instructure.com/courses/1220325/files/192364948/download?download_frd=1\">Download</a></li>\n<li><a class=\"ally-accessible-versions\" data-id=\"192364948\" href=\"#\">Alternative formats</a></li>\n</ul>\n</div><div class=\"preview_container\" id=\"preview_1\" role=\"region\" style=\"display: block;\"><a class=\"hide_file_preview_link\" href=\"#\" style=\"font-size: 0.8em;\">Minimize File Preview</a><div style=\"overflow: auto; resize: vertical; border: 1px solid transparent; height: 100%;\"><iframe allowfullscreen=\"1\" aria-label=\"File preview for written1.pdf\" id=\"undefined\" src=\"https://utah.instructure.com/api/v1/canvadoc_session?blob=%7B%22user_id%22:20000003068647,%22attachment_id%22:192364948,%22type%22:%22canvadoc%22%7D&amp;hmac=1d324aa651701650ef317250f7845f52a947a202\" style=\"border: 0; overflow: auto; height: 99%; min-height: 800px\" width=\"100%\"></iframe></div></div></span></p></div>",
+      "description_text": "Please write solutions to these problems on the provided sheet and upload as a single multipage pdf.\u00a0 Remember, that the point of these written assignments is to practice writing out clear and complete solutions as opposed to finding a final answer only.\u00a0 The quality and clarity of your work will be graded as well as your answers.\nIt is preferable if you do your work in the spaces provided, either by printing the page or filling it out electronically.\nPlease submit your work directly to Gradescope.\u00a0 You should be able to do this by clicking the Gradescope tab embedded in our Canvas page.\u00a0 You still must upload only a single pdf (multipage if necessary).\nwritten1.pdf\nManage Alternates\nActions\nPreview\nDownload\nAlternative formats\nMinimize File Preview",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17519614"
+    },
+    {
+      "id": "17849904",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17849904"
+    },
+    {
+      "id": "17848353",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17848353"
+    },
+    {
+      "id": "17849902",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17849902"
+    },
+    {
+      "id": "17617060",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div aria-label=\"Quiz Instructions\" class=\"description user_content enhanced\" role=\"region\">\n<p><span>Answer the following questions to allow me to get to know you a little better!\u00a0 Click <a data-course-type=\"wikiPages\" data-published=\"true\" href=\"https://utah.instructure.com/courses/1220325/pages/about-the-instructor\" title=\"About the Instructor\">here </a>to read a little bit about your instructor.</span></p>\n</div>",
+      "description_text": "Answer the following questions to allow me to get to know you a little better!\u00a0 Click\nhere\nto read a little bit about your instructor.",
+      "due_date": null,
+      "points": "/ 0",
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17617060"
+    },
+    {
+      "id": "17616635",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17616635"
+    },
+    {
+      "id": "17616634",
+      "title": "You need to have JavaScript enabled in order to access this site.",
+      "description_html": "<div class=\"user_content enhanced\" data-testid=\"assignments-2-assignment-description\">No additional details were added for this assignment.</div>",
+      "description_text": "No additional details were added for this assignment.",
+      "due_date": null,
+      "points": null,
+      "url": "https://utah.instructure.com/courses/1220325/assignments/17616634"
+    }
+  ],
+  "modules": [],
+  "announcements": [],
+  "pages": [],
+  "files": []
+}

@@ -1,0 +1,1729 @@
+{
+  "crawl_time": "2026-04-09T15:59:03.581430",
+  "elapsed_seconds": 2243.9,
+  "base_url": "http://localhost:2000",
+  "total_pages": 101,
+  "total_katex_errors": 1,
+  "pages_with_errors": 1,
+  "console_errors": [
+    {
+      "type": "error",
+      "text": "Failed to load data: Error: Request timed out \u2014 the AI may be busy. Try again.\n    at fetchAPI (http://localhost:2000/src/utils/api.js:24:10)\n    at async Promise.all (index 0)\n    at async loadInitialData (http://localhost:2000/src/pages/PracticeV2.jsx:1535:29)",
+      "url": "http://localhost:2000/practice"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load data: Error: Request timed out \u2014 the AI may be busy. Try again.\n    at fetchAPI (http://localhost:2000/src/utils/api.js:24:10)\n    at async Promise.all (index 0)\n    at async loadInitialData (http://localhost:2000/src/pages/PracticeV2.jsx:1535:29)",
+      "url": "http://localhost:2000/practice"
+    }
+  ],
+  "pages": [
+    {
+      "page": "dashboard",
+      "route": "/",
+      "screenshot": "screenshots/dashboard.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 12,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 6711,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:21:41.557907"
+    },
+    {
+      "page": "formulas",
+      "route": "/formulas",
+      "screenshot": "screenshots/formulas.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 27,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2548,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:21:43.092458"
+    },
+    {
+      "page": "course",
+      "route": "/course",
+      "screenshot": "screenshots/course.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 1,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 503,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:21:49.260851"
+    },
+    {
+      "page": "settings",
+      "route": "/settings",
+      "screenshot": "screenshots/settings.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1039,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:21:55.478087"
+    },
+    {
+      "page": "learn/1.5",
+      "tab": "learn",
+      "route": "/learn/1.5",
+      "screenshot": "screenshots/learn_1_5_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 5,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1872,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:21:57.765957"
+    },
+    {
+      "page": "learn/1.5/concept/0",
+      "tab": "learn",
+      "concept_index": 0,
+      "screenshot": "screenshots/learn_1_5_concept_0.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 5,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1872,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:21:57.929562"
+    },
+    {
+      "page": "learn/1.5/concept/1",
+      "tab": "learn",
+      "concept_index": 1,
+      "screenshot": "screenshots/learn_1_5_concept_1.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 3,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1869,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:21:59.471696"
+    },
+    {
+      "page": "learn/1.5/concept/2",
+      "tab": "learn",
+      "concept_index": 2,
+      "screenshot": "screenshots/learn_1_5_concept_2.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 3,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2051,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:01.016917"
+    },
+    {
+      "page": "learn/1.5/concept/3",
+      "tab": "learn",
+      "concept_index": 3,
+      "screenshot": "screenshots/learn_1_5_concept_3.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 12,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2950,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:02.563587"
+    },
+    {
+      "page": "learn/1.5/practice",
+      "tab": "practice",
+      "screenshot": "screenshots/learn_1_5_practice.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 2,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1505,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:04.287096"
+    },
+    {
+      "page": "learn/1.5/walkthrough",
+      "tab": "practice",
+      "screenshot": "screenshots/learn_1_5_walkthrough.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 4,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1662,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:05.819760"
+    },
+    {
+      "page": "learn/1.6",
+      "tab": "learn",
+      "route": "/learn/1.6",
+      "screenshot": "screenshots/learn_1_6_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 19,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2287,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:08.104986"
+    },
+    {
+      "page": "learn/1.6/concept/0",
+      "tab": "learn",
+      "concept_index": 0,
+      "screenshot": "screenshots/learn_1_6_concept_0.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 19,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2287,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:08.292565"
+    },
+    {
+      "page": "learn/1.6/concept/1",
+      "tab": "learn",
+      "concept_index": 1,
+      "screenshot": "screenshots/learn_1_6_concept_1.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 12,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2336,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:09.880658"
+    },
+    {
+      "page": "learn/1.6/concept/2",
+      "tab": "learn",
+      "concept_index": 2,
+      "screenshot": "screenshots/learn_1_6_concept_2.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 15,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2175,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:11.418775"
+    },
+    {
+      "page": "learn/1.6/concept/3",
+      "tab": "learn",
+      "concept_index": 3,
+      "screenshot": "screenshots/learn_1_6_concept_3.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 12,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2407,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:12.975707"
+    },
+    {
+      "page": "learn/1.6/practice",
+      "tab": "practice",
+      "screenshot": "screenshots/learn_1_6_practice.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 4,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1712,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:14.744749"
+    },
+    {
+      "page": "learn/1.6/walkthrough",
+      "tab": "practice",
+      "screenshot": "screenshots/learn_1_6_walkthrough.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 8,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1903,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:16.311853"
+    },
+    {
+      "page": "learn/2.1",
+      "tab": "learn",
+      "route": "/learn/2.1",
+      "screenshot": "screenshots/learn_2_1_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 2,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1975,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:18.678322"
+    },
+    {
+      "page": "learn/2.1/concept/0",
+      "tab": "learn",
+      "concept_index": 0,
+      "screenshot": "screenshots/learn_2_1_concept_0.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 2,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1975,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:18.850314"
+    },
+    {
+      "page": "learn/2.1/concept/1",
+      "tab": "learn",
+      "concept_index": 1,
+      "screenshot": "screenshots/learn_2_1_concept_1.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 3,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2125,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:20.390850"
+    },
+    {
+      "page": "learn/2.1/concept/2",
+      "tab": "learn",
+      "concept_index": 2,
+      "screenshot": "screenshots/learn_2_1_concept_2.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 4,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2177,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:21.916321"
+    },
+    {
+      "page": "learn/2.1/concept/3",
+      "tab": "learn",
+      "concept_index": 3,
+      "screenshot": "screenshots/learn_2_1_concept_3.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 2,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1938,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:23.438958"
+    },
+    {
+      "page": "learn/2.1/practice",
+      "tab": "practice",
+      "screenshot": "screenshots/learn_2_1_practice.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 1,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1584,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:25.133702"
+    },
+    {
+      "page": "learn/2.1/walkthrough",
+      "tab": "practice",
+      "screenshot": "screenshots/learn_2_1_walkthrough.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 3,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1884,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:26.699874"
+    },
+    {
+      "page": "learn/2.2",
+      "tab": "learn",
+      "route": "/learn/2.2",
+      "screenshot": "screenshots/learn_2_2_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 7,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2056,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:28.982736"
+    },
+    {
+      "page": "learn/2.2/concept/0",
+      "tab": "learn",
+      "concept_index": 0,
+      "screenshot": "screenshots/learn_2_2_concept_0.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 7,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2056,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:29.144821"
+    },
+    {
+      "page": "learn/2.2/concept/1",
+      "tab": "learn",
+      "concept_index": 1,
+      "screenshot": "screenshots/learn_2_2_concept_1.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 5,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2036,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:30.726772"
+    },
+    {
+      "page": "learn/2.2/concept/2",
+      "tab": "learn",
+      "concept_index": 2,
+      "screenshot": "screenshots/learn_2_2_concept_2.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 7,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2080,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:32.247621"
+    },
+    {
+      "page": "learn/2.2/concept/3",
+      "tab": "learn",
+      "concept_index": 3,
+      "screenshot": "screenshots/learn_2_2_concept_3.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 4,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2103,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:33.837912"
+    },
+    {
+      "page": "learn/2.2/practice",
+      "tab": "practice",
+      "screenshot": "screenshots/learn_2_2_practice.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 2,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1512,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:35.545747"
+    },
+    {
+      "page": "learn/2.2/walkthrough",
+      "tab": "practice",
+      "screenshot": "screenshots/learn_2_2_walkthrough.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 3,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1792,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:37.086897"
+    },
+    {
+      "page": "learn/2.3",
+      "tab": "learn",
+      "route": "/learn/2.3",
+      "screenshot": "screenshots/learn_2_3_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 5,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2665,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:39.532023"
+    },
+    {
+      "page": "learn/2.3/concept/0",
+      "tab": "learn",
+      "concept_index": 0,
+      "screenshot": "screenshots/learn_2_3_concept_0.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 5,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2665,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:39.728662"
+    },
+    {
+      "page": "learn/2.3/concept/1",
+      "tab": "learn",
+      "concept_index": 1,
+      "screenshot": "screenshots/learn_2_3_concept_1.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 3,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2714,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:41.315798"
+    },
+    {
+      "page": "learn/2.3/concept/2",
+      "tab": "learn",
+      "concept_index": 2,
+      "screenshot": "screenshots/learn_2_3_concept_2.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 4,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2810,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:42.951478"
+    },
+    {
+      "page": "learn/2.3/concept/3",
+      "tab": "learn",
+      "concept_index": 3,
+      "screenshot": "screenshots/learn_2_3_concept_3.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 4,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2876,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:44.581044"
+    },
+    {
+      "page": "learn/2.3/practice",
+      "tab": "practice",
+      "screenshot": "screenshots/learn_2_3_practice.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 2,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2176,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:46.340290"
+    },
+    {
+      "page": "learn/2.3/walkthrough",
+      "tab": "practice",
+      "screenshot": "screenshots/learn_2_3_walkthrough.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 2,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2356,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:47.912927"
+    },
+    {
+      "page": "learn/2.4",
+      "tab": "learn",
+      "route": "/learn/2.4",
+      "screenshot": "screenshots/learn_2_4_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 25,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2193,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:50.394967"
+    },
+    {
+      "page": "learn/2.4/concept/0",
+      "tab": "learn",
+      "concept_index": 0,
+      "screenshot": "screenshots/learn_2_4_concept_0.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 25,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2193,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:50.544574"
+    },
+    {
+      "page": "learn/2.4/concept/1",
+      "tab": "learn",
+      "concept_index": 1,
+      "screenshot": "screenshots/learn_2_4_concept_1.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 23,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2359,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:52.154232"
+    },
+    {
+      "page": "learn/2.4/concept/2",
+      "tab": "learn",
+      "concept_index": 2,
+      "screenshot": "screenshots/learn_2_4_concept_2.png",
+      "katex_errors": [
+        {
+          "type": "leaked-dollar-delimiters",
+          "text": "Proving limits (constructing $\\delta$ from $\\epsilon$)",
+          "parentTag": "H3",
+          "index": 96
+        }
+      ],
+      "metrics": {
+        "katex_count": 19,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2398,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:53.711389"
+    },
+    {
+      "page": "learn/2.4/concept/3",
+      "tab": "learn",
+      "concept_index": 3,
+      "screenshot": "screenshots/learn_2_4_concept_3.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 19,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2359,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:55.235788"
+    },
+    {
+      "page": "learn/2.4/practice",
+      "tab": "practice",
+      "screenshot": "screenshots/learn_2_4_practice.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 10,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1813,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:57.029415"
+    },
+    {
+      "page": "learn/2.4/walkthrough",
+      "tab": "practice",
+      "screenshot": "screenshots/learn_2_4_walkthrough.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 15,
+        "formula_boxes": 1,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 2058,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:22:58.607997"
+    },
+    {
+      "page": "learn/2.5",
+      "tab": "learn",
+      "route": "/learn/2.5",
+      "screenshot": "screenshots/learn_2_5_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 1,
+        "active_loaders": 0,
+        "body_text_length": 1244,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:25:04.421995"
+    },
+    {
+      "page": "learn/2.6",
+      "tab": "learn",
+      "route": "/learn/2.6",
+      "screenshot": "screenshots/learn_2_6_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:25:31.617634"
+    },
+    {
+      "page": "learn/2.7",
+      "tab": "learn",
+      "route": "/learn/2.7",
+      "screenshot": "screenshots/learn_2_7_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:25:58.803449"
+    },
+    {
+      "page": "learn/2.8",
+      "tab": "learn",
+      "route": "/learn/2.8",
+      "screenshot": "screenshots/learn_2_8_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:26:25.990026"
+    },
+    {
+      "page": "learn/3.1",
+      "tab": "learn",
+      "route": "/learn/3.1",
+      "screenshot": "screenshots/learn_3_1_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:26:53.144638"
+    },
+    {
+      "page": "learn/3.2",
+      "tab": "learn",
+      "route": "/learn/3.2",
+      "screenshot": "screenshots/learn_3_2_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:27:20.325916"
+    },
+    {
+      "page": "learn/3.3",
+      "tab": "learn",
+      "route": "/learn/3.3",
+      "screenshot": "screenshots/learn_3_3_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:27:47.499606"
+    },
+    {
+      "page": "learn/3.4",
+      "tab": "learn",
+      "route": "/learn/3.4",
+      "screenshot": "screenshots/learn_3_4_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 1,
+        "active_loaders": 0,
+        "body_text_length": 1301,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:30:04.828922"
+    },
+    {
+      "page": "learn/3.5",
+      "tab": "learn",
+      "route": "/learn/3.5",
+      "screenshot": "screenshots/learn_3_5_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:30:32.008090"
+    },
+    {
+      "page": "learn/3.6",
+      "tab": "learn",
+      "route": "/learn/3.6",
+      "screenshot": "screenshots/learn_3_6_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:30:59.167411"
+    },
+    {
+      "page": "learn/3.9",
+      "tab": "learn",
+      "route": "/learn/3.9",
+      "screenshot": "screenshots/learn_3_9_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:31:26.335830"
+    },
+    {
+      "page": "learn/3.10",
+      "tab": "learn",
+      "route": "/learn/3.10",
+      "screenshot": "screenshots/learn_3_10_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:31:53.496982"
+    },
+    {
+      "page": "learn/4.1",
+      "tab": "learn",
+      "route": "/learn/4.1",
+      "screenshot": "screenshots/learn_4_1_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:32:20.657157"
+    },
+    {
+      "page": "learn/4.2",
+      "tab": "learn",
+      "route": "/learn/4.2",
+      "screenshot": "screenshots/learn_4_2_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 1,
+        "active_loaders": 0,
+        "body_text_length": 1305,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:34:34.882578"
+    },
+    {
+      "page": "learn/4.3",
+      "tab": "learn",
+      "route": "/learn/4.3",
+      "screenshot": "screenshots/learn_4_3_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 1,
+        "active_loaders": 0,
+        "body_text_length": 1244,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:36:41.050001"
+    },
+    {
+      "page": "learn/4.4",
+      "tab": "learn",
+      "route": "/learn/4.4",
+      "screenshot": "screenshots/learn_4_4_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:37:08.243595"
+    },
+    {
+      "page": "learn/4.5",
+      "tab": "learn",
+      "route": "/learn/4.5",
+      "screenshot": "screenshots/learn_4_5_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:37:35.414450"
+    },
+    {
+      "page": "learn/4.7",
+      "tab": "learn",
+      "route": "/learn/4.7",
+      "screenshot": "screenshots/learn_4_7_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 1,
+        "active_loaders": 0,
+        "body_text_length": 1244,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:39:43.374770"
+    },
+    {
+      "page": "learn/4.9",
+      "tab": "learn",
+      "route": "/learn/4.9",
+      "screenshot": "screenshots/learn_4_9_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:40:10.574652"
+    },
+    {
+      "page": "learn/5.1",
+      "tab": "learn",
+      "route": "/learn/5.1",
+      "screenshot": "screenshots/learn_5_1_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:40:37.756582"
+    },
+    {
+      "page": "learn/5.2",
+      "tab": "learn",
+      "route": "/learn/5.2",
+      "screenshot": "screenshots/learn_5_2_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:41:04.935398"
+    },
+    {
+      "page": "learn/5.3",
+      "tab": "learn",
+      "route": "/learn/5.3",
+      "screenshot": "screenshots/learn_5_3_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:41:32.125215"
+    },
+    {
+      "page": "learn/5.4",
+      "tab": "learn",
+      "route": "/learn/5.4",
+      "screenshot": "screenshots/learn_5_4_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1163,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:41:39.417997"
+    },
+    {
+      "page": "learn/5.5",
+      "tab": "learn",
+      "route": "/learn/5.5",
+      "screenshot": "screenshots/learn_5_5_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:42:06.602235"
+    },
+    {
+      "page": "learn/6.1",
+      "tab": "learn",
+      "route": "/learn/6.1",
+      "screenshot": "screenshots/learn_6_1_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:42:33.790924"
+    },
+    {
+      "page": "learn/6.2",
+      "tab": "learn",
+      "route": "/learn/6.2",
+      "screenshot": "screenshots/learn_6_2_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:43:00.987080"
+    },
+    {
+      "page": "learn/6.3",
+      "tab": "learn",
+      "route": "/learn/6.3",
+      "screenshot": "screenshots/learn_6_3_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:43:28.173434"
+    },
+    {
+      "page": "learn/6.4",
+      "tab": "learn",
+      "route": "/learn/6.4",
+      "screenshot": "screenshots/learn_6_4_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:43:55.363643"
+    },
+    {
+      "page": "learn/6.5",
+      "tab": "learn",
+      "route": "/learn/6.5",
+      "screenshot": "screenshots/learn_6_5_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:44:22.555504"
+    },
+    {
+      "page": "learn/7.1",
+      "tab": "learn",
+      "route": "/learn/7.1",
+      "screenshot": "screenshots/learn_7_1_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:44:49.744189"
+    },
+    {
+      "page": "learn/7.2",
+      "tab": "learn",
+      "route": "/learn/7.2",
+      "screenshot": "screenshots/learn_7_2_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:45:16.939735"
+    },
+    {
+      "page": "learn/7.3",
+      "tab": "learn",
+      "route": "/learn/7.3",
+      "screenshot": "screenshots/learn_7_3_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 1163,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:45:24.244221"
+    },
+    {
+      "page": "learn/7.4",
+      "tab": "learn",
+      "route": "/learn/7.4",
+      "screenshot": "screenshots/learn_7_4_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:45:51.422742"
+    },
+    {
+      "page": "learn/7.5",
+      "tab": "learn",
+      "route": "/learn/7.5",
+      "screenshot": "screenshots/learn_7_5_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:46:18.604185"
+    },
+    {
+      "page": "learn/7.7",
+      "tab": "learn",
+      "route": "/learn/7.7",
+      "screenshot": "screenshots/learn_7_7_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:46:45.796968"
+    },
+    {
+      "page": "learn/7.8",
+      "tab": "learn",
+      "route": "/learn/7.8",
+      "screenshot": "screenshots/learn_7_8_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:47:12.985618"
+    },
+    {
+      "page": "learn/8.1",
+      "tab": "learn",
+      "route": "/learn/8.1",
+      "screenshot": "screenshots/learn_8_1_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:47:40.183723"
+    },
+    {
+      "page": "learn/8.2",
+      "tab": "learn",
+      "route": "/learn/8.2",
+      "screenshot": "screenshots/learn_8_2_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:48:07.383505"
+    },
+    {
+      "page": "learn/8.3",
+      "tab": "learn",
+      "route": "/learn/8.3",
+      "screenshot": "screenshots/learn_8_3_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:48:34.570636"
+    },
+    {
+      "page": "learn/10.1",
+      "tab": "learn",
+      "route": "/learn/10.1",
+      "screenshot": "screenshots/learn_10_1_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:49:01.762986"
+    },
+    {
+      "page": "learn/10.2",
+      "tab": "learn",
+      "route": "/learn/10.2",
+      "screenshot": "screenshots/learn_10_2_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:49:28.950902"
+    },
+    {
+      "page": "learn/10.3",
+      "tab": "learn",
+      "route": "/learn/10.3",
+      "screenshot": "screenshots/learn_10_3_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:49:56.137132"
+    },
+    {
+      "page": "learn/10.4",
+      "tab": "learn",
+      "route": "/learn/10.4",
+      "screenshot": "screenshots/learn_10_4_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:50:23.320434"
+    },
+    {
+      "page": "learn/11.1",
+      "tab": "learn",
+      "route": "/learn/11.1",
+      "screenshot": "screenshots/learn_11_1_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 1,
+        "active_loaders": 0,
+        "body_text_length": 1244,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:52:29.476475"
+    },
+    {
+      "page": "learn/11.2",
+      "tab": "learn",
+      "route": "/learn/11.2",
+      "screenshot": "screenshots/learn_11_2_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:52:56.679940"
+    },
+    {
+      "page": "learn/11.3",
+      "tab": "learn",
+      "route": "/learn/11.3",
+      "screenshot": "screenshots/learn_11_3_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:53:23.861563"
+    },
+    {
+      "page": "learn/11.4",
+      "tab": "learn",
+      "route": "/learn/11.4",
+      "screenshot": "screenshots/learn_11_4_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:53:51.048371"
+    },
+    {
+      "page": "learn/11.5",
+      "tab": "learn",
+      "route": "/learn/11.5",
+      "screenshot": "screenshots/learn_11_5_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:54:18.240224"
+    },
+    {
+      "page": "learn/11.6",
+      "tab": "learn",
+      "route": "/learn/11.6",
+      "screenshot": "screenshots/learn_11_6_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:54:45.428099"
+    },
+    {
+      "page": "learn/11.7",
+      "tab": "learn",
+      "route": "/learn/11.7",
+      "screenshot": "screenshots/learn_11_7_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:55:12.618856"
+    },
+    {
+      "page": "learn/11.8",
+      "tab": "learn",
+      "route": "/learn/11.8",
+      "screenshot": "screenshots/learn_11_8_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 1,
+        "active_loaders": 0,
+        "body_text_length": 1305,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:57:18.773840"
+    },
+    {
+      "page": "learn/11.9",
+      "tab": "learn",
+      "route": "/learn/11.9",
+      "screenshot": "screenshots/learn_11_9_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:57:45.966922"
+    },
+    {
+      "page": "learn/11.10",
+      "tab": "learn",
+      "route": "/learn/11.10",
+      "screenshot": "screenshots/learn_11_10_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:58:13.157719"
+    },
+    {
+      "page": "learn/11.11",
+      "tab": "learn",
+      "route": "/learn/11.11",
+      "screenshot": "screenshots/learn_11_11_overview.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 150,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:58:40.323180"
+    },
+    {
+      "page": "practice",
+      "route": "/practice",
+      "screenshot": "screenshots/practice_main.png",
+      "katex_errors": [],
+      "metrics": {
+        "katex_count": 0,
+        "formula_boxes": 0,
+        "empty_states": 0,
+        "error_states": 0,
+        "active_loaders": 0,
+        "body_text_length": 971,
+        "title": "Calculus Mastery"
+      },
+      "timestamp": "2026-04-09T15:59:03.563795"
+    }
+  ]
+}

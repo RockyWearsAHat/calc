@@ -1,0 +1,170 @@
+{
+  "generated_at": "2026-04-08T17:41:57.080888",
+  "course_id": "1220325",
+  "summary": {
+    "total_assignments": 51,
+    "total_modules": 0,
+    "current_focus": []
+  },
+  "priorities": [
+    {
+      "topic": "taylor_maclaurin",
+      "name": "Taylor and Maclaurin Series",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "polar_calculus",
+      "name": "Calculus in Polar Coordinates",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "series_strategy",
+      "name": "Series Convergence Strategy",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "improper_integrals",
+      "name": "Improper Integrals",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "integration_by_parts",
+      "name": "Integration by Parts",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "parametric_calculus",
+      "name": "Calculus with Parametric Curves",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "partial_fractions",
+      "name": "Partial Fractions",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "power_series",
+      "name": "Power Series",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    }
+  ],
+  "warnings": [
+    {
+      "topic": "taylor_maclaurin",
+      "name": "Taylor and Maclaurin Series",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "polar_calculus",
+      "name": "Calculus in Polar Coordinates",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "series_strategy",
+      "name": "Series Convergence Strategy",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "improper_integrals",
+      "name": "Improper Integrals",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "integration_by_parts",
+      "name": "Integration by Parts",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "parametric_calculus",
+      "name": "Calculus with Parametric Curves",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "partial_fractions",
+      "name": "Partial Fractions",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    },
+    {
+      "topic": "power_series",
+      "name": "Power Series",
+      "priority": "HIGH",
+      "score": 20,
+      "reason": "Critical for final exam",
+      "assignments": []
+    }
+  ],
+  "topic_breakdown": {},
+  "recommendations": [
+    {
+      "type": "FINAL",
+      "message": "For the final: Series convergence tests are HEAVILY tested. Know all tests and when to use each.",
+      "topics": [
+        "series_strategy",
+        "ratio_root_tests",
+        "comparison_tests"
+      ]
+    },
+    {
+      "type": "FINAL",
+      "message": "Taylor series: Know common series (e^x, sin x, cos x, 1/(1-x)) and how to derive new ones.",
+      "topics": [
+        "taylor_maclaurin",
+        "power_series"
+      ]
+    },
+    {
+      "type": "TECHNIQUE",
+      "message": "Integration techniques: Practice recognizing WHICH technique to use. This is often harder than the technique itself.",
+      "topics": [
+        "integration_by_parts",
+        "trig_substitution",
+        "partial_fractions"
+      ]
+    }
+  ]
+}
